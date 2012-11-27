@@ -47,6 +47,10 @@
         map = new esri.Map("map",{extent:initExtent});
         var basemap = new esri.layers.ArcGISTiledMapServiceLayer("http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer");
         map.addLayer(basemap);
+        
+        dojo.connect(window,'resize',map,function(){
+          map.resize();
+        });
       }
 
     </script>
@@ -77,21 +81,21 @@
         <div class="span6 repo el">
           <div class="repo-inner">
             <a href="https://github.com/search?q=username%3Aesri+app+OR+sample"><h1>Apps and Samples</h1></a>
-            <div>Here lives a general collection of open source code from Esri. Innovative and experimental apps and models use this space as a centralized development platform.</div>
+            <div>Here lives a general collection of open source ArcGIS apps and samples from Esri.</div>
           </div>
         </div> 
         <div class="span6 repo el">
           <div class="repo-inner">
             <a href="https://github.com/search?q=username%3Aesri"><h1>Frameworks and Utilities</h1></a>
-            <div>This account houses code for various projects related to the ArcGIS Platform. Application Templates, viewers, and extensions to ArcGIS.</div>
+            <div>Here you will find code for utility projects and extensions of the ArcGIS Platform.</div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="span6 repo el">
           <div class="repo-inner">
-            <a href="https://github.com/search?q=username%3Aarcgis+Solution"><h1>ArcGIS Solutions</h1></a>
-            <div>This account houses code for the various project related to the ArcGIS Platform Application Templates, viewers, and extensions to ArcGIS.</div>
+            <a href="https://github.com/search?q=username%3Aarcgis+Solution"><h1>Application Templates</h1></a>
+            <div>Here you will find various mapping and other template projects for the ArcGIS platform.</div>
           </div>
         </div>
         <div class="span6 repo el">
