@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    		<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/js/esri/css/esri.css" />
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
@@ -36,12 +37,13 @@
       }
     </style>
     <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.8compact"></script>
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.3compact"></script>
 
     <script type="text/javascript">
       dojo.require("esri.map");
       dojo.addOnLoad(init);
 
+      var map;
       function init() {
         var initExtent = new esri.geometry.Extent({"xmin":-8592665.38, "ymin": 4694796.86, "xmax": -8558268.72, "ymax": 4717727.97, "spatialReference":{"wkid":102100}});
         map = new esri.Map("map",{extent:initExtent});
@@ -51,6 +53,13 @@
         dojo.connect(window,'resize',map,function(){
           map.resize();
         });
+        dojo.connect(map, 'onResize',  function(extent, width, height) { 
+	  map.__resizeCenter = map.extent.getCenter();
+		setTimeout(function() {
+			map.centerAt(map.__resizeCenter);
+		}, 200);
+	});
+        
       }
 
     </script>
