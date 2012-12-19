@@ -42,6 +42,7 @@
       dojo.require("esri.map");
       dojo.addOnLoad(init);
 
+      var map;
       function init() {
         var initExtent = new esri.geometry.Extent({"xmin":-8592665.38, "ymin": 4694796.86, "xmax": -8558268.72, "ymax": 4717727.97, "spatialReference":{"wkid":102100}});
         map = new esri.Map("map",{extent:initExtent});
@@ -51,6 +52,13 @@
         dojo.connect(window,'resize',map,function(){
           map.resize();
         });
+        dojo.connect(map, 'onResize',  function(extent, width, height) { 
+  				map.__resizeCenter = map.extent.getCenter();
+					setTimeout(function() {
+						map.centerAt(map.__resizeCenter);
+					}, 200);
+				});
+        
       }
 
     </script>
@@ -70,7 +78,7 @@
       <!--img src="assets/img/esri-logo.gif"/-->
       <div class="hero-unit" style="background-color:#fff; opacity:.65;">
         <h1>Esri is now on Github!</h1>
-        <p>We're excited to be bringing more to Github, and starting to collaborate around some of our ideas and projects. Stay tuned as we grow our code! </p>
+        <p>We're excited to be bringing more to GitHub, and starting to collaborate around some of our ideas and projects. Stay tuned as we grow our code! </p>
         <p>
           <a href="http://github.com/esri" class="btn btn-primary btn-large">
             See the code
