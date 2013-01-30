@@ -1,140 +1,1192 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title>esri.github.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <title>Esri GitHub | Open Source and Example Projects from the Esri Developer Platform</title>
 
-    <!-- Le styles -->
-    		<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/js/esri/css/esri.css" />
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-      .repo {
-        background-color: #fff;
-        opacity:.65;
-      }
-      .repo-inner {
-        margin:10px;
-      }
-      .map {
-        position:absolute;
-        width:100%;
-        height:100%;
-        top:0px;
-        z-index:-1;
-      }
-      #map_zoom_slider {
-        display:none;
-      } 
-      .el {
-        height:130px;
-        margin-bottom: 10px;
-      }
-    </style>
-    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.3compact"></script>
+      <meta name='description' content='We are excited about bringing the idea of social coding to Esri. Browse and search flexible applications, frameworks, and extensions built with our powerful developer platform.'>
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+          
+    
+    <link href="http://fast.fonts.com/cssapi/23855eec-5fdf-4594-9898-0113a04bfef0.css" rel="stylesheet" type="text/css">
+    
+    <link href="/css/screen.css?1359497374" media="screen" rel="stylesheet" type="text/css" />
+    
+    
+      
+        <link href="/css/home.css?1359483595" media="screen" rel="stylesheet" type="text/css" />
+      
+    
+
+  
+    
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    
+      <script src="/js/libs/jquery.isotope.min.js?1359424719" type="text/javascript"></script>
+    
+      <script src="/js/libs/chosen.jquery.js?1359424719" type="text/javascript"></script>
+    
+      <script src="/js/github.js?1359483595" type="text/javascript"></script>
+    
+  
+  
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div id="page">
+        
+        <div id="home-banner">
+  <div class="container">
+    <div class="row">
+      <div id="home-main-text">
+        <h1>Esri is on GitHub!</h1>
+        <p class="large"> 
+          We're excited about helping developers build and share software. Browse our open source code and get started with our powerful ArcGIS platform. 
+        </p>
+        <p>
+          <a class="btn primary centered" href="https://github.com/esri"> Browse on GitHub </a>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="container smaller">
+  <div class="filter-container">
+    <div class="label">
+      <em class="lable-it"> Filter by language or keyword: </em>
+    </div>
+    <div class="search-select">
+      <select data-placeholder="Search/Select" class="chzn-select" multiple tabindex="6">
+        <optgroup label="Language">
+
+          
+            <option data-filter="ActionScript">ActionScript</option>
+          
+            <option data-filter="JavaScript">JavaScript</option>
+          
+            <option data-filter="Objective-C">Objective-C</option>
+          
+            <option data-filter="Java">Java</option>
+          
+            <option data-filter="D">D</option>
+          
+            <option data-filter="C-sharp">C#</option>
+          
+            <option data-filter="Python">Python</option>
+          
+            <option data-filter="ASP">ASP</option>
+          
+            <option data-filter="Visual Basic">Visual Basic</option>
+          
+        
+        </optgroup>
+        <optgroup label="Tags">
+          
+          
+            <option data-filter=".NET">.NET</option>
+          
+            <option data-filter="API">API</option>
+          
+            <option data-filter="Add-ins">Add-ins</option>
+          
+            <option data-filter="Addresses">Addresses</option>
+          
+            <option data-filter="Analitics">Analitics</option>
+          
+            <option data-filter="Android">Android</option>
+          
+            <option data-filter="Animation">Animation</option>
+          
+            <option data-filter="Apple">Apple</option>
+          
+            <option data-filter="Application">Application</option>
+          
+            <option data-filter="ArcGIS">ArcGIS</option>
+          
+            <option data-filter="ArcGIS-Online">ArcGIS Online</option>
+          
+            <option data-filter="ArcMap">ArcMap</option>
+          
+            <option data-filter="Arcpy">Arcpy</option>
+          
+            <option data-filter="Assessment">Assessment</option>
+          
+            <option data-filter="Assessments">Assessments</option>
+          
+            <option data-filter="Auto-Complete">Auto Complete</option>
+          
+            <option data-filter="Basemaps">Basemaps</option>
+          
+            <option data-filter="Basic">Basic</option>
+          
+            <option data-filter="Buffer">Buffer</option>
+          
+            <option data-filter="Building">Building</option>
+          
+            <option data-filter="COP">COP</option>
+          
+            <option data-filter="Campus">Campus</option>
+          
+            <option data-filter="Canvas">Canvas</option>
+          
+            <option data-filter="Citizen">Citizen</option>
+          
+            <option data-filter="Citizens">Citizens</option>
+          
+            <option data-filter="Comment">Comment</option>
+          
+            <option data-filter="Community">Community</option>
+          
+            <option data-filter="Compare">Compare</option>
+          
+            <option data-filter="Convert">Convert</option>
+          
+            <option data-filter="Critical">Critical</option>
+          
+            <option data-filter="Dashboard">Dashboard</option>
+          
+            <option data-filter="Data-Collection">Data Collection</option>
+          
+            <option data-filter="Database">Database</option>
+          
+            <option data-filter="Demo">Demo</option>
+          
+            <option data-filter="Desktop">Desktop</option>
+          
+            <option data-filter="Developers">Developers</option>
+          
+            <option data-filter="Directions">Directions</option>
+          
+            <option data-filter="Directories">Directories</option>
+          
+            <option data-filter="Display">Display</option>
+          
+            <option data-filter="Dojo">Dojo</option>
+          
+            <option data-filter="Driving">Driving</option>
+          
+            <option data-filter="Dynamic">Dynamic</option>
+          
+            <option data-filter="Election">Election</option>
+          
+            <option data-filter="Employees">Employees</option>
+          
+            <option data-filter="Esri">Esri</option>
+          
+            <option data-filter="Example">Example</option>
+          
+            <option data-filter="Executive">Executive</option>
+          
+            <option data-filter="Facility">Facility</option>
+          
+            <option data-filter="Field">Field</option>
+          
+            <option data-filter="Files">Files</option>
+          
+            <option data-filter="Find">Find</option>
+          
+            <option data-filter="Finder">Finder</option>
+          
+            <option data-filter="Flex">Flex</option>
+          
+            <option data-filter="Flickr">Flickr</option>
+          
+            <option data-filter="Format">Format</option>
+          
+            <option data-filter="Framework">Framework</option>
+          
+            <option data-filter="GPS">GPS</option>
+          
+            <option data-filter="Gallery">Gallery</option>
+          
+            <option data-filter="Geocoding">Geocoding</option>
+          
+            <option data-filter="Geojson">Geojson</option>
+          
+            <option data-filter="Geoprocessing">Geoprocessing</option>
+          
+            <option data-filter="GitHub">GitHub</option>
+          
+            <option data-filter="Government">Government</option>
+          
+            <option data-filter="Heatmap">Heatmap</option>
+          
+            <option data-filter="Incident">Incident</option>
+          
+            <option data-filter="Information">Information</option>
+          
+            <option data-filter="Inspections">Inspections</option>
+          
+            <option data-filter="Inspector">Inspector</option>
+          
+            <option data-filter="Interop">Interop</option>
+          
+            <option data-filter="JavaScript">JavaScript</option>
+          
+            <option data-filter="Json">Json</option>
+          
+            <option data-filter="Keyword">Keyword</option>
+          
+            <option data-filter="Labels">Labels</option>
+          
+            <option data-filter="Land-Use">Land Use</option>
+          
+            <option data-filter="Layer">Layer</option>
+          
+            <option data-filter="Layers">Layers</option>
+          
+            <option data-filter="Libraries">Libraries</option>
+          
+            <option data-filter="Library">Library</option>
+          
+            <option data-filter="Locate">Locate</option>
+          
+            <option data-filter="Location">Location</option>
+          
+            <option data-filter="Mac">Mac</option>
+          
+            <option data-filter="Mailing">Mailing</option>
+          
+            <option data-filter="Management">Management</option>
+          
+            <option data-filter="Map">Map</option>
+          
+            <option data-filter="Mapping">Mapping</option>
+          
+            <option data-filter="Maps">Maps</option>
+          
+            <option data-filter="Metrics">Metrics</option>
+          
+            <option data-filter="Mobile">Mobile</option>
+          
+            <option data-filter="Notification">Notification</option>
+          
+            <option data-filter="Offline">Offline</option>
+          
+            <option data-filter="Package">Package</option>
+          
+            <option data-filter="Parcel">Parcel</option>
+          
+            <option data-filter="Parks">Parks</option>
+          
+            <option data-filter="Place">Place</option>
+          
+            <option data-filter="Places">Places</option>
+          
+            <option data-filter="Planning">Planning</option>
+          
+            <option data-filter="Points">Points</option>
+          
+            <option data-filter="Polling">Polling</option>
+          
+            <option data-filter="Portal">Portal</option>
+          
+            <option data-filter="Presentation">Presentation</option>
+          
+            <option data-filter="Properties">Properties</option>
+          
+            <option data-filter="Property">Property</option>
+          
+            <option data-filter="Public">Public</option>
+          
+            <option data-filter="Public-Safety">Public Safety</option>
+          
+            <option data-filter="Python">Python</option>
+          
+            <option data-filter="Quickstart">Quickstart</option>
+          
+            <option data-filter="REST">REST</option>
+          
+            <option data-filter="Recreation">Recreation</option>
+          
+            <option data-filter="Request">Request</option>
+          
+            <option data-filter="Routing">Routing</option>
+          
+            <option data-filter="Runtime">Runtime</option>
+          
+            <option data-filter="SDK">SDK</option>
+          
+            <option data-filter="Sample">Sample</option>
+          
+            <option data-filter="Santa">Santa</option>
+          
+            <option data-filter="Search">Search</option>
+          
+            <option data-filter="Server">Server</option>
+          
+            <option data-filter="Service">Service</option>
+          
+            <option data-filter="Service-Layer">Service Layer</option>
+          
+            <option data-filter="Services">Services</option>
+          
+            <option data-filter="Shapefile">Shapefile</option>
+          
+            <option data-filter="Showcase">Showcase</option>
+          
+            <option data-filter="Social-Media">Social Media</option>
+          
+            <option data-filter="Staff">Staff</option>
+          
+            <option data-filter="Storytelling">Storytelling</option>
+          
+            <option data-filter="Students">Students</option>
+          
+            <option data-filter="Swipe">Swipe</option>
+          
+            <option data-filter="Tablet">Tablet</option>
+          
+            <option data-filter="Tax">Tax</option>
+          
+            <option data-filter="Template">Template</option>
+          
+            <option data-filter="Test">Test</option>
+          
+            <option data-filter="Tile">Tile</option>
+          
+            <option data-filter="Tool">Tool</option>
+          
+            <option data-filter="Toolbox">Toolbox</option>
+          
+            <option data-filter="Touch">Touch</option>
+          
+            <option data-filter="Trends">Trends</option>
+          
+            <option data-filter="Twitter">Twitter</option>
+          
+            <option data-filter="Utilities">Utilities</option>
+          
+            <option data-filter="Vector">Vector</option>
+          
+            <option data-filter="Viewers">Viewers</option>
+          
+            <option data-filter="Visitors">Visitors</option>
+          
+            <option data-filter="Water">Water</option>
+          
+            <option data-filter="Web">Web</option>
+          
+            <option data-filter="WebHDFS">WebHDFS</option>
+          
+            <option data-filter="Widget">Widget</option>
+          
+            <option data-filter="Widgets">Widgets</option>
+          
+            <option data-filter="Wind-Turbine">Wind Turbine</option>
+          
+            <option data-filter="YouTube">YouTube</option>
+          
+            <option data-filter="Zip">Zip</option>
+          
+            <option data-filter="iOS">iOS</option>
+          
+            <option data-filter="iPad">iPad</option>          
+        
+        </optgroup>
+      </select>
+    </div>
+  </div>
+</div>
+ 
+<div class="container smaller">
+
+  <div id="content">
+
+
+    <div class="repo-container element ArcGIS Web Flex Developers Libraries Quickstart API Map ActionScript">
+      <div class="repo">
+        <div class="repo-header ActionScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/quickstart-map-library-flex">  quickstart-map-library-flex </a> </h2>
+          <h3 class="repo-language ActionScript"> ActionScript </h3>
+        </div>
+        <p class="repo-description">
+          Easy mapping for Flex developers - Open Source project demonstrating the powers of the ArcGIS API for Flex
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 7 <span class="icon-star"> 32 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web Flex Developers Viewers Map ActionScript">
+      <div class="repo">
+        <div class="repo-header ActionScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/arcgis-viewer-flex">  arcgis-viewer-flex </a> </h2>
+          <h3 class="repo-language ActionScript"> ActionScript </h3>
+        </div>
+        <p class="repo-description">
+          Source code for ArcGIS Viewer for Flex
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 21 <span class="icon-star"> 70 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online JavaScript Developers Maps Map Gallery Template Public Showcase Layers Application JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/map-gallery-template-js">  map-gallery-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          This Public Gallery template is designed for anyone who wants to showcase their ArcGIS Online maps, layers, and mobile apps in a dynamic web gallery.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 5 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime iOS Developers Geocoding Geoprocessing iPad Demo Application Apple Mac Touch Tablet Map Objective-C">
+      <div class="repo">
+        <div class="repo-header Objective-C">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/geoprocessing-map-ipad">  geoprocessing-map-ipad </a> </h2>
+          <h3 class="repo-language Objective-C"> Objective-C </h3>
+        </div>
+        <p class="repo-description">
+          ArcGIS demo application shown at the User Conference 2012 Plenary for Geoprocessing Presentation.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 3 <span class="icon-star"> 3 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element GitHub Esri JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri.github.com">  esri.github.com </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          Esri on Github 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 3 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Developers Quickstart Geocoding Example Esri Showcase API Maps Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri.js">  esri.js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A collection of examples showcasing Esri's Javascript Mapping API 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 6 <span class="icon-star"> 15 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime Android Developers SDK Offline Wind-Turbine Inspector Runtime Mapping Maps Application Field Java">
+      <div class="repo">
+        <div class="repo-header Java">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/offline-windturbine-inspector-android">  offline-windturbine-inspector-android </a> </h2>
+          <h3 class="repo-language Java"> Java </h3>
+        </div>
+        <p class="repo-description">
+          An ArcGIS Runtime SDK for Android mapping application for inspecting wind turbines in the field 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 8 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime iOS Developers Offline Routing Directions Data-Collection SDK D">
+      <div class="repo">
+        <div class="repo-header D">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/offline-and-routing-data-collection-ios">  offline-and-routing-data-collection-ios </a> </h2>
+          <h3 class="repo-language D"> D </h3>
+        </div>
+        <p class="repo-description">
+          Offline and Routing data Collection for iOS, developed using the ArcGIS Runtime and demonstrated at the 2012 Developer Summit.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 5 <span class="icon-star"> 2 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element  Java">
+      <div class="repo">
+        <div class="repo-header Java">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/Geoportal">  Geoportal </a> </h2>
+          <h3 class="repo-language Java"> Java </h3>
+        </div>
+        <p class="repo-description">
+          Geoportal Server is a standards-based, open source product that enables discovery and use of geospatial resources including data and services.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 2 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element Developers Utilities Convert Geojson Json Format JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/geojson-utils">  geojson-utils </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A set of utilities for converting between standard geojson and other json formats
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 5 <span class="icon-star"> 17 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime iOS Developers Data-Collection Offline Inspections Runtime Demo Objective-C">
+      <div class="repo">
+        <div class="repo-header Objective-C">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/offline-data-collection-ios">  offline-data-collection-ios </a> </h2>
+          <h3 class="repo-language Objective-C"> Objective-C </h3>
+        </div>
+        <p class="repo-description">
+          Offline Inspections for iOS built using the ArcGIS Runtime. Shown at the User Conference 2011 Plenary Demo
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 2 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Developers Layer Dynamic Service-Layer Heatmap Library Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/heatmap-layer-js">  heatmap-layer-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          This is a custom DynamicMapServiceLayer for Heatmap.js to work with the ArcGIS Javascript API.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 4 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Developers Social-Media Twitter Maps Template Display Keyword Points Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/social-media-map-template-js">  social-media-map-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          The Social Media Template has an innovative use of social media, which allows you to display up-to-date, keyword-targeted social media points on a map.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 4 <span class="icon-star"> 3 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web Developers Geocoding Search Widget Auto-Complete Places Location Dojo JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/geocoder-search-widget-js">  geocoder-search-widget-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          JavaScript auto-complete widget for locating places.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element Developers Interop Example Python Presentation Geoprocessing Utilities C-sharp">
+      <div class="repo">
+        <div class="repo-header C-sharp">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/interop-examples-python">  interop-examples-python </a> </h2>
+          <h3 class="repo-language C-sharp"> C# </h3>
+        </div>
+        <p class="repo-description">
+          Code and slides from my Developer Summit 2011 presentation on using Python as a glue language for Geoprocessing tools
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Database Python Developers Toolbox Geoprocessing Utilities Python">
+      <div class="repo">
+        <div class="repo-header Python">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/tbx-pyt-translator">  tbx-pyt-translator </a> </h2>
+          <h3 class="repo-language Python"> Python </h3>
+        </div>
+        <p class="repo-description">
+          Utility for converting a Geoprocessing TBX file to a pure-Python PYT file in ArcGIS 10.1
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element Animation JavaScript Developers Vector Canvas Library Tile Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/canvas_animation">  canvas_animation </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A library for tile vector animations with canvas
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server REST Python Developers Arcpy Utilities API Services Python">
+      <div class="repo">
+        <div class="repo-header Python">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/arcpy-server-util-rest">  arcpy-server-util-rest </a> </h2>
+          <h3 class="repo-language Python"> Python </h3>
+        </div>
+        <p class="repo-description">
+          A Python utilities API for consuming REST services from ArcGIS server
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 8 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime iOS Developers Driving Directions Runtime SDK Mac Apple iPad D">
+      <div class="repo">
+        <div class="repo-header D">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/driving-directions-ios">  driving-directions-ios </a> </h2>
+          <h3 class="repo-language D"> D </h3>
+        </div>
+        <p class="repo-description">
+          Driving Directions for iOS using the ArcGIS Runtime. This application was shown at the Development Summit Europe 2012 Plenary.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 3 <span class="icon-star"> 2 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element  JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/VECNIK">  VECNIK </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          Render Vector HTML5 maps using CartoDB and Carto as styling language, on top of ModestMaps
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Android Library Developers Application Sample Quickstart Map Java">
+      <div class="repo">
+        <div class="repo-header Java">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/quickstart-map-android">  quickstart-map-android </a> </h2>
+          <h3 class="repo-language Java"> Java </h3>
+        </div>
+        <p class="repo-description">
+          Quickly build maps for Android with this library and sample app. 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile iOS Developers Library Application Sample Quickstart Runtime SDK Framework Map Objective-C">
+      <div class="repo">
+        <div class="repo-header Objective-C">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/quickstart-map-ios">  quickstart-map-ios </a> </h2>
+          <h3 class="repo-language Objective-C"> Objective-C </h3>
+        </div>
+        <p class="repo-description">
+          An iOS Framework and sample app to get started with Esri's iOS Runtime SDK.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Developers Parks Recreation Locate Find Community Government Application Web Maps JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/park-and-recreation-finder">  park-and-recreation-finder </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows citizens to locate park and recreation opportunities in their community.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 3 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web Flex Developers Government Widget Public-Safety Incident COP Application ActionScript">
+      <div class="repo">
+        <div class="repo-header ActionScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/public-safety-cop">  public-safety-cop </a> </h2>
+          <h3 class="repo-language ActionScript"> ActionScript </h3>
+        </div>
+        <p class="repo-description">
+          A collection of Flex widgets used in the Public Safety COP application to provide a common operational picture of an incident.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Developers Basemaps Sample Quickstart Web Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/switch-basemaps-js">  switch-basemaps-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          ArcGIS Javascript sample that illustrates how to change your web map's basemap.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 4 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Government Executive Dashboard Critical Metrics Trends Management Application JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/executive-dashboard">  executive-dashboard </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows local government leaders to proactively view critical metrics, identify trends, and devise new management strategies.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Land-Use Public Comment Management Application JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/land-use-public-comment">  land-use-public-comment </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows the general public and other interested parties to comment on proposed land use cases.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Citizen Service Request Application Desktop Mobile Touch Tablet JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/citizen-service-request">  citizen-service-request </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows citizens to submit requests for service from a desktop PC, mobile phone, or tablet device.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Campus Building Place Finder Application Employees Students Visitors Location JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/campus-place-finder">  campus-place-finder </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows employees, students and/or visitors to locate people and places on a campus or in a single building.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Land-Use Application Public Notification Staff Buffer Properties Mailing Labels JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/land-use-public-notification">  land-use-public-notification </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows local government staff to identify buffer properties and generate mailing labels.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 2 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Developers Zip Sample Shapefile Web Map Portal API REST JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/add-shapefile-js">  add-shapefile-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          ArcGIS JavaScript sample that let's you add a shapefile to your web map. 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Storytelling Basic Template Maps Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/basic-map-storytelling-template-js">  basic-map-storytelling-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A storytelling template for publishing an ArcGIS webmap to a general audience (Available as a hosted template on ArcGIS Online).
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Information Public Citizens JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/public-information-center">  public-information-center </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows citizens to review projects and activities, submit requests for service, and review social media feeds.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Storytelling Swipe Template Maps Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/swipe-map-storytelling-template-js">  swipe-map-storytelling-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A storytelling template that enables users to view and compare two layers of a web map.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Storytelling Compare Template Maps Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/compare-map-storytelling-template-js">  compare-map-storytelling-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A storytelling template that compares up to three web maps from ArcGIS Online. (Available as a hosted template on ArcGIS Online)
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS ArcGIS-Online Web JavaScript Developers Storytelling Template Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/text-and-legend-map-storytelling-template-js">  text-and-legend-map-storytelling-template-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A storytelling template for publishing a web map to a general audience; includes text and legend panel. Supports time enabled maps and multiple webmaps with tabs. (Available as a hosted template on ArcGIS Online).
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Election Polling Citizens JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/election-polling-places">  election-polling-places </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that helps citizens locate their election polling place and obtain information about elected officials.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Information Public Citizens Facility Services Community JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/my-government-services">  my-government-services </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that helps citizens locate a government facility and obtain information about curbside and drop-off services.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Desktop JavaScript Government Public Election Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/election-results">  election-results </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that provides election results to the general public and other interested parties.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 3 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web Flex Government Developers Property Parcel Tax Assessment JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/tax-parcel-viewer">  tax-parcel-viewer </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that provides the general public property tax and assessment information.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Server Web JavaScript Government Developers Citizens Public Addresses Maps Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/community-addressing">  community-addressing </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          An application that allows the general public to contribute site address and contact information.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Government Developers Citizens Gallery Maps Map ASP">
+      <div class="repo">
+        <div class="repo-header ASP">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/map-and-app-gallery">  map-and-app-gallery </a> </h2>
+          <h3 class="repo-language ASP"> ASP </h3>
+        </div>
+        <p class="repo-description">
+          An application that provides citizens access to maps and apps developed by a local government and cataloged in ArcGIS.com.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Desktop Government Add-ins ArcMap Utilities C-sharp">
+      <div class="repo">
+        <div class="repo-header C-sharp">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/local-government-desktop-addins">  local-government-desktop-addins </a> </h2>
+          <h3 class="repo-language C-sharp"> C# </h3>
+        </div>
+        <p class="repo-description">
+          A series of ArcGIS Desktop Add-ins used in the ArcGIS for Local Government editing maps.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 3 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile .NET Utilities Water Utilities Government Map Visual Basic">
+      <div class="repo">
+        <div class="repo-header Visual Basic">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/water-utility-mobile-map">  water-utility-mobile-map </a> </h2>
+          <h3 class="repo-language Visual Basic"> Visual Basic </h3>
+        </div>
+        <p class="repo-description">
+          An application used by field staff to gain access to utility information.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript Developers Libraries Quickstart API Map quickstart-map-js JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/quickstart-map-js">  quickstart-map-js </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          ArcGIS API for Javascript mapping samples to get you up and running fast.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web JavaScript .NET YouTube Flickr Santa Dashboard Map JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/santa-dashboard">  santa-dashboard </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          A story map that locates Flickr and YouTube Christmas results across the globe. Users select which Christmas terms to map then images and videos can be viewed in the media frame.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web Flex Government Developers Community Planning Widgets ActionScript">
+      <div class="repo">
+        <div class="repo-header ActionScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/community-planning">  community-planning </a> </h2>
+          <h3 class="repo-language ActionScript"> ActionScript </h3>
+        </div>
+        <p class="repo-description">
+          A collection of Flex widgets used in the Community Planning application to provide citizens a method to share land use goals.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Web Flex Government Developers Property Assessments Analitics Citizens ActionScript">
+      <div class="repo">
+        <div class="repo-header ActionScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/value-analysis-dashboard">  value-analysis-dashboard </a> </h2>
+          <h3 class="repo-language ActionScript"> ActionScript </h3>
+        </div>
+        <p class="repo-description">
+          A collection of Flex widgets used in the Value Dashboard application to analyze property value.
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element Python WebHDFS Package Files Directories Utilities Python">
+      <div class="repo">
+        <div class="repo-header Python">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/webhdfs-py">  webhdfs-py </a> </h2>
+          <h3 class="repo-language Python"> Python </h3>
+        </div>
+        <p class="repo-description">
+          Python Client for WebHDFS REST API
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 1 <span class="icon-star"> 1 </span> 
+      </div>
+    </div>
+
+
+    <div class="repo-container element ArcGIS Mobile Runtime Android GPS Test Tool Utilities JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/android-gps-test-tool">  android-gps-test-tool </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          Test all aspects of Android's location capabilities. Configurable for trying out different scenarios. 
+        </p>
+        <p class="stats"> <span class="icon-fork"> </span> 0 <span class="icon-star"> 0 </span> 
+      </div>
+    </div>
+
+  
+  </div>
+
+</div>
+
+
+      </div>
+    </div>
+          <footer id="footer">
+  <div class="container">
+    <div class="row">
+      <nav>
+        <h4>Arc<span>GIS</span> for Organizations</h4>
+        <ul class="footer-list">
+          <li><a href="http://www.arcgis.com/about/">Home</a></li>
+          <li><a href="http://www.arcgis.com/about/features.html">Features</a></li>
+          <li><a href="http://www.arcgis.com/about/pricing.html">Pricing</a></li>
+          <li><a href="http://www.arcgis.com/about/trial.html">30-Day Free Trial</a></li>
+          <li><a href="https://www.arcgis.com/home/signin.html">Sign In</a></li>
+        </ul>
+      </nav>
+<!--
+      <nav>
+        <h4>Arc<span>GIS</span> for Developers</h4>
+        <ul class="footer-list">
+          <li><a href="http://developers.arcgis.com/">Home</a></li>
+          <li><a href="http://developers.arcgis.com/features">Features</a></li>
+          <li><a href="http://developers.arcgis.com/pricing">Pricing</a></li>
+          <li><a href="http://developers.arcgis.com/trial">90-Day Free Trial</a></li>
+          <li><a href="http://developers.arcgis.com/sign-in">Sign In</a></li>
+        </ul>
+      </nav>
+-->
+      <nav>
+        <h4>About Esri</h4>
+        <ul class="footer-list">
+          <li><a href="http://www.esri.com/about-esri">About Us</a></li>
+          <li><a href="http://www.esri.com/careers">Careers</a></li>
+          <li><a href="http://blogs.esri.com/esri/esri-insider/">Insiders Blog</a></li>
+          <li><a href="http://www.esri.com/events/user-conference/index.html">Users Conference</a></li>
+          <li><a href="http://www.esri.com/events/devsummit/index.html">Developer Summit</a></li>
+        </ul>
+      </nav>
+
+      <nav class="last">
+        <li><a id="esri-logo-footer" href="http://esri.com">Esri</a></li>
+        <ul id="footer-social-nav">
+          <li><a class="icon-twitter" href="https://twitter.com/Esri"></a></li>
+          <li><a class="icon-facebook" href="https://www.facebook.com/esrigis"></a></li>
+          <li><a class="icon-github" href="http://github.com/Esri"></a></li>
+          <li><a class="icon-email" href="http://www.esri.com/about-esri/contact"></a></li>
+        </ul>
+      </nav>
+      <small id="footer-legal">© Copyright 2010-2012 Environmental Systems Research Institute, Inc. | <a href="http://www.esri.com/legal/privacy">Privacy</a> | <a href="http://www.esri.com/legal/software-license">Legal</a></small>
+    </div>
+
+  </div>
+</footer>
 
     <script type="text/javascript">
-      dojo.require("esri.map");
-      dojo.addOnLoad(init);
 
-      var map;
-      function init() {
-        var initExtent = new esri.geometry.Extent({"xmin":-8592665.38, "ymin": 4694796.86, "xmax": -8558268.72, "ymax": 4717727.97, "spatialReference":{"wkid":102100}});
-        map = new esri.Map("map",{extent:initExtent});
-        var basemap = new esri.layers.ArcGISTiledMapServiceLayer("http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer");
-        map.addLayer(basemap);
-        
-        dojo.connect(window,'resize',map,function(){
-          map.resize();
-        });
-        dojo.connect(map, 'onResize',  function(extent, width, height) { 
-	  map.__resizeCenter = map.extent.getCenter();
-		setTimeout(function() {
-			map.centerAt(map.__resizeCenter);
-		}, 200);
-	});
-        
-      }
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34368765-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
     </script>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  </body>
 
-  </head>
 
-  <body>
 
-    <div id="map" class="map"></div>
-    <div class="container" >
+</html>pt')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-      <!--img src="assets/img/esri-logo.gif"/-->
-      <div class="hero-unit" style="background-color:#fff; opacity:.65;">
-        <h1>Esri is now on GitHub!</h1>
-        <p>We're excited to be bringing more to GitHub, and starting to collaborate around some of our ideas and projects. Stay tuned as we grow our code! </p>
-        <p>
-          <a href="http://github.com/esri" class="btn btn-primary btn-large">
-            See the code
-          </a>
-        </p>
-      </div>
-      <div class="row">
-        <div class="span6 repo el">
-          <div class="repo-inner">
-            <a href="https://github.com/search?q=username%3Aesri+app+OR+sample"><h2>Apps and Samples</h2></a>
-            <div>General collection of ArcGIS mapping apps and samples.</div>
-          </div>
-        </div> 
-        <div class="span6 repo el">
-          <div class="repo-inner">
-            <a href="https://github.com/search?q=username%3Aesri+template"><h2>Application Templates</h2></a>
-            <div>Mapping and application templates for the ArcGIS platform.</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span6 repo el">
-          <div class="repo-inner">
-            <a href="https://github.com/search?q=username%3Aesri+local+government"><h2>ArcGIS for Local Government</h2></a>
-            <div>Focused maps and apps that help you implement ArcGIS in your local government.</div>
-          </div>
-        </div>
-        <div class="span6 repo el">
-          <div class="repo-inner">
-            <a href="https://github.com/search?q=username%3Aesri+framework+OR+utility"><h2>Frameworks and Utilities</h2></a>
-            <div>Utility projects, frameworks and extensions for the ArcGIS platform.</div>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--script src="../assets/boostrap/js/bootstrap.min.js"></script-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34368765-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    </script>
 
   </body>
+
+
+
 </html>
