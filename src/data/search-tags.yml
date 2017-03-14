@@ -13,8 +13,6 @@ languages:
     label: Objective-C, Swift
   - tag: Mixed
     label: Mixed
-  - tag: Javascript
-    label: Javascript
   - tag: CSS
     label: CSS
   - tag: C-Sharp
@@ -41,8 +39,6 @@ languages:
     label: Swift, Objective-C
   - tag: python
     label: python
-  - tag: JavsScript
-    label: JavsScript
   - tag: C-sharp
     label: C#
   - tag: JavaScript REST-API
