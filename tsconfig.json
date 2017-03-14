@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": "",
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "mapRoot": "",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./build/assets/js",
+    "rootDir": "./src/assets/js-es6/ng",
+    "skipLibCheck": true,
+    "typeRoots": [ "node_modules/@types" ],
+    "types": [ "node", "jasmine" ],
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": [
+    "node_modules",
+    "build",
+    "**/*.ngfactory.ts",
+    "**/*.shim.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true,
+    "useCache": true
+  },
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "entryModule": "src/assets/js-es6/ng/apps/root.module#RootModule"
+  }
+}
