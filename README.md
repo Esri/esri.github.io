@@ -1,4 +1,4 @@
-#esri.github.com
+# esri.github.com
 Landing page for all of our projects.
 
 [License](License.txt)
