@@ -1,0 +1,64 @@
+---
+title: Esri GitHub | Open Source and Example Projects from the Esri Developer Platform
+description: We are excited about bringing the idea of social coding to Esri. Browse and search flexible applications, frameworks, and extensions built with our powerful developer platform.
+css:
+  - home
+---
+{% from "layouts/_macros.html" import projectsSection %}
+{% from "layouts/_macros.html" import languageOptions %}
+
+<div class="panel panel-dark-blue">
+  <main class="grid-container">
+    <div class="column-18 first-column pre-3 post-3">
+      <div class="text-center">
+        <span class="esri-logo-reverse logo-large"></span>
+      </div>
+      <h1 id="about" class="trailer-half">Esri Open Source</h1>
+      <p class="font-size-1">
+        Esri believes that spatial thinking can address the world's most difficult problems and enable communities to work together. Central to our mission is the development of advanced technology that enables you to be innovative by providing a stable data management and analysis platform that is built and extended through open-source code.
+      </p>
+      <p class="font-size-1">
+        These projects cover the entire ArcGIS platform, from user applications to data analysis and visualization. Learn more about our many open-source products and tools that you are free to use, modify, contribute to. We look forward to working together.
+      </p>
+      <p class="home-subscription-text">
+        Need an <a href="//developers.esri.com/sign-up/" class="link-light-blue">ArcGIS subscription</a>? Start developing today for <a href="//developers.arcgis.com/plans/" class="link-light-blue">free</a>.
+      </p>
+    </div>
+  </main>
+</div>
+<div id="wrapper">
+  <div id="explore" class="grid-container">
+    <div class="filter-container column-18 pre-3 post-3 leader-0 trailer-1">
+      <div class="label">
+        <em class="lable-it">Find projects by language or keyword:</em>
+      </div>
+      <div class="search-select">
+        <select data-placeholder="Search/Select" class="chzn-select" multiple tabindex="6">
+          <optgroup label="Language">
+          {{ languageOptions(data.searchTags.languages) }}
+          </optgroup>
+          <optgroup label="Tags">
+          {{ languageOptions(data.searchTags.tags) }}
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div id="content" class="column-18 pre-3 post-3">
+    </div>
+  </div>
+</div>
+<div id="featured" class="panel panel-no-padding panel-no-border padding-leader-2 padding-trailer-2">
+  <div class="grid-container">
+    <div class="column-24">
+      <h2 class="trailer-3">Featured projects</h2>
+      {% for project in data.projects.categories %}
+        {{ projectsSection(project) }}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/libs/chosen.jquery.js" type="text/javascript"></script>
+<script src="/assets/js/github.js" type="text/javascript"></script>
