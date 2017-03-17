@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Title -->
+    {% if title -%}
+      <title>{{title | safe}}</title>
+    {% else -%}
+      <title>Esri Open Source</title>
+    {% endif -%}
+
+    {% if mobile %}
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endif %}
+
+    {% if description -%}
+      <!-- Description -->
+      <meta name="description" content="{{description | safe}}">
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary">
+      {% if title -%}
+        <meta name="twitter:title" content="{{title | safe}}">
+      {% else -%}
+        <meta name="twitter:title" content="Esri Open Source">
+      {% endif -%}
+
+      <meta name="twitter:site" content="{{cards.twitter or '@Esri'}}">
+      <meta name="twitter:description" content="{{description}}">
+
+      <!-- Facebook Open Graph -->
+      {% if title -%}
+        <meta name="og:title" content="{{title | safe}}">
+      {% else -%}
+        <meta name="og:title" content="Esri Open Source">
+      {% endif -%}
+      <meta property="og:description" content="{{description}}" />
+      <meta property="og:site_name" content="Esri Open Source" />
+      <meta property="og:url" content="https://esri.github.io/{{ url }}" />
+    {% endif -%}
+
+    <!-- Search Metadata -->
+    <meta name="content-language" content="en">
+    <meta name="last-modified" content="{{ stats.mtime | date('YYYY/MM/DD') }}">
+
+    {% if search.product %}
+      <meta name="product" content="{{search.product}}">
+    {% endif %}
+
+    {% if search.version %}
+      <meta name="version" content="{{search.version}}">
+    {% endif %}
+
+    {% if search.subject %}
+      <meta name="subject" content="{{search.subject}}">
+    {% endif %}
+
+    {% if search.subCategory %}
+      <meta name="sub_category" content="{{search.subCategory}}">
+    {% endif %}
+
+    {% if search.contentType %}
+      <meta name="content_type" content="{{search.contentType}}">
+    {% endif %}
+
+    {% if search.contentTypeLabel %}
+      <meta name="content_type_label" content="{{search.contentTypeLabel}}">
+    {% endif %}
+
+    {% if search.collection %}
+      <meta name="search-collection" content="{{search.collection}}">
+    {% endif %}
+
+    {% if search.category %}
+      <meta name="search-category" content="{{search.category}}">
+    {% endif %}
+
+    {% if base -%}
+      <base href="{{ base }}">
+    {% endif -%}
+
+    {% for script in head_js -%}
+      <script src="{% javascript_url script %}.js"></script>
+    {% endfor -%}
+
+    <!-- PingBack / Favicon -->
+    <link rel="pingback" href="http://pingback.me/esri/xmlrpc" />
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- CSS  -->
+    {% if jsApi == 3 %}
+      <link rel="stylesheet" href="https://js.arcgis.com/3.19/esri/css/esri.css">
+    {% endif %}
+
+    {% if jsApi == 4 %}
+      <link rel="stylesheet" href="https://js.arcgis.com/4.2/esri/css/main.css">
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/screen.css">
+
+    {% for stylesheet in css -%}
+      <link rel="stylesheet" href="{% stylesheet_url stylesheet %}.css">
+    {% endfor -%}
+
+    {% block stylesheets %}{% endblock -%}
+
+  </head>
+
+  <body class="claro">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NJGGV5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NJGGV5');</script>
+
+    <div class="drawer drawer-left js-drawer" data-drawer="top-nav">
+      <nav class="drawer-nav">
+        <aside class="side-nav">
+          <h2 class="side-nav-title text-center font-size-3">Esri Open Source</h2>
+          <a class="side-nav-link" href="/#about">About</a>
+          <a class="side-nav-link" href="/#explore">Explore</a>
+          <a class="side-nav-link" href="/#featured">Featured</a>
+        </aside>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <header class="top-nav fade-in">
+        <a class="skip-to-content" href="#skip-to-content">Skip To Content</a>
+        <div class="grid-container">
+          <div class="column-24">
+            <nav class="top-nav-list left tablet-show" role="navigation">
+              <a href="#" class="top-nav-link link-blue js-drawer-toggle tablet-show" data-drawer="top-nav">Menu</a>
+            </nav>
+            <a href="/" class="top-nav-title">Esri Open Source</a>
+            <nav class="top-nav-list tablet-hide" role="navigation">
+              <a href="/#about" class="top-nav-link {% is_active 'about' %}">About</a>
+              <a href="/#explore" class="top-nav-link hide-if-logged-in {% is_active 'explore' %}">Explore</a>
+              <a href="/#featured" class="top-nav-link {% is_active 'featured' %}">Featured</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="skip-to-content">
+        {% block main %}{% endblock %}
+      </div>
+    </div>
+    <footer class="footer leader-{{ footer_margin }} link-dark-gray" role="contentinfo">
+      <div class="grid-container">
+        <nav class="column-6">
+          <h6>ArcGIS for Developers</h6>
+          <ul class="list-plain">
+            <li><a href="//developers.arcgis.com/">Home</a></li>
+            <li><a href="//developers.arcgis.com/features">Features</a></li>
+            <li><a href="//developers.arcgis.com/documentation">Documentation</a></li>
+            <li><a href="//developers.arcgis.com/startups">Startups</a></li>
+            <li><a href="https://blogs.esri.com/esri/arcgis/category/developer/">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="column-6">
+          <h6>ArcGIS Platform</h6>
+          <ul class="list-plain">
+            <li><a href="http://arcgis.com">ArcGIS Online</a></li>
+            <li><a href="http://desktop.arcgis.com">ArcGIS Desktop</a></li>
+            <li><a href="http://server.arcgis.com">ArcGIS Enterprise</a></li>
+            <li><a href="http://developers.arcgis.com">ArcGIS for Developers</a></li>
+            <li><a href="http://solutions.arcgis.com">ArcGIS Solutions</a></li>
+            <li><a href="http://marketplace.arcgis.com">ArcGIS Marketplace</a></li>
+          </ul>
+        </nav>
+        <nav class="column-6">
+          <h6>About Esri</h6>
+          <ul class="list-plain">
+            <li><a href="http://www.esri.com/about-esri/">About Us</a></li>
+            <li><a href="http://www.esri.com/careers/">Careers</a></li>
+            <li><a href="https://blogs.esri.com/esri/esri-insider/">Insiders Blog</a></li>
+            <li><a href="http://www.esri.com/events/user-conference/index.html">User Conference</a></li>
+            <li><a href="http://www.esri.com/events/devsummit/index.html">Developer Summit</a></li>
+          </ul>
+        </nav>
+        <nav class="column-6">
+          <a class="esri-logo" href="http://esri.com" aria-label="Esri Home"></a>
+          <section class="footer-social-nav leader-1">
+            <a class="icon-social-twitter" aria-label="Esri on Twitter" href="https://twitter.com/Esri/"></a>
+            <a class="icon-social-facebook" aria-label="Esri on Facebook" href="https://www.facebook.com/esrigis/"></a>
+            <a class="icon-social-github" aria-label="Esri on GitHub" href="http://esri.github.com/"></a>
+            <a class="icon-social-contact" aria-label="Contact Esri" href="http://www.esri.com/about-esri/contact/"></a>
+          </section>
+        </nav>
+        <div class="column-24 leader-1">
+          <p><small><a href="http://www.esri.com/legal/copyright-trademarks">Copyright © 2017 Esri</a>. All rights reserved. | <a href="http://www.esri.com/legal/privacy">Privacy</a> | <a href="https://developers.arcgis.com/terms/faq/">Terms of use</a></small></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    {% if ENV == 'local' %}
+      <script src="http://localhost:8080/webpack-dev-server.js"></script>
+    {% endif %}
+
+    <script src="/assets/js/config.js"></script>
+
+    {% if jsApi == 3 %}
+      <script src="https://js.arcgis.com/3.19/"></script>
+      <script src="/assets/js/config-js-api-3.js"></script>
+    {% endif %}
+
+    {% if jsApi == 4 %}
+      <script src="https://js.arcgis.com/4.2/"></script>
+      <script src="/assets/js/config-js-api-4.js"></script>
+    {% endif %}
+
+    <script src="{{ assetPath }}/index.js"></script>
+
+    {% for script in js -%}
+      <script src="{% javascript_url script %}.js"></script>
+    {% endfor -%}
+
+    {% for script in webpackAssets -%}
+    <script src="{{ assetPath }}/{{ script }}.js"></script>
+    {% endfor -%}
+
+    {% block javascripts %}{% endblock %}
+  </body>
+</html>
