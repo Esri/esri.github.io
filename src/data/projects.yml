@@ -1,117 +1,117 @@
 categories:
   - title: Publishing and sharing
     url: //github.com/Esri
-    text: Explore more open-source publishing projects
+    text: Explore more publishing and sharing projects
     projects:
       - title: Smithsonian StoryMaps
         description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Spyglass
         description: Web app for comparing two maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
   - title: Data management
     url: //github.com/Esri
-    text: Explore more open-source data management projects
+    text: Explore more data management projects
     projects:
       - title: Smithsonian StoryMaps
         description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Spyglass
         description: Web app for comparing two maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
   - title: Analysis
     url: //github.com/Esri
-    text: Explore more open-source analysis projects
+    text: Explore more analysis projects
     projects:
       - title: Smithsonian StoryMaps
         description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Spyglass
         description: Web app for comparing two maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
   - title: Web development
     url: //github.com/Esri
-    text: Explore more open-source web projects
+    text: Explore more web projects
     projects:
       - title: Smithsonian StoryMaps
         description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Spyglass
         description: Web app for comparing two maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        text: Learn more

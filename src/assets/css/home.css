@@ -817,7 +817,6 @@ body {
    cursor: text;
    overflow: hidden;
    height: auto !important;
-   height: 1%;
    position: relative;
    width: 100% !important;
  }
@@ -840,7 +839,7 @@ body {
 .chzn-container-multi .chzn-choices .search-field {
   white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding: 8px;
 }
 .chzn-container-multi .chzn-choices .search-field input {
   color: #666;
