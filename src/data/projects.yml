@@ -3,115 +3,123 @@ categories:
     url: //github.com/Esri
     text: Explore more open-source publishing projects
     projects:
-      - title: Smithsonian StoryMaps
-        description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
+      - title: The Smithsonian
+        description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Spyglass
-        description: Web app for comparing two maps.
+        language: JavaScript
+        text: Learn more
+      - title: Compare Maps
+        description: Web app for comparing different maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        url: //github.com/Esri/Compare-Maps-Template
+        language: JavaScript
+        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        url: //github.com/Esri/map-collection-explorer
+        language: JavaScript
+        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        url: //github.com/esridc/opendata-search-component
+        language: JavaScript
+        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        url: //http://esri.github.io/cedar/
+        language: JavaScript
+        text: Learn more
   - title: Data management
     url: //github.com/Esri
     text: Explore more open-source data management projects
     projects:
-      - title: Smithsonian StoryMaps
-        description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
+      - title: U.S. Census Bureau
+        description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Spyglass
-        description: Web app for comparing two maps.
+        url: //terraformer.io
+        language: JavaScript
+        text: Learn more about Terraformer
+      - title: Koop
+        description: Node server to integrate custom Web APIs with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Historic Map Explorer
-        description: Web app to explore digitized map overlays.
+        url: //http://koopjs.github.io/
+        language: JavaScript
+        text: Learn more about Koop
+      - title: Geometry Engine
+        description: Fundamental spatial data types and analyses
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Open Data
-        description: Web components for integrating data into civic sites.
+        url: //github.com/Esri/geometry-api-java/wiki
+        language: Java
+        text: Learn more about the Geometry Engine
+      - title: Terraformer
+        description: Library to convert common spatial data formats.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Cedar
-        description: Charts for ArcGIS GeoServices
+        url: //terraformer.io
+        language: JavaScript
+        text: Learn more about Terraformer
+      - title: OSM Editor
+        description: Desktop toolbox for accessing and editing OpenStreetMap.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
+        url: //github.com/Esri/arcgis-osm-editor
+        language: C#
         text: Learn more about StoryMaps
   - title: Analysis
     url: //github.com/Esri
     text: Explore more open-source analysis projects
     projects:
-      - title: Smithsonian StoryMaps
-        description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
+      - title: Gibbs Seed Company
+        description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
+        language: JavaScript
         text: Learn more about StoryMaps
-      - title: Spyglass
-        description: Web app for comparing two maps.
+      - title: GIS Tools for Hadoop
+        description: Integrate ArcGIS with Hadoop big data processing.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Historic Map Explorer
-        description: Web app to explore digitized map overlays.
+        language: Java
+        text: Learn more
+      - title: R Analysis
+        description: Develop and share R statistical analysis with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Open Data
-        description: Web components for integrating data into civic sites.
+        language: R
+        text: Learn more
+      - title: PySAL
+        description: Python library for spatial analysis.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Cedar
-        description: Charts for ArcGIS GeoServices
+        language: Python
+        text: Learn more
+      - title: Spark-Geo
+        description: Extension to Apache Spark engine for spatial processing
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        language: Scala
+        text: Learn more
   - title: Web development
     url: //github.com/Esri
     text: Explore more open-source web projects
     projects:
-      - title: Smithsonian StoryMaps
-        description: The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
+      - title: City of Raleigh, North Carolina
+        description: The City of Raleigh used Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Spyglass
-        description: Web app for comparing two maps.
+        url: //maps.raleighnc.gov/sustainable/
+        language: JavaScript
+        text: Learn more
+      - title: Esri Leaflet
+        description: Leaflet plugins for the most popular ArcGIS web services
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Historic Map Explorer
-        description: Web app to explore digitized map overlays.
+        url: //esri.github.io/esri-leaflet/
+        language: JavaScript
+        text: Learn more
+      - title: Calcite Web
+        description: A Responsive HTML, CSS, and JS Framework.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Open Data
-        description: Web components for integrating data into civic sites.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
-      - title: Cedar
-        description: Charts for ArcGIS GeoServices
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/storymap-crowdsource
-        text: Learn more about StoryMaps
+        url: //esri.github.io/calcite-web/
+        language: CSS
+        text: Learn more
