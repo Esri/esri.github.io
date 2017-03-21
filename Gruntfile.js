@@ -90,6 +90,10 @@ module.exports = function (grunt) {
         files: ['src/assets/js/**'],
         tasks: ['copy:js']
       },
+      css: {
+        files: ['src/assets/css/**'],
+        tasks: ['copy:css']
+      },
       json: {
         files: ['src/messages.json'],
         tasks: ['copy:json']

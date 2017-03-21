@@ -1,7 +1,7 @@
 categories:
   - title: Publishing and sharing
     url: //github.com/Esri
-    text: Explore more open-source publishing projects
+    text: Explore more publishing and sharing projects
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
@@ -35,7 +35,7 @@ categories:
         text: Learn more
   - title: Data management
     url: //github.com/Esri
-    text: Explore more open-source data management projects
+    text: Explore more data management projects
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
@@ -69,7 +69,7 @@ categories:
         text: Learn more about StoryMaps
   - title: Analysis
     url: //github.com/Esri
-    text: Explore more open-source analysis projects
+    text: Explore more analysis projects
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
@@ -103,7 +103,7 @@ categories:
         text: Learn more
   - title: Web development
     url: //github.com/Esri
-    text: Explore more open-source web projects
+    text: Explore more web projects
     projects:
       - title: City of Raleigh, North Carolina
         description: The City of Raleigh used Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
