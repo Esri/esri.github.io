@@ -5,7 +5,7 @@ categories:
     projects:
       - title: City of Raleigh, North Carolina
         description: The City of Raleigh used Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
+        image: /assets/img/projects/raleigh-sustainable.png
         url: //maps.raleighnc.gov/sustainable/
         language: JavaScript
         text: Learn more
@@ -43,7 +43,7 @@ categories:
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
+        image: /assets/img/projects/us-census-citysdk.png
         url: //terraformer.io
         language: JavaScript
         text: Learn more about Terraformer
@@ -81,7 +81,7 @@ categories:
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
+        image: /assets/img/projects/story-map-crowdsource-sm.png
         url: //github.com/Esri/storymap-crowdsource
         language: JavaScript
         stars: 7
@@ -120,7 +120,7 @@ categories:
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
+        image: /assets/img/projects/storymap-smithsonian.png
         url: //github.com/Esri/storymap-crowdsource
         language: JavaScript
         text: Learn more
