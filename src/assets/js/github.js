@@ -1,3 +1,4 @@
+// unauthenticated requests are rate-limited to 6/min
 var githubSearchURL = 'https://api.github.com/search/repositories';
 var sort = 'sort=stars&order=desc';
 var githubOrg = 'org:Esri';
@@ -17,27 +18,32 @@ function assembleSearchUrl(keywords, language) {
             query += 'language:' + language.replace(/ +/g, '+');
         }
     }
+    query += '+NOT+deprecated ';
     query += githubOrg;
     return githubSearchURL + query + '&' + sort;
 }
 
 function showQueryResults(tags, response) {
-    var items = response.items,
+    if (!response.message) {
+        var items = response.items,
         i,
         dateUpdated,
         html,
         project;
 
-    if (Array.isArray(items) && items.length > 0) {
-        html = '';
-        for (i = 0; i < items.length; i ++) {
-            project = items[i];
-            dateUpdated = new Date(project.updated_at).toLocaleDateString();
-            html += '<div class="card card-bar-blue block trailer-1"><div class="card-content"><h4 class="trailer-0">' + project.name + '</h4><div class="font-size--2"><span class="text-green"><b>' + (project.language || '') + '</b></span><span class="font-size--3 text-light-gray right">' + dateUpdated + '</span></div><p class="leader-1">' + (project.description || '') + '</p><div class="card-last"></div><div class="leader-1"><span class="icon-fork"></span> ' + project.forks_count + ' <span class="icon-star padding-left-1"> ' + project.stargazers_count + ' </span></div><a href="' + project.html_url + '" class="btn btn-clear text-center leader-half">View it on github</a></div></div>';
+        if (Array.isArray(items) && items.length > 0) {
+            html = '';
+            for (i = 0; i < items.length; i ++) {
+                project = items[i];
+                dateUpdated = new Date(project.updated_at).toLocaleDateString();
+                html += '<div class="card card-bar-blue block trailer-1"><div class="card-content"><h4 class="trailer-0">' + project.name + '</h4><div class="font-size--2"><span class="text-green"><b>' + (project.language || '') + '</b></span><span class="font-size--3 text-light-gray right">' + dateUpdated + '</span></div><p class="leader-1">' + (project.description || '') + '</p><div class="card-last"></div><div class="leader-1"><span class="icon-fork"></span> ' + project.forks_count + ' <span class="icon-star padding-left-1"> ' + project.stargazers_count + ' </span></div><a href="' + project.html_url + '" class="btn btn-clear text-center leader-half">View it on github</a></div></div>';
+            }
+            $('#content').html('<div class="block-group block-group-3-up tablet-block-group-2-up phone-block-group-1-up">' + html + '</div>');
+        } else {
+            $('#content').html('<div class="alert alert-red is-active text-center">No projects found with tags ' + tags + '</div>');
         }
-        $('#content').html('<div class="block-group block-group-3-up tablet-block-group-2-up phone-block-group-1-up">' + html + '</div>');
-    } else {
-        $('#content').html('<div class="alert alert-red is-active text-center">No projects found with tags ' + tags + '</div>');
+    } else if (response.message && response.message.indexOf('API rate limit exceeded') > -1) {
+        $('#content').html('<div class="alert alert-red is-active text-center">Hold your horses. GitHub only allows six searches per minute.</div>');
     }
 }
 

@@ -90,14 +90,6 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <!-- CSS  -->
-    {% if jsApi == 3 %}
-      <link rel="stylesheet" href="https://js.arcgis.com/3.19/esri/css/esri.css">
-    {% endif %}
-
-    {% if jsApi == 4 %}
-      <link rel="stylesheet" href="https://js.arcgis.com/4.2/esri/css/main.css">
-    {% endif %}
-
     <link rel="stylesheet" href="/assets/css/screen.css">
 
     {% for stylesheet in css -%}
@@ -203,16 +195,6 @@
     {% endif %}
 
     <script src="/assets/js/config.js"></script>
-
-    {% if jsApi == 3 %}
-      <script src="https://js.arcgis.com/3.19/"></script>
-      <script src="/assets/js/config-js-api-3.js"></script>
-    {% endif %}
-
-    {% if jsApi == 4 %}
-      <script src="https://js.arcgis.com/4.2/"></script>
-      <script src="/assets/js/config-js-api-4.js"></script>
-    {% endif %}
 
     <script src="{{ assetPath }}/index.js"></script>
 
