@@ -13,12 +13,12 @@ css:
       <div class="text-center">
         <span class="esri-logo-reverse logo-large"></span>
       </div>
-      <h1 id="about" class="trailer-half">Esri Open Source</h1>
+      <h1 id="about" class="trailer-half">Esri <a href="http://www.esri.com/software/open/open-source">Open Source</a></h1>
       <p class="font-size-1">
         At Esri we believe that spatial thinking can address the world's most difficult problems and enable communities to work together. Central to our mission is the development of advanced technology that enables you to be innovative by providing a stable data management and analysis platform that is built and extended through open&#8209;source code.
       </p>
       <p class="font-size-1">
-        These projects cover the entire ArcGIS platform, from user applications to data analysis and visualization. Learn more about our many open-source products and tools that you are free to use, modify, contribute to. We look forward to working together.
+        These projects cover the entire ArcGIS platform, from user applications to data analysis and visualization. Learn more about our many open-source products and tools that you are free to use, modify and contribute to. We look forward to working together.
       </p>
       <p class="home-subscription-text">
         Need an <a href="//developers.esri.com/sign-up/" class="link-light-blue">ArcGIS subscription</a>? Start developing today for <a href="//developers.arcgis.com/plans/" class="link-light-blue">free</a>.
@@ -27,7 +27,7 @@ css:
   </main>
 </div>
 <div id="wrapper">
-  <div id="explore" class="grid-container">
+  <!--div id="explore" class="grid-container">
     <div class="filter-container column-18 pre-3 post-3 leader-0 trailer-1">
       <div class="label">
         <em class="lable-it">Find projects by language or keyword:</em>
@@ -43,7 +43,7 @@ css:
         </select>
       </div>
     </div>
-  </div>
+  </div-->
   <div class="grid-container">
     <div id="content" class="column-18 pre-3 post-3">
     </div>
@@ -52,7 +52,7 @@ css:
 <div id="featured" class="panel panel-no-padding panel-no-border padding-leader-2 padding-trailer-2">
   <div class="grid-container">
     <div class="column-24">
-      <h2 class="trailer-3">Featured projects</h2>
+      <!--h2 class="trailer-3">Featured projects</h2-->
       {% for project in data.projects.categories %}
         {{ projectsSection(project) }}
       {% endfor %}

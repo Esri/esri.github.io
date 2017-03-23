@@ -1,10 +1,10 @@
 categories:
   - title: Web development
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Aweb-development+org%3AEsri+fork%3Atrue
     text: Explore more web projects
     projects:
       - title: City of Raleigh, North Carolina
-        description: The City of Raleigh used Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
+        description: The City of Raleigh uses Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
         image: /assets/img/projects/raleigh-sustainable.png
         url: //maps.raleighnc.gov/sustainable/
         language: JavaScript
@@ -20,7 +20,7 @@ categories:
         description: A Responsive HTML, CSS, and JS Framework.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //esri.github.io/calcite-web/
-        language: CSS
+        language: css
         stars: 39
         text: Learn more
       - title: Cedar
@@ -38,7 +38,7 @@ categories:
         stars: 36
         text: Learn more
   - title: Data management
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Adata-management+org%3AEsri+fork%3Atrue
     text: Explore more data management projects
     projects:
       - title: U.S. Census Bureau
@@ -76,7 +76,7 @@ categories:
         stars: 123
         text: Learn more about StoryMaps
   - title: Analysis
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Aanalysis+org%3AEsri+fork%3Atrue
     text: Explore more analysis projects
     projects:
       - title: Gibbs Seed Company
@@ -115,7 +115,7 @@ categories:
         stars: 15
         text: Learn more
   - title: Publishing and sharing
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Apublishing-sharing+org%3AEsri+fork%3Atrue
     text: Explore more publishing and sharing projects
     projects:
       - title: The Smithsonian
