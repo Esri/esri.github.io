@@ -1,154 +1,174 @@
 categories:
   - title: Web development
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Aweb-development+org%3AEsri+fork%3Atrue
     text: Explore more web projects
     projects:
       - title: City of Raleigh, North Carolina
-        description: The City of Raleigh used Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
+        description: The City of Raleigh uses Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
         image: /assets/img/projects/raleigh-sustainable.png
         url: //maps.raleighnc.gov/sustainable/
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         text: Learn more
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //esri.github.io/esri-leaflet/
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 691
         text: Learn more
       - title: Calcite Web
         description: A Responsive HTML, CSS, and JS Framework.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //esri.github.io/calcite-web/
-        language: CSS
+        displayLang: CSS
+        searchLang: css
         stars: 39
         text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //esri.github.io/cedar/
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 148
         text: Learn more
       - title: LERC
         description: rapid encoding and decoding for any pixel type (not just RGB or Byte)
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/lerc
-        language: C++
+        displayLang: C++
+        searchLang: c%2B%2B
         stars: 36
         text: Learn more
   - title: Data management
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Adata-management+org%3AEsri+fork%3Atrue
     text: Explore more data management projects
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
         image: /assets/img/projects/us-census-citysdk.png
         url: //terraformer.io
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         text: Learn more about Terraformer
       - title: Koop
         description: Node server to integrate custom Web APIs with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //koopjs.github.io/
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 314
         text: Learn more about Koop
       - title: Geometry Engine
         description: Fundamental spatial data types and analyses
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/geometry-api-java/wiki
-        language: Java
+        displayLang: Java
+        searchLang: java
         stars: 242
         text: Learn more
       - title: Terraformer
         description: Library to convert common spatial data formats.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //terraformer.io
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 378
         text: Learn more about Terraformer
       - title: OSM Editor
         description: Desktop toolbox for accessing and editing OpenStreetMap.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/arcgis-osm-editor
-        language: C#
+        displayLang: C#
+        searchLang: c%23
         stars: 123
         text: Learn more about StoryMaps
   - title: Analysis
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Aanalysis+org%3AEsri+fork%3Atrue
     text: Explore more analysis projects
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
         image: /assets/img/projects/spark-geo.png
         url: //github.com/Esri/storymap-crowdsource
-        language: JavaScript
+        displayLang: C#
+        searchLang: c%23
         stars: 7
         text: Learn more about StoryMaps
       - title: GIS Tools for Hadoop
         description: Integrate ArcGIS with Hadoop big data processing.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/gis-tools-for-hadoop
-        language: Java
+        displayLang: Java
+        searchLang: java
         stars: 289
         text: Learn more
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //r-arcgis.github.io/
-        language: R
+        displayLang: R
+        searchLang: r
         stars: 47
         text: Learn more
       - title: PySAL
         description: Python library for spatial analysis.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/PySAL-ArcGIS-Toolbox
-        language: Python
+        displayLang: Python
+        searchLang: python
         stars: 7
         text: Learn more
       - title: Spark Point in Polygon
         description: Spark job to perform massive Point in Polygon (PiP) operations on a distributed share-nothing cluster.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/mraad/spark-pip
-        language: Scala
+        displayLang: Scala
+        searchLang: scala
         stars: 15
         text: Learn more
   - title: Publishing and sharing
-    url: //github.com/Esri
+    url: //github.com/search?q=topic%3Apublishing-sharing+org%3AEsri+fork%3Atrue
     text: Explore more publishing and sharing projects
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
         image: /assets/img/projects/storymap-smithsonian.png
         url: //github.com/Esri/storymap-crowdsource
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         text: Learn more
       - title: Compare Maps
         description: Web app for comparing different maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/Compare-Maps-Template
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 3
         text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/map-collection-explorer
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 5
         text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/esridc/opendata-search-component
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 3
         text: Learn more
       - title: Styler
         description: A configurable application for creating, styling and sharing modern 2D and 3D map apps
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/calcite-maps-styler-template
-        language: JavaScript
+        displayLang: JavaScript
+        searchLang: javascript
         stars: 11
         text: Learn more
