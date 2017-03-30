@@ -1,8 +1,8 @@
 {% macro projectsSection(projectInfo) %}
-<div>
-  <h3 class="text-rule">{{ projectInfo.title }}</h3>
+<div class="padding-leader-1">
+  <h1 class="" id="{{ projectInfo.anchor }}">{{ projectInfo.title }}</h1>
   {% set project = projectInfo.projects[0] %}
-  <div class="grid-container panel panel-white">
+  <div class="grid-container panel panel-gray">
     <div class="column-8">
       <img src="{{ project.image }}" />
     </div>
@@ -16,7 +16,7 @@
     {% for project in projectInfo.projects %}
     {% if loop.index > 1 %}
     <div class="card block leader-1">
-      <div class="card-content card-bar-green">
+      <div class="card-content card-bar-{{ projectInfo.color }}">
         <h4>{{ project.title }}</h4>
         <p class="card-last">{{ project.description }}</p>
         <p><a href="{{ project.url }}" alt="{{ project.text }}">{{ project.text }}<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon leader-2"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>

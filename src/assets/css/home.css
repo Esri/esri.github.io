@@ -1,3 +1,15 @@
+.open-banner {
+  background: url("../img/open-source-hero-1.jpg") center center no-repeat #212121;
+  background-size: covers;
+}
+.panel-border-bottom {
+  border: none;
+  border-bottom: 1px #eee solid;
+}
+.panel-gray {
+  background-color: #eee;
+}
+
 .logo-large {
   min-width: 180px;
   min-height: 77px;
