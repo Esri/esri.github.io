@@ -2,6 +2,8 @@ categories:
   - title: Web development
     url: //github.com/search?q=topic%3Aweb-development+org%3AEsri+fork%3Atrue
     text: Explore more web projects
+    anchor: webdevelopment
+    color: blue
     projects:
       - title: City of Raleigh, North Carolina
         description: The City of Raleigh uses Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
@@ -45,6 +47,8 @@ categories:
   - title: Data management
     url: //github.com/search?q=topic%3Adata-management+org%3AEsri+fork%3Atrue
     text: Explore more data management projects
+    anchor: datamanagement
+    color: orange
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
@@ -85,9 +89,11 @@ categories:
         searchLang: c%23
         stars: 123
         text: Learn more about StoryMaps
-  - title: Analysis
+  - title: Spatial Analysis
     url: //github.com/search?q=topic%3Aanalysis+org%3AEsri+fork%3Atrue
     text: Explore more analysis projects
+    anchor: spatialanalysis
+    color: green
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
@@ -132,6 +138,8 @@ categories:
   - title: Publishing and sharing
     url: //github.com/search?q=topic%3Apublishing-sharing+org%3AEsri+fork%3Atrue
     text: Explore more publishing and sharing projects
+    anchor: publishingsharing
+    color: purple
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
