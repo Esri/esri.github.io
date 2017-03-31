@@ -51,7 +51,32 @@ function showQueryError(tags, error) {
     $('#content').html('<div class="alert alert-red is-active text-center">Error ' + error.message + ' searching for ' + tags + '</div>');
 }
 
+function redirectIfQuery() {
+    var pageName = window.location.toString(),
+        delimiterPosition,
+        redirectURL = 'https://github.com/Esri?q=',
+        redirected = false;
+
+    delimiterPosition = pageName.indexOf('#');
+    if (delimiterPosition > 0) {
+        pageName = redirectURL + pageName.substr(delimiterPosition + 1);
+        redirected = true;
+        window.location = pageName;
+    } else {
+        delimiterPosition = pageName.indexOf('?q=');
+        if (delimiterPosition > 0) {
+            pageName = redirectURL + pageName.substr(delimiterPosition + 3);
+            redirected = true;
+            window.location = pageName;
+        }
+    }
+    return redirected;
+}
+
 $(function() {
+    if (redirectIfQuery()) {
+        return;
+    }
     $(".chzn-select").chosen();
     $(".repo-language").click(function() {
         var e = this.innerHTML.replace(/ /g, "");
