@@ -5,7 +5,6 @@ css:
   - home
 ---
 {% from "layouts/_macros.html" import projectsSection %}
-{% from "layouts/_macros.html" import languageOptions %}
 
 <div class="panel open-banner panel-black panel-no-border padding-leader-1 padding-trailer-2">
   <div class="grid-container">
@@ -39,13 +38,9 @@ css:
 <div id="featured" class="panel panel-white panel-no-padding panel-no-border padding-leader-0 padding-trailer-2">
   <div class="grid-container">
     <div class="column-24">
-      <!--h2 class="trailer-3">Featured projects</h2-->
       {% for project in data.projects.categories %}
         {{ projectsSection(project) }}
       {% endfor %}
     </div>
   </div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/js/libs/chosen.jquery.js" type="text/javascript"></script>
-<script src="/assets/js/github.js" type="text/javascript"></script>
