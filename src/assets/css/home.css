@@ -1,6 +1,25 @@
 .open-banner {
   background: url("../img/open-source-hero-1.jpg") center center no-repeat #212121;
   background-size: covers;
+  -webkit-transition: .5s -webkit-filter linear;
+  -moz-transition: .5s -moz-filter linear;
+  -moz-transition: .5s filter linear;
+  -ms-transition: .5s -ms-filter linear;
+  -o-transition: .5s -o-filter linear;
+  transition: .5s filter linear;
+  filter: grayscale(0);
+}
+@media screen and (max-width: 768px){
+  .open-banner {
+    /*background-image: none;*/
+    -webkit-transition: .5s -webkit-filter linear;
+    -moz-transition: .5s -moz-filter linear;
+    -moz-transition: .5s filter linear;
+    -ms-transition: .5s -ms-filter linear;
+    -o-transition: .5s -o-filter linear;
+    transition: .5s filter linear;
+    filter: grayscale(100%);
+  }
 }
 .panel-border-bottom {
   border: none;
