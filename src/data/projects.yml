@@ -11,7 +11,6 @@ categories:
         url: //maps.raleighnc.gov/sustainable/
         displayLang: JavaScript
         searchLang: javascript
-        text: Learn more
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -19,7 +18,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 691
-        text: Learn more
       - title: Calcite Web
         description: A Responsive HTML, CSS, and JS Framework.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -27,7 +25,6 @@ categories:
         displayLang: CSS
         searchLang: css
         stars: 39
-        text: Learn more
       - title: Cedar
         description: Charts for ArcGIS GeoServices
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -35,7 +32,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 148
-        text: Learn more
       - title: LERC
         description: rapid encoding and decoding for any pixel type (not just RGB or Byte)
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -43,7 +39,6 @@ categories:
         displayLang: C++
         searchLang: c%2B%2B
         stars: 36
-        text: Learn more
   - title: Data management
     url: //github.com/search?q=topic%3Adata-management+org%3AEsri+fork%3Atrue
     text: Explore more data management projects
@@ -56,7 +51,6 @@ categories:
         url: //terraformer.io
         displayLang: JavaScript
         searchLang: javascript
-        text: Learn more about Terraformer
       - title: Koop
         description: Node server to integrate custom Web APIs with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -64,7 +58,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 314
-        text: Learn more about Koop
       - title: Geometry Engine
         description: Fundamental spatial data types and analyses
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -72,7 +65,6 @@ categories:
         displayLang: Java
         searchLang: java
         stars: 242
-        text: Learn more
       - title: Terraformer
         description: Library to convert common spatial data formats.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -80,7 +72,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 378
-        text: Learn more about Terraformer
       - title: OSM Editor
         description: Desktop toolbox for accessing and editing OpenStreetMap.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -88,7 +79,6 @@ categories:
         displayLang: C#
         searchLang: c%23
         stars: 123
-        text: Learn more about StoryMaps
   - title: Spatial Analysis
     url: //github.com/search?q=topic%3Aanalysis+org%3AEsri+fork%3Atrue
     text: Explore more analysis projects
@@ -102,7 +92,6 @@ categories:
         displayLang: C#
         searchLang: c%23
         stars: 7
-        text: Learn more about StoryMaps
       - title: GIS Tools for Hadoop
         description: Integrate ArcGIS with Hadoop big data processing.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -110,7 +99,6 @@ categories:
         displayLang: Java
         searchLang: java
         stars: 289
-        text: Learn more
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -118,7 +106,6 @@ categories:
         displayLang: R
         searchLang: r
         stars: 47
-        text: Learn more
       - title: PySAL
         description: Python library for spatial analysis.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -126,7 +113,6 @@ categories:
         displayLang: Python
         searchLang: python
         stars: 7
-        text: Learn more
       - title: Spark Point in Polygon
         description: Spark job to perform massive Point in Polygon (PiP) operations on a distributed share-nothing cluster.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -134,7 +120,6 @@ categories:
         displayLang: Scala
         searchLang: scala
         stars: 15
-        text: Learn more
   - title: Publishing and sharing
     url: //github.com/search?q=topic%3Apublishing-sharing+org%3AEsri+fork%3Atrue
     text: Explore more publishing and sharing projects
@@ -147,7 +132,6 @@ categories:
         url: //github.com/Esri/storymap-crowdsource
         displayLang: JavaScript
         searchLang: javascript
-        text: Learn more
       - title: Compare Maps
         description: Web app for comparing different maps.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -155,7 +139,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 3
-        text: Learn more
       - title: Historic Map Explorer
         description: Web app to explore digitized map overlays.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -163,7 +146,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 5
-        text: Learn more
       - title: Open Data
         description: Web components for integrating data into civic sites.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -171,7 +153,6 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 3
-        text: Learn more
       - title: Styler
         description: A configurable application for creating, styling and sharing modern 2D and 3D map apps
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -179,4 +160,3 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 11
-        text: Learn more
