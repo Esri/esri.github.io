@@ -1,6 +1,6 @@
 .open-banner {
   background: url("../img/open-source-hero-1.jpg") center center no-repeat #212121;
-  background-size: covers;
+  background-size: cover;
   -webkit-transition: .5s -webkit-filter linear;
   -moz-transition: .5s -moz-filter linear;
   -moz-transition: .5s filter linear;
