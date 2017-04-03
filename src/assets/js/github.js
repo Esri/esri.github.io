@@ -92,58 +92,58 @@ $(function() {
     if (redirectIfQuery()) {
         return;
     }
-    $(".chzn-select").chosen();
-    $(".repo-language").click(function() {
-        var e = this.innerHTML.replace(/ /g, "");
-        return $("select").val(e).trigger("liszt:updated").change(),
-            window.location.hash = e,
-            !1
-    }),
-    $("select").change(function() {
-        var selectedOptions,
-            selectedTags = [];
-        selectedOptions = $("select option:selected"),
-            selectedOptions.each(function() {
-                selectedTags.push($(this).data("filter"));
-            });
-        if (selectedTags.length > 0) {
-            var tags = selectedTags.join(" ");
-            var searchURL = assembleSearchUrl(tags, '');
-            $('#content').html('<div class="alert is-active text-center">Looking for projects matching ' + tags + '</div>');
-            fetch(searchURL).then(function (response) {
-               response.json().then(function(json) {
-                   showQueryResults(tags, json)
-               }, function (error) {
-                   showQueryError(tags, error);
-               });
-            },
-            function (error) {
-                showQueryError(tags, error);
-            });
-        } else {
-            $('#content').html('');
-        }
-        window.location.hash = selectedTags.join(",");
-    }),
-    $(document).ready(function() {
-        var e = window.location.hash;
-        null !== e && "" != e && ($("select").val(e.replace(/#/, "").split(",")),
-            $("select").trigger("liszt:updated").change())
-    }),
-    $(document).ready(function() {
-        var n, i = !1, o = 3e3, a = 0, c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
-        function e(e) {
-            window.clearInterval(n),
-            e && (n = setInterval(t, o))
-        }
-        function t() {
-            $("select").val(c[a]),
-                $("select").trigger("liszt:updated").change(),
-                a < c.length - 1 ? a++ : a = 0
-        }
-        $(document).keydown(function(t) {
-            38 === t.which && t.shiftKey && i ? o > 1e3 && (o -= 1e3) : 40 === t.which && t.shiftKey && i && 5e3 > o && (o += 1e3),
-            i && e(i)
-        })
-    })
+    // $(".chzn-select").chosen();
+    // $(".repo-language").click(function() {
+    //     var e = this.innerHTML.replace(/ /g, "");
+    //     return $("select").val(e).trigger("liszt:updated").change(),
+    //         window.location.hash = e,
+    //         !1
+    // }),
+    // $("select").change(function() {
+    //     var selectedOptions,
+    //         selectedTags = [];
+    //     selectedOptions = $("select option:selected"),
+    //         selectedOptions.each(function() {
+    //             selectedTags.push($(this).data("filter"));
+    //         });
+    //     if (selectedTags.length > 0) {
+    //         var tags = selectedTags.join(" ");
+    //         var searchURL = assembleSearchUrl(tags, '');
+    //         $('#content').html('<div class="alert is-active text-center">Looking for projects matching ' + tags + '</div>');
+    //         fetch(searchURL).then(function (response) {
+    //            response.json().then(function(json) {
+    //                showQueryResults(tags, json)
+    //            }, function (error) {
+    //                showQueryError(tags, error);
+    //            });
+    //         },
+    //         function (error) {
+    //             showQueryError(tags, error);
+    //         });
+    //     } else {
+    //         $('#content').html('');
+    //     }
+    //     window.location.hash = selectedTags.join(",");
+    // }),
+    // $(document).ready(function() {
+    //     var e = window.location.hash;
+    //     null !== e && "" != e && ($("select").val(e.replace(/#/, "").split(",")),
+    //         $("select").trigger("liszt:updated").change())
+    // }),
+    // $(document).ready(function() {
+    //     var n, i = !1, o = 3e3, a = 0, c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
+    //     function e(e) {
+    //         window.clearInterval(n),
+    //         e && (n = setInterval(t, o))
+    //     }
+    //     function t() {
+    //         $("select").val(c[a]),
+    //             $("select").trigger("liszt:updated").change(),
+    //             a < c.length - 1 ? a++ : a = 0
+    //     }
+    //     $(document).keydown(function(t) {
+    //         38 === t.which && t.shiftKey && i ? o > 1e3 && (o -= 1e3) : 40 === t.which && t.shiftKey && i && 5e3 > o && (o += 1e3),
+    //         i && e(i)
+    //     })
+    // })
 });
