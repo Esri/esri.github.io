@@ -174,15 +174,6 @@ module.exports = function (grunt) {
           locale: 'en-us',
           useDeferredInstrumentation: true,
           packages: [{
-            name: "SessionManager",
-            location: "/assets/js/legacy/SessionManager"
-          },{
-            name: "Notifications",
-            location: "/assets/js/legacy/Notifications"
-          },{
-            name: "Config",
-            location: "/assets/js/legacy/Config"
-          },{
             name: "calcite-web",
             location: "/assets/js",
             main: "calcite-web"
