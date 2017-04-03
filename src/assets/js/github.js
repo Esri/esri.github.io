@@ -59,9 +59,17 @@ function redirectIfQuery() {
 
     delimiterPosition = pageName.indexOf('#');
     if (delimiterPosition > 0) {
-        pageName = redirectURL + pageName.substr(delimiterPosition + 1);
-        redirected = true;
-        window.location = pageName;
+        switch (pageName.substr(delimiterPosition + 1)) {
+            case 'webdevelopment':
+            case 'datamanagement':
+            case 'spatialanalysis':
+            case 'publishingsharing':
+                break;
+            default:
+                pageName = redirectURL + pageName.substr(delimiterPosition + 1);
+                redirected = true;
+                window.location = pageName;
+        }
     } else {
         delimiterPosition = pageName.indexOf('?q=');
         if (delimiterPosition > 0) {
@@ -74,6 +82,13 @@ function redirectIfQuery() {
 }
 
 $(function() {
+    var inlineLinks = document.getElementsByClassName("subdued-links");
+    for (i = 0; i < inlineLinks.length; ++i) {
+        inlineLinks[i].addEventListener("click", function(){
+        window.location.hash = this.id;
+        });
+    }
+
     if (redirectIfQuery()) {
         return;
     }

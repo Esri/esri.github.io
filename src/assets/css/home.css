@@ -10,6 +10,10 @@
   background-color: #eee;
 }
 
+.subdued-links:hover {
+  cursor: pointer;
+}
+
 .logo-large {
   min-width: 180px;
   min-height: 77px;
