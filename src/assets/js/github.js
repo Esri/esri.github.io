@@ -60,10 +60,10 @@ function redirectIfQuery() {
     delimiterPosition = pageName.indexOf('#');
     if (delimiterPosition > 0) {
         switch (pageName.substr(delimiterPosition + 1)) {
-            case 'webdevelopment':
-            case 'datamanagement':
-            case 'spatialanalysis':
-            case 'publishingsharing':
+            case 'web-development':
+            case 'data-management':
+            case 'spatial-analysis':
+            case 'publishing-sharing':
                 break;
             default:
                 pageName = redirectURL + pageName.substr(delimiterPosition + 1);
