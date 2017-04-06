@@ -16,11 +16,12 @@
     {% if loop.index > 1 %}
     <div class="card block leader-1">
       <div class="card-content card-bar-{{ projectInfo.color }}">
-        <h4>{{ project.title }}</h4>
+        <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
         <p class="card-last">{{ project.description }}</p>
         <p><a href="{{ project.url }}" alt="Learn more">Learn more<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon leader-2"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
         <footer>
-          <span class="font-size--2"><em><a class="link-green" href="https://github.com/Esri?language={{ project.searchLang }}">{{ project.displayLang }}</a></em></span><span class="icon-star right padding-left-1 text-dark-gray font-size--2"><em>{{ project.stars }}</em></span>
+          <span class="font-size--2"><em><a class="link-green" href="https://github.com/Esri?language={{ project.searchLang }}">{{ project.displayLang }}</a></em></span>
+          <span class="icon-star right padding-left-1 text-dark-gray font-size--2"><em>{{ project.stars }}</em></span>
         </footer>
       </div>
     </div>
