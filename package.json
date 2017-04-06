@@ -115,7 +115,8 @@
   "scripts": {
     "test": "JOB_ENV=test karma start && ava test/build-validation",
     "start": "grunt dev",
-    "build": "grunt build"
+    "build": "grunt build",
+    "deploy": "grunt deploy"
   },
   "repository": {
     "type": "git",
