@@ -5,6 +5,8 @@ css:
   - home
 ---
 {% from "layouts/_macros.html" import projectsSection %}
+{% from "layouts/_macros.html" import languageOptions %}
+{% from "layouts/_macros.html" import topicOptions %}
 
 <div class="panel open-banner panel-black panel-no-border padding-leader-1 padding-trailer-2">
   <div class="grid-container">
@@ -13,6 +15,30 @@ css:
         <p class="text-white font-size-1">Thinking spatially, solving problems, together.</p>
         <a href="https://github.com/esri" class="btn btn-clear-white">Explore 400+ projects on GitHub</a>
       </div>
+  </div>
+</div>
+
+<div id="wrapper">
+  <div id="explore" class="grid-container">
+    <div class="filter-container column-18 pre-3 post-3 leader-0 trailer-1">
+      <div class="label">
+        <em class="lable-it">Find projects by topic:</em>
+      </div>
+      <div class="search-select">
+        <select data-placeholder="Search/Select" class="chzn-select" multiple tabindex="6">
+          <!--optgroup label="Language">
+          {{ languageOptions(data.searchTags.languages) }}
+          </optgroup-->
+          <optgroup label="Topics">
+          {{ topicOptions(data.searchTags.topics) }}
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div id="content" class="column-18 pre-3 post-3">
+    </div>
   </div>
 </div>
 
@@ -44,5 +70,6 @@ css:
     </div>
   </div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/libs/chosen.jquery.js" type="text/javascript"></script>
 <script src="/assets/js/github.js" type="text/javascript"></script>
