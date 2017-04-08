@@ -1,5 +1,5 @@
 .open-banner {
-  background: url("../img/open-source-hero-1.jpg") center center no-repeat #212121;
+  background: url("../img/open-source-hero-2.png") center center no-repeat #212121;
   background-size: cover;
   -webkit-transition: .5s -webkit-filter linear;
   -moz-transition: .5s -moz-filter linear;
@@ -28,9 +28,15 @@
 .panel-gray {
   background-color: #eee;
 }
-
+.btn-transparent:hover {
+    color: #000;
+}
 .subdued-links:hover {
   cursor: pointer;
+}
+
+.projects-border {
+  border: 1px #eee solid;
 }
 
 .logo-large {
