@@ -1,7 +1,6 @@
 categories:
   - title: Web Development
     url: https://github.com/Esri?q=topic%3Aweb-development
-    text: View all
     anchor: web-development
     color: blue
     projects:
@@ -41,7 +40,6 @@ categories:
         stars: 36
   - title: Data Management
     url: https://github.com/Esri?q=topic%3Adata-management
-    text: View all
     anchor: data-management
     color: orange
     projects:
@@ -81,7 +79,6 @@ categories:
         stars: 123
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
-    text: View all
     anchor: spatial-analysis
     color: green
     projects:
@@ -122,7 +119,6 @@ categories:
         stars: 15
   - title: Publishing and Sharing
     url: https://github.com/Esri?q=topic%3Apublishing-sharing
-    text: View all
     anchor: publishing-sharing
     color: purple
     projects:
