@@ -40,9 +40,6 @@
   </div>
 </div>
 {% endmacro %}
-{% macro languageOptions(languageList) %}
-  {% for language in languageList %}<option data-filter="{{ language.tag }}">{{ language.label }}</option>{% endfor %}
-{% endmacro %}
 {% macro topicOptions(topicList) %}
   {% for topic in topicList %}<option data-filter="{{ topic.tag }}">{{ topic.tag }}</option>{% endfor %}
 {% endmacro %}

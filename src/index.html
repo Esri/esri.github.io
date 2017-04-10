@@ -5,7 +5,6 @@ css:
   - home
 ---
 {% from "layouts/_macros.html" import projectsSection %}
-{% from "layouts/_macros.html" import languageOptions %}
 {% from "layouts/_macros.html" import topicOptions %}
 
 <div class="panel open-banner panel-black panel-no-border padding-leader-1 padding-trailer-2">
@@ -22,8 +21,7 @@ css:
   <div class="grid-container">
     <div class="column-18">
     <select data-placeholder="Search by topic..." class="chzn-select" multiple tabindex="1">
-      <optgroup label="Topics">
-        {{ languageOptions(data.searchTags.languages) }}
+      <optgroup>
         {{ topicOptions(data.searchTags.topics) }}
       </optgroup>
     </select>
@@ -46,6 +44,4 @@ css:
     <!--/div-->
   </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/js/libs/chosen.jquery.js" type="text/javascript"></script>
-<script src="/assets/js/github.js" type="text/javascript"></script>
+
