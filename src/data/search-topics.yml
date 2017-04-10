@@ -1,89 +1,71 @@
-languages:
-  - tag: actionscript
-    label: ActionScript
-  - tag: c
-    label: C
-  - tag: c%23
-    label: C#
-  - tag: c%2B%2B
-    label: C++
-  - tag: css
-    label: CSS
-  - tag: d
-    label: D
-  - tag: html
-    label: HTML
-  - tag: java
-    label: Java
-  - tag: javascript
-    label: JavaScript
-  - tag: objective-c
-    label: Objective-C
-  - tag: php
-    label: PHP
-  - tag: python
-    label: Python
-  - tag: qml
-    label: QML
-  - tag: r
-    label: R
-  - tag: ruby
-    label: Ruby
-  - tag: swift
-    label: Swift
-  - tag: typescript
-    label: TypeScript
-topics:
-  - tag: web-development
-  - tag: spatial-analysis
-  - tag: data-management
-  - tag: publishing-sharing
+ topics:
   - tag: arcgis
-  - tag: esri
-  - tag: desktop
-  - tag: web
-  - tag: runtime
-  - tag: native
-  - tag: server
+  - tag: actionscript
+  - tag: analysis
   - tag: app-template
-  - tag: storymaps
-  - tag: government
-  - tag: military
-  - tag: utilities
+  - tag: basemap
+  - tag: big-data
+  - tag: bootstrap
+  - tag: c
+  - tag: calcite
+  - tag: cartography
+  - tag: c-sharp
+  - tag: c-plus-plus
+  - tag: css
+  - tag: d
+  - tag: dashboard
+  - tag: database
+  - tag: data-management
+  - tag: dataset
+  - tag: demographics
+  - tag: desktop
+  - tag: devsummit
+  - tag: directions
+  - tag: editing
   - tag: electric
-  - tag: water
   - tag: emergency-management
   - tag: enterprise
-  - tag: maps
-  - tag: webmap
-  - tag: webscene
-  - tag: basemap
-  - tag: cartography
-  - tag: graphics
+  - tag: esri
   - tag: geometry
-  - tag: symbols
-  - tag: database
-  - tag: dataset
-  - tag: layer
   - tag: geocoding
   - tag: geoprocessing
-  - tag: editing
-  - tag: demographics
-  - tag: directions
-  - tag: logistics
-  - tag: projections
-  - tag: statistics
-  - tag: analysis
-  - tag: networking
-  - tag: services
   - tag: geoservices
+  - tag: government
+  - tag: graphics
+  - tag: html
   - tag: intelligence
-  - tag: big-data
-  - tag: dashboard
-  - tag: tools
+  - tag: java
+  - tag: javascript
+  - tag: layer
+  - tag: logistics
+  - tag: maps
+  - tag: military
+  - tag: native
+  - tag: networking
+  - tag: objective-c
+  - tag: php
+  - tag: projections
+  - tag: publishing-sharing
+  - tag: python
+  - tag: qml
+  - tag: r
   - tag: real-time
-  - tag: devsummit
-  - tag: uc
+  - tag: ruby
+  - tag: runtime
   - tag: sample
-  - tag: calcite
-  - tag: bootstrap
+  - tag: server
+  - tag: services
+  - tag: spatial-analysis
+  - tag: statistics
+  - tag: storymaps
+  - tag: swift
+  - tag: symbols
+  - tag: tools
+  - tag: typescript
+  - tag: uc
+  - tag: utilities
+  - tag: water
+  - tag: web
+  - tag: web-development
+  - tag: webmap
+  - tag: webscene

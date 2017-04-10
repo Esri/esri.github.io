@@ -31,9 +31,6 @@
   <p class="text-right leader-1"><a href="{{ projectInfo.url }}" alt="{{ projectInfo.text }}">{{ projectInfo.text }} <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
 </div>
 {% endmacro %}
-{% macro languageOptions(languageList) %}
-  {% for language in languageList %}<option data-filter="{{ language.tag }}">{{ language.label }}</option>{% endfor %}
-{% endmacro %}
 {% macro topicOptions(topicList) %}
   {% for topic in topicList %}<option data-filter="{{ topic.tag }}">{{ topic.tag }}</option>{% endfor %}
 {% endmacro %}

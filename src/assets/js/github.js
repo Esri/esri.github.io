@@ -8,21 +8,10 @@ function assembleSearchUrl(keywords, language) {
 
     if (keywords) {
         keywords = keywords.trim();
-        // if (keywords.length > 0) {
-            // for (i=0; i<keywords.length; i++) {
+        query += 'topic:' + keywords.replace(/ +/g, '+topic:');
+    }
 
-            // }
-            query += 'topic:' + keywords.replace(/ +/g, '+topic:');
-        // }
-    }
-    // for some reason GitHub fails to return results for languages with a space web%20ontology%20language, visual%20basic, jupyter%20notebook
-    if (language) {
-        language = language.trim();
-        if (language.length > 0) {
-            query += '+language:' + language.replace(/ +/g, '+');
-        }
-    }
-    // query += '+NOT+deprecated ';
+    query += '+NOT+deprecated';
     query += githubOrg;
     return githubSearchURL + query + '&' + sort;
 }
