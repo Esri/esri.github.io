@@ -9,61 +9,39 @@ css:
 
 <div class="panel open-banner panel-black panel-no-border padding-leader-1 padding-trailer-2">
   <div class="grid-container">
-      <div class="column-11 pre-1 padding-leader-2 padding-trailer-2">
-        <h1 class="font-size-6 text-white">Esri Open Source</h1>
-        <p class="text-white font-size-1">Thinking spatially, solving problems, together.</p>
-        <a href="https://github.com/esri" class="btn btn-clear-white">Explore 400+ projects on GitHub</a>
+      <div class="column-10 pre-1 padding-leader-1 padding-trailer-0">
+        <h1 class="font-size-6 text-white trailer-0">Esri Open Source</h1>
+        <p class="leader-0 font-size--1 avenir-light text-rule">Thinking spatially, solving problems, together.</p>
+        <p class="leader-2 font-size-1">Explore over 400 geosptial projects</p>
       </div>
   </div>
 </div>
 
-<div id="wrapper">
-  <div id="explore" class="grid-container">
-    <div class="filter-container column-18 pre-3 post-3 leader-0 trailer-1">
-      <div class="label">
-        <em class="lable-it">Find projects by topic:</em>
-      </div>
-      <div class="search-select">
-        <select data-placeholder="Search/Select" class="chzn-select" multiple tabindex="6">
-          <optgroup>
-          {{ topicOptions(data.searchTags.topics) }}
-          </optgroup>
-        </select>
-      </div>
-    </div>
-  </div>
+<div class="panel panel-blue panel-no-border padding-leader-1 padding-trailer-1">
   <div class="grid-container">
-    <div id="content" class="column-18 pre-3 post-3">
+    <div class="column-18">
+    <select data-placeholder="Search by topic..." class="chzn-select" multiple tabindex="1">
+      <optgroup>
+        {{ topicOptions(data.searchTags.topics) }}
+      </optgroup>
+    </select>
+    </div>
+    <div class="column-1" id="numReposFound">
+    </div>
+    <div class="column-5">
+      <a id="btnViewRepos" href="https://github.com/esri" class="btn btn-clear-white btn-fill">View on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a>
     </div>
   </div>
 </div>
 
-<div class="panel panel-white panel-border-bottom">
-  <div class="column-16 pre-4 post-4">
-    <div class="block-group block-group-4-up phone-block-group-1-up tablet-block-group-2-up text-center">
-      <div class="block phone-trailer-1">
-        <h5 class="trailer-0"><a href="#web-development" class="btn btn-large btn-white">Web Development</a></h5>
-      </div>
-      <div class="block phone-trailer-1">
-        <h5 class="trailer-0"><a href="#data-management" class="btn btn-large btn-white">Data Management</a></h5>
-      </div>
-      <div class="block phone-trailer-1">
-        <h5 class="trailer-0"><a href="#spatial-analysis" class="btn btn-large btn-white">Spatial Analysis</a></h5>
-      </div>
-      <div class="block phone-trailer-1">
-        <h5 class="trailer-0"><a href="#publishing-sharing" class="btn btn-large btn-white">Publishing and Sharing</a></h5>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div id="featured" class="panel panel-white panel-no-padding panel-no-border padding-leader-0 padding-trailer-2">
-  <div class="grid-container">
-    <div class="column-24">
+  <div class="grid-container padding-leader-1">
+    <!--div class="column-24"-->
       {% for project in data.projects.categories %}
         {{ projectsSection(project) }}
       {% endfor %}
-    </div>
+    <!--/div-->
   </div>
 </div>
 
