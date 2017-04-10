@@ -37,7 +37,8 @@ function showQueryResults(tags, response) {
 
         if (Array.isArray(items) /*&& items.length > 0*/) {
             html = '';
-            $('#content').html('<div class="alert alert-green is-active text-center">' + items.length + '</div>');
+            //$('#content').html('<div class="alert alert-green is-active text-center">' + items.length + '</div>');
+            $('#numReposFound').html('<div class="number-repos text-center">'+items.length+'</div>');
             // for (i = 0; i < items.length; i ++) {
             //     project = items[i];
             //     dateUpdated = new Date(project.updated_at).toLocaleDateString();
@@ -45,15 +46,18 @@ function showQueryResults(tags, response) {
             // }
             // $('#content').html('<div class="block-group block-group-3-up tablet-block-group-2-up phone-block-group-1-up">' + html + '</div>');
         } else {
-            $('#content').html('<div class="alert alert-red is-active text-center">No projects found with tags ' + tags + '</div>');
+            //$('#content').html('<div class="alert alert-red is-active text-center">No projects found with tags ' + tags + '</div>');
+            //$('#numReposFound').html("0");
+            $('#numReposFound').html('<div class="number-repos text-center">'+items.length+'</div>');
         }
     } else if (response.message && response.message.indexOf('API rate limit exceeded') > -1) {
-        $('#content').html('<div class="alert alert-red is-active text-center">Hold your horses. GitHub only allows six searches per minute.</div>');
+        //$('#content').html('<div class="alert alert-red is-active text-center">Hold your horses. GitHub only allows six searches per minute.</div>');
+        console.log("GitHub API rate limit exceeded...");
     }
 }
 
 function showQueryError(tags, error) {
-    $('#content').html('<div class="alert alert-red is-active text-center">Error ' + error.message + ' searching for ' + tags + '</div>');
+    $('#numReposFound').html('<div class="alert alert-red is-active text-center">Error ' + error.message + ' searching for ' + tags + '</div>');
 }
 
 // function redirectIfQuery() {
@@ -116,7 +120,7 @@ $(function() {
         if (selectedTags.length > 0) {
             var tags = selectedTags.join(" ");
             var searchURL = assembleSearchUrl(tags, '');
-            $('#content').html('<div class="alert is-active text-center">Looking for projects matching ' + tags + '</div>');
+            //$('#content').html('<div class="alert is-active text-center">Looking for projects matching ' + tags + '</div>');
             fetch(searchURL).then(function (response) {
                response.json().then(function(json) {
                    showQueryResults(tags, json)
@@ -128,7 +132,7 @@ $(function() {
                 showQueryError(tags, error);
             });
         } else {
-            $('#content').html('');
+            $('#numReposFound').html('');
         }
         window.location.hash = selectedTags.join(",");
     }),
@@ -138,7 +142,7 @@ $(function() {
             $("select").trigger("liszt:updated").change())
     }),
     $(document).ready(function() {
-        var n, i = !1, o = 3e3, a = 0, c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
+        var n, i = !1, o = 3e3, a = 0; //c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
         function e(e) {
             window.clearInterval(n),
             e && (n = setInterval(t, o))
@@ -151,6 +155,24 @@ $(function() {
         $(document).keydown(function(t) {
             38 === t.which && t.shiftKey && i ? o > 1e3 && (o -= 1e3) : 40 === t.which && t.shiftKey && i && 5e3 > o && (o += 1e3),
             i && e(i)
+        })
+        $("#btnViewRepos").on("click", function(e){
+            e.preventDefault();
+            var selectedOptions,
+                selectedTags = [],
+                urlEsriBase = "https://github.com/Esri?q=topic:",
+                urlEsriRepos;
+            selectedOptions = $("select option:selected"),
+            selectedOptions.each(function() {
+                selectedTags.push($(this).data("filter"));
+            });
+            if (selectedTags.length > 0) {
+                var tags = selectedTags.join(" ");
+                urlEsriRepos = urlEsriBase + tags;
+            } else {
+                urlEsriRepos = urlEsriBase;
+            }
+            window.location.href = urlEsriRepos;
         })
     })
 });

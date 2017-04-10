@@ -45,6 +45,7 @@ topics:
   - tag: runtime
   - tag: native
   - tag: server
+  - tag: application
   - tag: app-template
   - tag: storymaps
   - tag: government
