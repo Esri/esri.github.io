@@ -121,7 +121,7 @@ $(function() {
                 showQueryError(tags, error);
             });
         } else {
-            $('#numReposFound').html('');
+            $('#numReposFound').html('&nbsp;');
         }
         window.location.hash = selectedTags.join(",");
     }),

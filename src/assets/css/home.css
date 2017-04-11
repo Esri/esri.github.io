@@ -46,6 +46,11 @@
   min-width: 180px;
   min-height: 77px;
 }
+@media screen and (max-width: 959px) {
+  .chzn-container {
+    margin-bottom: 15px;
+  }
+}
 body {
   margin: 0;
 }
@@ -913,8 +918,8 @@ body {
   background-color: #efefef;
   color: #4d4d4d;
   border: 1px solid #ddd;
-  //line-height: 13px;
-  padding: 3px 24px 1px 10px;
+  /*line-height: 13px;*/
+  padding: 3px 28px 1px 10px;
   list-style-type: none !important;
   background-image: none;
   margin: 3px 5px;
