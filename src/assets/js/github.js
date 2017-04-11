@@ -49,35 +49,28 @@ function showQueryError(tags, error) {
     $('#numReposFound').html('<div class="alert alert-red is-active text-center">Error ' + error.message + ' searching for ' + tags + '</div>');
 }
 
-// function redirectIfQuery() {
-//     var pageName = window.location.toString(),
-//         delimiterPosition,
-//         redirectURL = 'https://github.com/Esri?q=',
-//         redirected = false;
+function redirectIfQuery() {
+    var pageName = window.location.toString(),
+        delimiterPosition,
+        redirectURL = 'https://github.com/Esri?q=',
+        topicList = document.getElementById('esri-topic-list').childNodes
+        redirected = false;
 
-//     delimiterPosition = pageName.indexOf('#');
-//     if (delimiterPosition > 0) {
-//         switch (pageName.substr(delimiterPosition + 1)) {
-//             case 'web-development':
-//             case 'data-management':
-//             case 'spatial-analysis':
-//             case 'publishing-sharing':
-//                 break;
-//             default:
-//                 pageName = redirectURL + pageName.substr(delimiterPosition + 1);
-//                 redirected = true;
-//                 window.location = pageName;
-//         }
-//     } else {
-//         delimiterPosition = pageName.indexOf('?q=');
-//         if (delimiterPosition > 0) {
-//             pageName = redirectURL + pageName.substr(delimiterPosition + 3);
-//             redirected = true;
-//             window.location = pageName;
-//         }
-//     }
-//     return redirected;
-// }
+    delimiterPosition = pageName.indexOf('#');
+    if (delimiterPosition > 0) {
+        for (i=1; i < topicList.length; i++) {
+            if (pageName.substr(delimiterPosition + 1) === topicList[i].innerHTML) {
+                return redirected;
+            }
+        }
+
+        pageName = redirectURL + pageName.substr(delimiterPosition + 1);
+        redirected = true;
+        window.location = pageName;
+    }
+
+    return redirected;
+}
 
 $(function() {
     var inlineLinks = document.getElementsByClassName("subdued-links");
@@ -87,9 +80,9 @@ $(function() {
         });
     }
 
-    // if (redirectIfQuery()) {
-    //     return;
-    // }
+    if (redirectIfQuery()) {
+        return;
+    }
     $(".chzn-select").chosen();
     $(".repo-language").click(function() {
         var e = this.innerHTML.replace(/ /g, "");
