@@ -124,6 +124,9 @@ $(function() {
             $("select").trigger("liszt:updated").change())
     }),
     $(document).ready(function() {
+
+        $(".chzn-select").removeClass("hidden");
+
         var n, i = !1, o = 3e3, a = 0; //c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
         function e(e) {
             window.clearInterval(n),

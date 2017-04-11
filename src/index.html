@@ -7,18 +7,11 @@ css:
 {% from "layouts/_macros.html" import projectsSection %}
 {% from "layouts/_macros.html" import topicOptions %}
 
-
 <div class="panel open-banner panel-black panel-no-border padding-leader-0 padding-trailer-2">
-  <!--div class="grid-container">
-    <div class="column-11 padding-leader-0 padding-trailer-0">
-      <p class="leader-half font-size--2 avenir-light inline-block">Thinking spatially, solving problems, together.</p>
-    </div>
-  </div-->
-
   <div class="grid-container">
     <div class="column-12 pre-1 padding-leader-1 padding-trailer-0">
-      <h1 class="font-size-6 leader-1 text-white trailer-0">Esri Open Source</h1>
-      <p class="leader-half font-size-1 avenir-light inline-block">Thinking spatially, solving problems, together.</p>
+      <h1 class="font-size-6 leader-1 text-white trailer-half">Esri Open Source</h1>
+      <p class="leader-half trailer-0 font-size-1 avenir-light inline-block">Thinking spatially, solving problems, together.</p>
       <p class="leader-1 font-size--3">Explore over 400 geospatial projects</p>
     </div>
   </div>
@@ -26,30 +19,25 @@ css:
 
 <div class="panel panel-no-border padding-leader-1 padding-trailer-1">
   <div class="grid-container">
-    <div class="column-18 tablet-column-11 phone-column-5">
-    <select data-placeholder="Search by topic..." class="chzn-select" multiple tabindex="1">
-      <optgroup id='esri-topic-list'>
-        {{ topicOptions(data.searchTags.topics) }}
-      </optgroup>
-    </select>
+    <div class="column-18 tablet-column-11 phone-column-5 line-height-less">
+      <select data-placeholder="Search by topic..." class="chzn-select hidden" multiple tabindex="1">
+        <optgroup id='esri-topic-list' label="Topics">
+          <{{ topicOptions(data.searchTags.topics) }}>
+        </optgroup>
+      </select>
     </div>
-    <div class="column-1" id="numReposFound">
-    &nbsp;
-    </div>
+    <div class="column-1" id="numReposFound">&nbsp;</div>
     <div class="column-5">
       <a id="btnViewRepos" href="https://github.com/esri" class="btn btn-blue btn-fill">View on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a>
     </div>
   </div>
 </div>
 
-
-<div id="featured" class="panel panel-white panel-no-padding panel-no-border padding-leader-0 padding-trailer-2">
+<div id="featured" class="panel panel-white panel-no-padding panel-no-border padding-leader-1 padding-trailer-2">
   <div class="grid-container padding-leader-1">
-    <!--div class="column-24"-->
-      {% for project in data.projects.categories %}
-        {{ projectsSection(project) }}
-      {% endfor %}
-    <!--/div-->
+    {% for project in data.projects.categories %}
+      {{ projectsSection(project) }}
+    {% endfor %}
   </div>
 </div>
 
