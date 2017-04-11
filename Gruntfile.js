@@ -143,6 +143,15 @@ module.exports = function (grunt) {
 
     clean: {
       build: ['build']
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'build',
+        branch: 'master',
+        repo: 'https://github.com/Esri/esri.github.io.git'
+      },
+      src: ['**']
     }
 
   });
@@ -155,7 +164,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', ['clean', 'sass', 'assets', 'imagemin', 'webpack', 'acetate']);
   grunt.registerTask('deploy', ['build', 'copy:deploy']);
   grunt.registerTask('assets', ['copy:json', 'copy:js', 'copy:css', 'copy:static', 'buildConfig']);
-
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
   grunt.registerTask('buildConfig', function () {
     var done = this.async();
 

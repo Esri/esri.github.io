@@ -1,7 +1,6 @@
 categories:
   - title: Web Development
-    url: //github.com/search?q=topic%3Aweb-development+org%3AEsri
-    text: More web development projects
+    url: https://github.com/Esri?q=topic%3Aweb-development
     anchor: web-development
     color: blue
     projects:
@@ -40,8 +39,7 @@ categories:
         searchLang: c%2B%2B
         stars: 36
   - title: Data Management
-    url: //github.com/search?q=topic%3Adata-management+user%3AEsri+user%3Akoopjs
-    text: More data management projects
+    url: https://github.com/Esri?q=topic%3Adata-management
     anchor: data-management
     color: orange
     projects:
@@ -80,8 +78,7 @@ categories:
         searchLang: c%23
         stars: 123
   - title: Spatial Analysis
-    url: //github.com/search?q=topic%3Aspatial-analysis+user%3AEsri+user%3Amraad+user%3Ar-arcgis
-    text: More spatial analysis projects
+    url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
     color: green
     projects:
@@ -121,8 +118,7 @@ categories:
         searchLang: scala
         stars: 15
   - title: Publishing and Sharing
-    url: //github.com/search?q=topic%3Apublishing-sharing+org%3AEsri+org%3Aesridc
-    text: More publishing and sharing projects
+    url: https://github.com/Esri?q=topic%3Apublishing-sharing
     anchor: publishing-sharing
     color: purple
     projects:
