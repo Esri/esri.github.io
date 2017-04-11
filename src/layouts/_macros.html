@@ -1,33 +1,44 @@
 {% macro projectsSection(projectInfo) %}
-<div class="padding-leader-1">
-  <h1 class="subdued-links" id="{{ projectInfo.anchor }}">{{ projectInfo.title }}</h1>
-  {% set project = projectInfo.projects[0] %}
-  <div class="grid-container panel panel-gray">
-    <div class="column-8 tablet-column-4 phone-column-5">
-      <img src="{{ project.image }}" />
+<div class="column-24 padding-leader-0 padding-trailer-2">
+  <div class="column-24">
+    <div class="column-12 tablet-column-8 phone-column-4">
+      <h1 class="subdued-links" id="{{ projectInfo.anchor }}">{{ projectInfo.title }}</h1>
     </div>
-    <div class="column-12 tablet-column-6 phone-column-5">
-      <h4>{{ project.title }}</h4>
-      <p>{{ project.description }}</p>
+    <div class="column-12 tablet-column-4 phone-column-2">
+      <p class="text-right leader-1"><a href="{{ projectInfo.url }}" alt="View All">View All <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
     </div>
   </div>
-  <div class="block-group block-group-4-up tablet-block-group-2-up phone-block-group-1-up">
-    {% for project in projectInfo.projects %}
-    {% if loop.index > 1 %}
-    <div class="card block leader-1">
-      <div class="card-content card-bar-{{ projectInfo.color }}">
-        <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
-        <p class="card-last">{{ project.description }}</p>
-        <p><a href="{{ project.url }}" alt="Learn more">Learn more<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon leader-2"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
-        <footer>
-          <span class="font-size--2"><em><a class="link-green" href="https://github.com/Esri?language={{ project.searchLang }}">{{ project.displayLang }}</a></em></span>
-          <span class="icon-star right padding-left-1 text-dark-gray font-size--2"><em>{{ project.stars }}</em></span>
-        </footer>
+  <div class="column-24 padding-left-1 padding-right-1 padding-leader-1 padding-trailer-1">
+    {% set project = projectInfo.projects[0] %}
+    <div class="panel panel-gray">
+      <div class="column-8">
+        <img src="{{ project.image }}" />
+      </div>
+      <div class="column-12">
+        <h4>{{ project.title }}</h4>
+        <p>{{ project.description }}</p>
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
+    <div class="block-group block-group-4-up tablet-block-group-2-up phone-block-group-1-up">
+      {% for project in projectInfo.projects %}
+      {% if loop.index > 1 %}
+      <div class="card block leader-1">
+        <div class="card-content card-bar-{{ projectInfo.color }}">
+          <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
+          <p class="card-last">{{ project.description }}</p>
+          <p><a href="{{ project.url }}" alt="Learn more">Learn more<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon leader-2"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
+          <footer>
+            <span class="font-size--2"><em><a class="link-green" href="https://github.com/Esri?language={{ project.searchLang }}">{{ project.displayLang }}</a></em></span>
+            <span class="icon-star right padding-left-1 text-dark-gray font-size--2"><em>{{ project.stars }}</em></span>
+          </footer>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
   </div>
-  <p class="text-right leader-1"><a href="{{ projectInfo.url }}" alt="{{ projectInfo.text }}">{{ projectInfo.text }} <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-icon"><path d="M7 4h5l12 12-12 12H7l12-12L7 4z"/></svg></a></p>
 </div>
+{% endmacro %}
+{% macro topicOptions(topicList) %}
+  {% for topic in topicList %}<option data-filter="{{ topic.tag }}">{{ topic.tag }}</option>{% endfor %}
 {% endmacro %}

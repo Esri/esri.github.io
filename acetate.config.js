@@ -242,5 +242,5 @@ module.exports = function (acetate) {
   }, {});
 
   acetate.data('projects', 'data/projects.yml');
-  acetate.data('searchTags', 'data/search-tags.yml');
+  acetate.data('searchTags', 'data/search-topics.yml');
 };
