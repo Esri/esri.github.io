@@ -3,26 +3,15 @@ var githubSearchURL = 'https://api.github.com/search/repositories';
 var sort = 'sort=stars&order=desc';
 var githubOrg = '+org:Esri';
 
-function assembleSearchUrl(keywords, language) {
+function assembleSearchUrl(keywords) {
     var query = '?q=';
 
     if (keywords) {
         keywords = keywords.trim();
-        // if (keywords.length > 0) {
-            // for (i=0; i<keywords.length; i++) {
+        query += 'topic:' + keywords.replace(/ +/g, '+topic:');
+    }
 
-            // }
-            query += 'topic:' + keywords.replace(/ +/g, '+topic:');
-        // }
-    }
-    // for some reason GitHub fails to return results for languages with a space web%20ontology%20language, visual%20basic, jupyter%20notebook
-    if (language) {
-        language = language.trim();
-        if (language.length > 0) {
-            query += '+language:' + language.replace(/ +/g, '+');
-        }
-    }
-    // query += '+NOT+deprecated ';
+    query += '+NOT+deprecated';
     query += githubOrg;
     return githubSearchURL + query + '&' + sort;
 }
@@ -119,7 +108,7 @@ $(function() {
 
         if (selectedTags.length > 0) {
             var tags = selectedTags.join(" ");
-            var searchURL = assembleSearchUrl(tags, '');
+            var searchURL = assembleSearchUrl(tags);
             //$('#content').html('<div class="alert is-active text-center">Looking for projects matching ' + tags + '</div>');
             fetch(searchURL).then(function (response) {
                response.json().then(function(json) {
@@ -160,19 +149,19 @@ $(function() {
             e.preventDefault();
             var selectedOptions,
                 selectedTags = [],
-                urlEsriBase = "https://github.com/Esri?q=topic:",
+                urlEsriBase = "https://github.com/Esri",
                 urlEsriRepos;
+
             selectedOptions = $("select option:selected"),
             selectedOptions.each(function() {
                 selectedTags.push($(this).data("filter"));
             });
             if (selectedTags.length > 0) {
-                var tags = selectedTags.join(" ");
-                urlEsriRepos = urlEsriBase + tags;
+                var tags = selectedTags.join("+topic:");
+                window.location.href = urlEsriBase + '?q=topic:' + tags;
             } else {
-                urlEsriRepos = urlEsriBase;
+                window.location.href = urlEsriBase;
             }
-            window.location.href = urlEsriRepos;
         })
     })
 });
