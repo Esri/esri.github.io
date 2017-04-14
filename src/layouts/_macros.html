@@ -12,10 +12,10 @@
     {% set project = projectInfo.projects[0] %}
     <div class="panel panel-gray">
       <div class="column-8 tablet-column-4 phone-column-5">
-        <img src="{{ project.image }}" />
+        <a href="{{ project.url }}" alt="{{ project.title }}"><img src="{{ project.image }}" /></a>
       </div>
       <div class="column-12 tablet-column-6 phone-column-5">
-        <h4>{{ project.title }}</h4>
+        <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
         <p>{{ project.description }}</p>
       </div>
     </div>
