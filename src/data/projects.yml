@@ -167,20 +167,20 @@ categories:
         url: //github.com/Esri/indoor-routing-xamarin
         displayLang: C#
         searchLang: c-sharp
-      - title: Nearby-Places Android
-        description: Locate nearby places with Android devices. Built with the ArcGIS Runtime SDK for Android. With some minor customization, you can change the types of places displayed.
+      - title: Ecological Marine Unit Explorer
+        description: The Ecological Marine Unit (EMU) example application uses the ArcGIS Runtime SDK for Android to showcase ocean ecosystems. Explore 50 years worth of NOAA data using Esri maps and services.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/nearby-android
+        url: //github.com/Esri/ecological-marine-unit-android
         displayLang: Android
-        searchLang: android
-        stars: 5
+        searchLang: java
+        stars: 2
       - title: Geocoding with Suggestions
         description: An online geocoding iOS sample app, modernized with suggestions and category support. The samples use ArcGIS Online basemaps and services.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/geocoding-with-suggestions-and-categories
         displayLang: Objective-C
         searchLang: ios
-        stars: 1
+        stars: 2
       - title: Vehicle Commander
         description: The Vehicle Commander template demonstrates best practices for building in-vehicle military applications with ArcGIS and Java.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
@@ -188,10 +188,10 @@ categories:
         displayLang: Java
         searchLang: java
         stars: 10
-      - title: Network Analysis Services
-        description: Geoprocessing tools to publish directions, routing, and logistics services available on ArcGIS Online to your own ArcGIS for Server site.
+      - title: Nearby-Places Android
+        description: Locate nearby places with Android devices. Built with the ArcGIS Runtime SDK for Android. With some minor customization, you can change the types of places displayed.
         image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/network-analysis-services
-        displayLang: Python
-        searchLang: python
-        stars: 3
+        url: //github.com/Esri/nearby-android
+        displayLang: Android
+        searchLang: android
+        stars: 5
