@@ -18,6 +18,7 @@
   - tag: dataset
   - tag: demographics
   - tag: desktop
+  - tag: desktop-development
   - tag: devsummit
   - tag: directions
   - tag: editing
@@ -40,6 +41,7 @@
   - tag: maps
   - tag: military
   - tag: native
+  - tag: native-development
   - tag: networking
   - tag: objective-c
   - tag: php
