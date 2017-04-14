@@ -59,7 +59,7 @@ function redirectIfQuery() {
     delimiterPosition = pageName.indexOf('#');
 
     // if a hashed query is passed and cant be matched with our list of valid topics, redirect a canned github search
-    if (pageName.length - 1 > delimiterPosition) {
+    if (delimiterPosition >= 0 && pageName.length - 1 > delimiterPosition) {
         for (i=1; i < topicList.length; i++) {
             if (pageName.substr(delimiterPosition + 1) === topicList[i].innerHTML) {
                 return redirected;
