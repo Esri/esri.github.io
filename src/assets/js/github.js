@@ -53,7 +53,7 @@ function redirectIfQuery() {
     var pageName = window.location.toString(),
         delimiterPosition,
         redirectURL = 'https://github.com/Esri?q=',
-        topicList = document.getElementById('esri-topic-list').childNodes
+        topicList = document.getElementById('esri-topic-list').childNodes,
         redirected = false;
 
     delimiterPosition = pageName.indexOf('#');
@@ -85,13 +85,13 @@ $(function() {
     if (redirectIfQuery()) {
         return;
     }
-    $(".chzn-select").chosen();
-    $(".repo-language").click(function() {
-        var e = this.innerHTML.replace(/ /g, "");
-        return $("select").val(e).trigger("liszt:updated").change(),
-            window.location.hash = e,
-            !1
-    }),
+    $(".chosen-select").chosen({width: "100%", max_selected_options: 3});
+    // $(".repo-language").click(function() {
+    //     var e = this.innerHTML.replace(/ /g, "");
+    //     return $("select").val(e).trigger("liszt:updated").change(),
+    //         window.location.hash = e,
+    //         !1
+    // }),
     $("select").change(function() {
         var selectedOptions,
             selectedTags = [];
@@ -126,8 +126,6 @@ $(function() {
             $("select").trigger("liszt:updated").change())
     }),
     $(document).ready(function() {
-
-        $(".chzn-select").removeClass("hidden");
 
         var n, i = !1, o = 3e3, a = 0; //c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
         function e(e) {
