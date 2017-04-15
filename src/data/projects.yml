@@ -85,7 +85,7 @@ categories:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
         image: /assets/img/projects/spark-geo.png
-        url: //github.com/Esri/storymap-crowdsource
+        url: //github.com/Esri/PySAL-ArcGIS-Toolbox
         displayLang: C#
         searchLang: c%23
         stars: 7
