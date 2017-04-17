@@ -60,7 +60,7 @@ function redirectIfQuery() {
 
     // if a hashed query is passed and cant be matched with our list of valid topics, redirect a canned github search
     if (delimiterPosition >= 0 && pageName.length - 1 > delimiterPosition) {
-        for (i=1; i < topicList.length; i++) {
+        for (var i=1; i < topicList.length; i++) {
             if (pageName.substr(delimiterPosition + 1) === topicList[i].innerHTML) {
                 return redirected;
             }
@@ -76,7 +76,7 @@ function redirectIfQuery() {
 
 $(function() {
     var inlineLinks = document.getElementsByClassName("subdued-links");
-    for (i = 0; i < inlineLinks.length; ++i) {
+    for (var i = 0; i < inlineLinks.length; ++i) {
         inlineLinks[i].addEventListener("click", function(){
         window.location.hash = this.id;
         });
