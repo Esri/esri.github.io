@@ -53,14 +53,14 @@ function redirectIfQuery() {
     var pageName = window.location.toString(),
         delimiterPosition,
         redirectURL = 'https://github.com/Esri?q=',
-        topicList = document.getElementById('esri-topic-list').childNodes
+        topicList = document.getElementById('esri-topic-list').childNodes,
         redirected = false;
 
     delimiterPosition = pageName.indexOf('#');
 
     // if a hashed query is passed and cant be matched with our list of valid topics, redirect a canned github search
     if (delimiterPosition >= 0 && pageName.length - 1 > delimiterPosition) {
-        for (i=1; i < topicList.length; i++) {
+        for (var i=1; i < topicList.length; i++) {
             if (pageName.substr(delimiterPosition + 1) === topicList[i].innerHTML) {
                 return redirected;
             }
@@ -76,7 +76,7 @@ function redirectIfQuery() {
 
 $(function() {
     var inlineLinks = document.getElementsByClassName("subdued-links");
-    for (i = 0; i < inlineLinks.length; ++i) {
+    for (var i = 0; i < inlineLinks.length; ++i) {
         inlineLinks[i].addEventListener("click", function(){
         window.location.hash = this.id;
         });
@@ -85,13 +85,13 @@ $(function() {
     if (redirectIfQuery()) {
         return;
     }
-    $(".chzn-select").chosen();
-    $(".repo-language").click(function() {
-        var e = this.innerHTML.replace(/ /g, "");
-        return $("select").val(e).trigger("liszt:updated").change(),
-            window.location.hash = e,
-            !1
-    }),
+    $(".chosen-select").chosen({width: "100%", max_selected_options: 3});
+    // $(".repo-language").click(function() {
+    //     var e = this.innerHTML.replace(/ /g, "");
+    //     return $("select").val(e).trigger("liszt:updated").change(),
+    //         window.location.hash = e,
+    //         !1
+    // }),
     $("select").change(function() {
         var selectedOptions,
             selectedTags = [];
@@ -126,8 +126,6 @@ $(function() {
             $("select").trigger("liszt:updated").change())
     }),
     $(document).ready(function() {
-
-        $(".chzn-select").removeClass("hidden");
 
         var n, i = !1, o = 3e3, a = 0; //c = ["JavaScript", "ActionScript", "Objective-C", "Java", "Python", "DotNet", "iOS", "C-Sharp", "Android", "QuickStart", "Local-Government", "Bootstrap", "Mapping", "GeoJSON", "Mobile", "Code-Challenge", "Utility", "Storytelling", "Geocoding", "ArcGIS", "Hadoop", "Web", "Social", "Analysis", "Offline", "Runtime", "Dashboard", "Public", ""];
         function e(e) {

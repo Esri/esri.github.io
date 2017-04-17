@@ -2,6 +2,7 @@
 title: Esri GitHub | Open Source and Example Projects from the Esri Developer Platform
 description: We are excited to bring the idea of social coding to Esri. Browse and search flexible applications, frameworks, and extensions built with our powerful developer platform.
 css:
+  - https://cdnjs.cloudflare.com/ajax/libs/chosen/1.7.0/chosen.min
   - home
 ---
 {% from "layouts/_macros.html" import projectsSection %}
@@ -20,9 +21,10 @@ css:
 <div class="panel panel-no-border padding-leader-1 padding-trailer-1">
   <div class="grid-container">
     <div class="column-18 tablet-column-11 phone-column-5 line-height-less">
-      <select data-placeholder="Search by topic&hellip;" class="chzn-select hidden" spellcheck="false" multiple tabindex="1">
+      <select data-placeholder="Search by topic&hellip;" class="chosen-select" spellcheck="false" multiple tabindex="1">
         <optgroup id='esri-topic-list' label="Topics">
-          <{{ topicOptions(data.searchTags.topics) }}>
+          <option value=""></option>
+          {{ topicOptions(data.searchTags.topics) }}
         </optgroup>
       </select>
     </div>
