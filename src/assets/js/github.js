@@ -86,6 +86,7 @@ $(function() {
         return;
     }
     $(".chosen-select").chosen({width: "100%", max_selected_options: 3});
+    $(".chosen-container .search-field .chosen-search-input").attr("spellcheck", false);
     // $(".repo-language").click(function() {
     //     var e = this.innerHTML.replace(/ /g, "");
     //     return $("select").val(e).trigger("liszt:updated").change(),
