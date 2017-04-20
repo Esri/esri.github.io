@@ -41,7 +41,21 @@
 .number-repos {
   font-size: 1rem;
   padding-top: 7px;
+  color: #999;
 }
+.spinner-container {
+  margin-top: 2px;
+}
+.spinner {
+}
+.spin-svg {
+  animation: spin 1s infinite linear;
+}
+@keyframes spin { 
+  100% { 
+    transform: rotate(360deg); 
+  } 
+} 
 .logo-large {
   min-width: 180px;
   min-height: 77px;
@@ -51,6 +65,9 @@
 }
 .hidden {
   visibility: hidden;
+}
+.hide {
+  display: none;
 }
 body {
   margin: 0;
