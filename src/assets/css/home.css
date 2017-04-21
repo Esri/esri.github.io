@@ -303,9 +303,16 @@ body {
   background-image: none;
 }
 
-.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-  top: 9px;
-  right: 8px;
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 17px;
+  background: url(../img/chosen-sprite.png) no-repeat;
+  background-position-x: -38px;
+  background-position-y: 6px;
+  background-size: initial;
 }
 
 .chosen-container-multi .chosen-choices li.search-field {
