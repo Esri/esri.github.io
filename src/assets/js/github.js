@@ -17,19 +17,22 @@ function assembleSearchUrl(keywords) {
 }
 
 function showQueryResults(tags, response) {
-    showElement($(".spinner"), false);
+    showElement($(".spinner-container"), false);
+    showElement($("#numReposFound"), true);
     if (!response.message) {
         var items = response.items || [];
         $('#numReposFound').html(items.length);
     } else if (response.message && response.message.indexOf('API rate limit exceeded') > -1) {
-        console.log("GitHub API rate limit exceeded...");
+        showElement($("#numReposFound"), false);
+        console.error("GitHub API rate limit exceeded...");
     } else {
         $('#numReposFound').html("0");
     }
 }
 
 function showQueryError(tags, error) {
-    showElement($(".spinner"), false);
+    showElement($(".spinner-container"), false);
+    showElement($("#numReposFound"), false);
     console.error(error.message);
 }
 
@@ -84,47 +87,49 @@ $(function() {
         return;
     }
     
-    // Show control after select is loaded
-    $(".chzn-select").removeClass("hidden");
-
-    // Initialize chosen
-    $(".chosen-select").chosen({width: "100%", max_selected_options: 3});
-    
-    // Provide spell check search
-    $(".chosen-container .search-field .chosen-search-input").attr("spellcheck", false);
-    
-    // Fetch number of repos that match query
-    $("select").change(function() {
-        // UI
-        clearResults();
-        showElement($(".spinner"), true);
-        // Get tags
-        var selectedTags = getSelectedTags();
-        // Fetch repos
-        if (selectedTags.length > 0) {
-            var tags = selectedTags.join(" ");
-            var searchURL = assembleSearchUrl(tags);
-            fetch(searchURL).then(function (response) {
-               response.json().then(function(json) {
-                   showQueryResults(tags, json)
-               }, function (error) {
-                   showQueryError(tags, error);
-               });
-            },
-            function (error) {
-                showQueryError(tags, error);
-            });
-        } else {
-            showElement($(".spinner"), false);
-        }
-    });
-
     $(document).ready(function() {
+
+        // Show control after select is loaded
+        $(".chzn-select").removeClass("hidden");
+
+        // Initialize chosen
+        $(".chosen-select").chosen({width: "100%", max_selected_options: 3});
+        
+        // Provide spell check search
+        $(".chosen-container .search-field .chosen-search-input").attr("spellcheck", false);
+        
+        // Fetch number of repos that match query
+        $("select").change(function() {
+            // UI
+            clearResults();
+            showElement($("#numReposFound"), false);
+            showElement($(".spinner-container"), true);
+            // Get tags
+            var selectedTags = getSelectedTags();
+            // Fetch repos
+            if (selectedTags.length > 0) {
+                var tags = selectedTags.join(" ");
+                var searchURL = assembleSearchUrl(tags);
+                fetch(searchURL).then(function (response) {
+                   response.json().then(function(json) {
+                       showQueryResults(tags, json)
+                   }, function (error) {
+                       showQueryError(tags, error);
+                   });
+                },
+                function (error) {
+                    showQueryError(tags, error);
+                });
+            } else {
+                showElement($(".spinner-container"), false);
+                showElement($("#numReposFound"), false);
+            }
+        });
+
         // Go to GitHub
         $("#btnViewRepos").on("click", function(e){
             e.preventDefault();
             var urlEsriBase = "https://github.com/Esri";
-            
             // Get tags
             var selectedTags = getSelectedTags();
             if (selectedTags.length > 0) {

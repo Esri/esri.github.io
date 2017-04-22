@@ -38,15 +38,23 @@
   margin: 0;
   padding: 0.25rem;
 }
+.column-flex {
+  display: flex;
+}
 .number-repos {
+  min-width: 25px;
   font-size: 1rem;
-  padding-top: 7px;
+  padding-top: 6px;
+  margin-left: 15px;
   color: #999;
 }
 .spinner-container {
-  margin-top: 2px;
+  text-align: center;
+  min-width: 25px;
+  margin-left: 15px;
 }
 .spinner {
+  margin: 8px 0 4px 0;
 }
 .spin-svg {
   animation: spin 1s infinite linear;
@@ -65,9 +73,6 @@
 }
 .hidden {
   visibility: hidden;
-}
-.hide {
-  display: none;
 }
 body {
   margin: 0;
@@ -295,6 +300,10 @@ body {
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   top: 10px;
   right: 8px;
+}
+
+.chosen-container-multi .chosen-choices {
+  padding: 1px 5px 0;  
 }
 
 .chosen-container-multi .chosen-choices,
