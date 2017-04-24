@@ -1,4 +1,5 @@
  topics:
+  - tag: android
   - tag: arcgis
   - tag: actionscript
   - tag: analysis
@@ -33,6 +34,7 @@
   - tag: government
   - tag: graphics
   - tag: html
+  - tag: ios
   - tag: intelligence
   - tag: java
   - tag: javascript
@@ -66,8 +68,12 @@
   - tag: typescript
   - tag: uc
   - tag: utilities
+  - tag: qml
+  - tag: qt
+  - tag: xamarin
   - tag: water
   - tag: web
   - tag: web-development
   - tag: webmap
   - tag: webscene
+  - tag: windows
