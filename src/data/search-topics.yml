@@ -34,6 +34,7 @@
   - tag: government
   - tag: graphics
   - tag: html
+  - tag: imagery
   - tag: ios
   - tag: intelligence
   - tag: java
@@ -52,6 +53,7 @@
   - tag: python
   - tag: qml
   - tag: r
+  - tag: raster
   - tag: real-time
   - tag: ruby
   - tag: runtime
