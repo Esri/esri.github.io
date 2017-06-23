@@ -1,21 +1,21 @@
  topics:
-  - tag: android
-  - tag: arcgis
   - tag: actionscript
   - tag: analysis
+  - tag: android
   - tag: app-template
+  - tag: arcgis
   - tag: basemap
   - tag: big-data
   - tag: bootstrap
   - tag: c
+  - tag: c-plus-plus
+  - tag: c-sharp
   - tag: calcite
   - tag: cartography
-  - tag: c-sharp
-  - tag: c-plus-plus
   - tag: css
   - tag: dashboard
-  - tag: database
   - tag: data-management
+  - tag: database
   - tag: dataset
   - tag: demographics
   - tag: desktop
@@ -27,16 +27,16 @@
   - tag: emergency-management
   - tag: enterprise
   - tag: esri
-  - tag: geometry
   - tag: geocoding
+  - tag: geometry
   - tag: geoprocessing
   - tag: geoservices
   - tag: government
   - tag: graphics
   - tag: html
   - tag: imagery
-  - tag: ios
   - tag: intelligence
+  - tag: ios
   - tag: java
   - tag: javascript
   - tag: layer
@@ -52,6 +52,7 @@
   - tag: publishing-sharing
   - tag: python
   - tag: qml
+  - tag: qt
   - tag: r
   - tag: raster
   - tag: real-time
@@ -70,12 +71,10 @@
   - tag: typescript
   - tag: uc
   - tag: utilities
-  - tag: qml
-  - tag: qt
-  - tag: xamarin
   - tag: water
   - tag: web
   - tag: web-development
   - tag: webmap
   - tag: webscene
   - tag: windows
+  - tag: xamarin
