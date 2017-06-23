@@ -12,6 +12,7 @@
   - tag: c-sharp
   - tag: calcite
   - tag: cartography
+  - tag: crowdsourcing
   - tag: css
   - tag: dashboard
   - tag: data-management
@@ -40,6 +41,7 @@
   - tag: java
   - tag: javascript
   - tag: layer
+  - tag: local-government
   - tag: logistics
   - tag: maps
   - tag: military
@@ -61,7 +63,9 @@
   - tag: sample
   - tag: server
   - tag: services
+  - tag: solutions
   - tag: spatial-analysis
+  - tag: state-government
   - tag: statistics
   - tag: storymaps
   - tag: swift
@@ -72,7 +76,9 @@
   - tag: uc
   - tag: utilities
   - tag: water
+  - tag: water-utility
   - tag: web
+  - tag: web-appbuilder
   - tag: web-development
   - tag: webmap
   - tag: webscene
