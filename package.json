@@ -1,10 +1,11 @@
 {
-  "name": "esri.github.com",
+  "name": "esri.github.io",
   "version": "2.0.1",
+  "private": true,
   "description": "Landing page for Esri open source projects.",
   "author": "Esri",
   "license": "Apache-2.0",
-  "main": "js/index.js",
+  "main": "src/assets/js/github.js",
   "dependencies": {
     "@angular/common": "2.4.1",
     "@angular/compiler": "2.4.1",
@@ -120,7 +121,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jf990/esri.github.com.git"
+    "url": "git+https://github.com/Esri/esri.github.io.git"
   },
   "keywords": [
     "html",
@@ -130,8 +131,8 @@
     "calcite"
   ],
   "bugs": {
-    "url": "https://github.com/jf990/esri.github.com/issues"
+    "url": "https://github.com/Esri/esri.github.io/issues"
   },
   "contributors": [],
-  "homepage": "https://github.com/jf990/esri.github.com#readme"
+  "homepage": "https://github.com/Esri/esri.github.io#readme"
 }
