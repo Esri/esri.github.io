@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     'gh-pages': {
       options: {
         base: 'build',
-        branch: 'master',
+        branch: 'gh-pages',
         repo: 'https://github.com/Esri/esri.github.io.git'
       },
       src: ['**']
