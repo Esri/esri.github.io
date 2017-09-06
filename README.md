@@ -1,5 +1,12 @@
 # esri.github.io
-Landing page for all of our projects.
+
+> Landing page for all of our projects.
+
+Both the project categories and search suggestions in http://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
+
+<kbd>web-development</kbd> <kbd>data-management</kbd> <kbd>spatial-analysis</kbd> <kbd>publishing-sharing</kbd> <kbd>native-development</kbd>
+
+You can find a complete list of searchable topics in [`search-topics.yaml`](/src/data/search-topics.yaml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
 
 ## Development
 
@@ -12,7 +19,7 @@ The website is generated using the open source static site generator [`acetate`]
 
 ## Architecture
 
-Information for the case studies and featured projects can be found in [`src/data/projects.yml`](https://github.com/Esri/esri.github.io/blob/master/src/data/projects.yaml)
+Information for the case studies and featured projects can be found in [`projects.yml`](/src/data/projects.yaml)
 
 ```yaml
 - title: R Analysis
@@ -24,8 +31,7 @@ Information for the case studies and featured projects can be found in [`src/dat
     stars: 47
 ```
 
-
-Templated markup for the featured content is located in [`src/layouts/_macros.html`](https://github.com/Esri/esri.github.io/blob/master/src/layouts/_macros.html)
+Templated markup for the featured content is located in [`_macros.html`](/src/layouts/_macros.html)
 
 For example, below we define a loop to generate 24 cards using information from `projects.yaml`
 ```html
@@ -50,6 +56,7 @@ A bare minimum of `<html>` scaffolding can be found in [`src/index.html`](https:
 Anyone and everyone is welcome to contribute. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
+
 Copyright 2017 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
