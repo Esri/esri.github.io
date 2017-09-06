@@ -6,20 +6,20 @@ Both the project categories and search suggestions in http://esri.github.io are 
 
 <kbd>web-development</kbd> <kbd>data-management</kbd> <kbd>spatial-analysis</kbd> <kbd>publishing-sharing</kbd> <kbd>native-development</kbd>
 
-You can find a complete list of searchable topics in [`search-topics.yaml`](/src/data/search-topics.yaml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
+You can find a complete list of searchable topics in [`search-topics.yml`](src/data/search-topics.yml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
 
 ## Development
 
 The website is generated using the open source static site generator [`acetate`](https://github.com/patrickarlt/acetate) and styled with the help of [`calcite-web`](https:esri.github.io/calcite-web/).
 
 1. Fork and clone the project
-2. Install the [`package.json`](https://github.com/Esri/esri.github.io/blob/master/package.json) dependencies by running `npm install`
+2. Install the [`package.json`](package.json) dependencies by running `npm install`
 3. Run `npm start`. This will generate built pages in memory, launch the site on http://localhost:8000 and watch the raw source for changes.
 4. To create a build that will be saved to disk, use `grunt build`
 
 ## Architecture
 
-Information for the case studies and featured projects can be found in [`projects.yml`](/src/data/projects.yaml)
+Information for the case studies and featured projects can be found in [`projects.yml`](src/data/projects.yml)
 
 ```yaml
 - title: R Analysis
@@ -31,9 +31,9 @@ Information for the case studies and featured projects can be found in [`project
     stars: 47
 ```
 
-Templated markup for the featured content is located in [`_macros.html`](/src/layouts/_macros.html)
+Templated markup for the featured content is located in [`_macros.html`](src/layouts/_macros.html)
 
-For example, below we define a loop to generate 24 cards using information from `projects.yaml`
+For example, below we define a loop to generate 24 cards using information from `projects.yml`
 ```html
 <div class="block-group block-group-4-up tablet-block-group-2-up phone-block-group-1-up">
     {% for project in projectInfo.projects %}
