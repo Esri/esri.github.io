@@ -10,7 +10,7 @@ You can find a complete list of searchable topics in [`search-topics.yml`](src/d
 
 ## Development
 
-The website is generated using the open source static site generator [`acetate`](https://github.com/patrickarlt/acetate) and styled with the help of [`calcite-web`](https:esri.github.io/calcite-web/).
+The website is generated using the open source static site generator [`acetate`](https://github.com/patrickarlt/acetate) and styled with the help of [`calcite-web`](https://esri.github.io/calcite-web/).
 
 1. Fork and clone the project
 2. Install the [`package.json`](package.json) dependencies by running `npm install`
