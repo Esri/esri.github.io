@@ -20,8 +20,7 @@ function showQueryResults(tags, response) {
     showElement($(".spinner-container"), false);
     showElement($("#numReposFound"), true);
     if (!response.message) {
-        var items = response.items || [];
-        $('#numReposFound').html(items.length);
+        $('#numReposFound').html(response.total_count);
     } else if (response.message && response.message.indexOf('API rate limit exceeded') > -1) {
         showElement($("#numReposFound"), false);
         console.error("GitHub API rate limit exceeded...");
