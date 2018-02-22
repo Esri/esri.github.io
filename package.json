@@ -94,7 +94,7 @@
     "lodash": "4.16.2",
     "markdown-it-toc": "git+https://git@github.com/kneemer/markdown-it-toc",
     "matchdep": "1.0.1",
-    "node-sass": "3.10.0",
+    "node-sass": "4.7.2",
     "nunjucks": "^2.5.2",
     "nunjucks-date-filter": "0.1.1",
     "phantomjs-prebuilt": "2.1.12",
