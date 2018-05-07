@@ -24,11 +24,10 @@ Information for the case studies and featured projects can be found in [`project
 ```yaml
 - title: R Analysis
     description: Develop and share R statistical analysis with ArcGIS.
-    image: //developers.arcgis.com/assets/img/homepage/promo-python.png
     url: //r-arcgis.github.io/
     displayLang: R
     searchLang: r
-    stars: 47
+    stars: 109
 ```
 
 Templated markup for the featured content is located in [`_macros.html`](src/layouts/_macros.html)
@@ -49,7 +48,7 @@ For example, below we define a loop to generate 24 cards using information from 
     {% endfor %}
     </div>
 ```
-A bare minimum of `<html>` scaffolding can be found in [`src/index.html`](https://github.com/Esri/esri.github.io/blob/master/src/index.html)
+`<html>` scaffolding can be found in [`src/index.html`](https://github.com/Esri/esri.github.io/blob/master/src/index.html)
 
 ## Contributing
 
@@ -57,7 +56,7 @@ Anyone and everyone is welcome to contribute. Please see our [guidelines for con
 
 ## Licensing
 
-Copyright 2017 Esri
+Copyright &copy; 2017 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
