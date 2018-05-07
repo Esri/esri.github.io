@@ -10,34 +10,30 @@ categories:
         url: //maps.raleighnc.gov/sustainable/
         displayLang: JavaScript
         searchLang: javascript
-      - title: Esri Leaflet
-        description: Leaflet plugins for the most popular ArcGIS web services
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //esri.github.io/esri-leaflet/
-        displayLang: JavaScript
-        searchLang: javascript
-        stars: 783
-      - title: React ArcGIS
-        description: A react component kit for the ArcGIS API for JavaScript.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: https://github.com/nicksenger/react-arcgis
-        displayLang: JavaScript
-        searchLang: javascript
-        stars: 21
       - title: Cedar
         description: Charts for ArcGIS Services
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //esri.github.io/cedar/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 167
-      - title: LERC
-        description: rapid encoding and decoding for any pixel type (not just RGB or Byte)
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/lerc
-        displayLang: C++
-        searchLang: c%2B%2B
-        stars: 50
+        stars: 189
+      - title: Webpack Plugin
+        description: Build ArcGIS API for JavaScript applications with webpack
+        url: //github.com/Esri/arcgis-webpack-plugin
+        displayLang: JavaScript
+        searchLang: javascript
+        stars: 28
+      - title: Esri Leaflet
+        description: Leaflet plugins for the most popular ArcGIS web services
+        url: //esri.github.io/esri-leaflet/
+        displayLang: JavaScript
+        searchLang: javascript
+        stars: 896
+      - title: ArcGIS REST JS
+        description: Compact, modular JavaScript wrappers for the ArcGIS REST API
+        url: //esri.github.io/arcgis-rest-js/
+        displayLang: JavaScript
+        searchLang: javascript
+        stars: 57
   - title: Data Management
     url: https://github.com/Esri?q=topic%3Adata-management
     anchor: data-management
@@ -51,32 +47,28 @@ categories:
         searchLang: javascript
       - title: Koop
         description: Node server to integrate custom Web APIs with ArcGIS.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //koopjs.github.io/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 349
+        stars: 385
       - title: Geometry Engine
-        description: Fundamental spatial data types and analyses
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
+        description: Fundamental spatial data types and analyses.
         url: //github.com/Esri/geometry-api-java/wiki
         displayLang: Java
         searchLang: java
-        stars: 291
+        stars: 354
       - title: Terraformer
         description: Library to convert common spatial data formats.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //terraformer.io
         displayLang: JavaScript
         searchLang: javascript
-        stars: 408
+        stars: 453
       - title: AGO Assistant
         description: A swiss army knife for your ArcGIS Online and Portal for ArcGIS accounts.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/ago-assistant
         displayLang: JavaScript
         searchLang: javascript
-        stars: 88
+        stars: 97
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
@@ -91,32 +83,28 @@ categories:
         stars: 16
       - title: GIS Tools for Hadoop
         description: Integrate ArcGIS with Hadoop big data processing.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/gis-tools-for-hadoop
         displayLang: Java
         searchLang: java
-        stars: 310
+        stars: 345
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //r-arcgis.github.io/
         displayLang: R
         searchLang: r
-        stars: 91
+        stars: 109
       - title: Solutions GP Toolbox
         description: Models, scripts, and tools for use in ArcGIS for Desktop and ArcGIS Pro.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/solutions-geoprocessing-toolbox
         displayLang: Python
         searchLang: python
-        stars: 83
-      - title: Spark Point in Polygon
-        description: Spark job to perform massive Point in Polygon (PiP) operations on a distributed share-nothing cluster.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/mraad/spark-pip
-        displayLang: Scala
-        searchLang: scala
-        stars: 19
+        stars: 94
+      - title: LERC
+        description: Rapid encoding and decoding for any pixel type (not just RGB or Byte).
+        url: //github.com/Esri/lerc
+        displayLang: C++
+        searchLang: c%2B%2B
+        stars: 56
   - title: Publishing and Sharing
     url: https://github.com/Esri?q=topic%3Apublishing-sharing
     anchor: publishing-sharing
@@ -128,34 +116,30 @@ categories:
         url: //github.com/Esri/storymap-crowdsource
         displayLang: JavaScript
         searchLang: javascript
-      - title: Public Information Template
-        description: Social media map for disaster response and public information.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/public-information-map-template-js
+      - title: React ArcGIS
+        description: A react component kit for the ArcGIS API for JavaScript.
+        url: https://github.com/nicksenger/react-arcgis
         displayLang: JavaScript
         searchLang: javascript
-        stars: 39
-      - title: Historic Map Explorer
-        description: Web app to explore digitized map overlays.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/Esri/map-collection-explorer
+        stars: 65
+      - title: Esri Loader
+        description: A tiny library to help load ArcGIS API for JavaScript modules in non-Dojo applications.
+        url: //github.com/Esri/esri-loader
         displayLang: JavaScript
         searchLang: javascript
-        stars: 8
-      - title: Open Data
-        description: Web components for integrating data into civic sites.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
-        url: //github.com/esridc/opendata-search-component
-        displayLang: JavaScript
-        searchLang: javascript
-        stars: 14
+        stars: 151
       - title: Styler
         description: A configurable application for creating, styling and sharing modern 2D and 3D map apps
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/calcite-maps-styler-template
         displayLang: JavaScript
         searchLang: javascript
-        stars: 14
+        stars: 18
+      - title: Maps App
+        description: A progressive web app that loads the ArcGIS API for JavaScript.
+        url: //github.com/Esri/maps-app-javascript
+        displayLang: JavaScript
+        searchLang: javascript
+        stars: 30
   - title: Native Development
     url: https://github.com/Esri?q=topic%3Anative-development
     anchor: native-development
@@ -169,29 +153,25 @@ categories:
         searchLang: c-sharp
       - title: Ecological Marine Unit Explorer
         description: The Ecological Marine Unit (EMU) example application uses the ArcGIS Runtime SDK for Android to showcase ocean ecosystems. Explore 50 years worth of NOAA data using Esri maps and services.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/ecological-marine-unit-android
         displayLang: Android
         searchLang: java
-        stars: 4
+        stars: 6
       - title: ArcGIS Toolkit .NET
         description: Controls and utilities you can use with the ArcGIS Runtime SDK for .NET.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
         searchLang: c-sharp
-        stars: 50
+        stars: 61
       - title: Vehicle Commander
         description: The Vehicle Commander template demonstrates best practices for building in-vehicle military applications with ArcGIS and Java.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/vehicle-commander-java
         displayLang: Java
         searchLang: java
-        stars: 12
+        stars: 14
       - title: Nearby-Places Android
         description: Locate nearby places with Android devices. Built with the ArcGIS Runtime SDK for Android. With some minor customization, you can change the types of places displayed.
-        image: //developers.arcgis.com/assets/img/homepage/promo-python.png
         url: //github.com/Esri/nearby-android
         displayLang: Android
         searchLang: android
-        stars: 10
+        stars: 16

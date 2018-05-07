@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     'gh-pages': {
       options: {
         base: 'build',
-        // User pages like esri.github.io must be built from the master branch.
+        // User pages like esri.github.io **must** be built from the master branch.
         branch: 'master',
         repo: 'https://github.com/Esri/esri.github.io.git'
       },
