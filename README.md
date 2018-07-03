@@ -4,7 +4,11 @@
 
 Both the project categories and search suggestions in http://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
 
-<kbd>web-development</kbd> <kbd>data-management</kbd> <kbd>spatial-analysis</kbd> <kbd>publishing-sharing</kbd> <kbd>native-development</kbd>
+[<kbd>web-development</kbd>](https://github.com/Esri?q=topic%3Aweb-development)
+[<kbd>data-management</kbd>](https://github.com/Esri?q=topic%3Adata-management)
+[<kbd>spatial-analysis</kbd>](https://github.com/Esri?q=topic%3Aspatial-analysis)
+[<kbd>publishing-sharing</kbd>](https://github.com/Esri?q=topic%3Apublishing-sharing)
+[<kbd>native-development</kbd>](https://github.com/Esri?q=topic%3Anative-development)
 
 You can find a complete list of searchable topics in [`search-topics.yml`](src/data/search-topics.yml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
 
@@ -56,7 +60,7 @@ Anyone and everyone is welcome to contribute. Please see our [guidelines for con
 
 ## Licensing
 
-Copyright &copy; 2017 Esri
+Copyright &copy; 2013-2018 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
