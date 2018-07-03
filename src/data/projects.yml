@@ -150,28 +150,29 @@ categories:
         image: /assets/img/projects/indoor-routing-xamarin.png
         url: //github.com/Esri/indoor-routing-xamarin
         displayLang: C#
-        searchLang: c-sharp
-      - title: Ecological Marine Unit Explorer
-        description: The Ecological Marine Unit (EMU) example application uses the ArcGIS Runtime SDK for Android to showcase ocean ecosystems. Explore 50 years worth of NOAA data using Esri maps and services.
-        url: //github.com/Esri/ecological-marine-unit-android
-        displayLang: Android
-        searchLang: java
-        stars: 6
+        searchLang: csharp
+        stars: 26
+      - title: Mapbook iOS
+        description: Replace the paper maps you use for field work with offline maps. Uses the ArcGIS Runtime SDK for iOS.
+        url: //github.com/Esri/mapbook-ios
+        displayLang: Swift
+        searchLang: swift
+        stars: 3
       - title: ArcGIS Toolkit .NET
         description: Controls and utilities you can use with the ArcGIS Runtime SDK for .NET.
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
-        searchLang: c-sharp
-        stars: 61
-      - title: Vehicle Commander
-        description: The Vehicle Commander template demonstrates best practices for building in-vehicle military applications with ArcGIS and Java.
-        url: //github.com/Esri/vehicle-commander-java
-        displayLang: Java
-        searchLang: java
-        stars: 14
+        searchLang: csharp
+        stars: 63
+      - title: Dynamic Situational Awareness
+        description: Built using the ArcGIS Runtime SDK for Qt, DSA highlights developer best practices for the specific workflows for in-vehicle (mounted) and field (handheld/dismounted) teams who need to dynamically understand their environment and the situation around them.
+        url: //github.com/Esri/dynamic-situational-awareness-qt
+        displayLang: C++
+        searchLang: c%2B%2B
+        stars: 9
       - title: Nearby-Places Android
         description: Locate nearby places with Android devices. Built with the ArcGIS Runtime SDK for Android. With some minor customization, you can change the types of places displayed.
         url: //github.com/Esri/nearby-android
         displayLang: Android
         searchLang: android
-        stars: 16
+        stars: 18
