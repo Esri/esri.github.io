@@ -129,7 +129,7 @@ categories:
         searchLang: javascript
         stars: 209
       - title: i3s-spec
-        description: A specification for arbitrarily large amounts of geographic data..
+        description: A specification for arbitrarily large amounts of geographic data.
         url: //github.com/Esri/i3s-spec
         displayLang: JavaScript
         searchLang: javascript
