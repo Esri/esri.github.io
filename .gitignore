@@ -36,4 +36,3 @@ ssl
 .awcache/
 
 /config.json
-package-lock.json
