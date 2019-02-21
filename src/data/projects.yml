@@ -42,7 +42,7 @@ categories:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
         image: /assets/img/projects/us-census-citysdk.png
-        url: //terraformer.io
+        url: http://terraformer.io
         displayLang: JavaScript
         searchLang: javascript
       - title: Koop
@@ -59,7 +59,7 @@ categories:
         stars: 398
       - title: Terraformer
         description: Library to convert common spatial data formats.
-        url: //terraformer.io
+        url: http://terraformer.io
         displayLang: JavaScript
         searchLang: javascript
         stars: 489
