@@ -21,7 +21,7 @@ categories:
         url: //esri.github.io/esri-leaflet/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 1041
+        stars: 1070
       - title: ArcGIS REST JS
         description: Compact, modular JavaScript wrappers for the ArcGIS REST API
         url: //esri.github.io/arcgis-rest-js/

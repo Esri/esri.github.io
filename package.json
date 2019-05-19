@@ -116,6 +116,7 @@
     "test": "JOB_ENV=test karma start && ava test/build-validation",
     "start": "grunt dev",
     "build": "grunt build",
+    "predeploy": "npm run build",
     "deploy": "grunt deploy"
   },
   "repository": {

@@ -56,7 +56,7 @@ For example, below we define a loop to generate 24 cards using information from 
 
 ## Contributing
 
-Anyone and everyone is welcome to contribute. Please see our [guidelines for contributing](https://github.com/esri/contributing).
+Anyone and everyone is welcome to contribute. Please see our [guidelines for contributing](CONTRIBUTING.md).
 
 ## Licensing
 
