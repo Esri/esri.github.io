@@ -1,6 +1,6 @@
 # esri.github.io
 
-> Landing page for all of our projects.
+> Landing page for Esri open source projects.
 
 Both the project categories and search suggestions in http://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
 
@@ -34,9 +34,10 @@ Information for the case studies and featured projects can be found in [`project
     stars: 109
 ```
 
-Templated markup for the featured content is located in [`_macros.html`](src/layouts/_macros.html)
+Template markup for the featured content is located in [`_macros.html`](src/layouts/_macros.html)
 
 For example, below we define a loop to generate 24 cards using information from `projects.yml`
+
 ```html
 <div class="block-group block-group-4-up tablet-block-group-2-up phone-block-group-1-up">
     {% for project in projectInfo.projects %}
@@ -52,15 +53,20 @@ For example, below we define a loop to generate 24 cards using information from 
     {% endfor %}
     </div>
 ```
+
 `<html>` scaffolding can be found in [`src/index.html`](https://github.com/Esri/esri.github.io/blob/master/src/index.html)
 
 ## Contributing
 
 Anyone and everyone is welcome to contribute. Please see our [guidelines for contributing](CONTRIBUTING.md).
 
-## Licensing
+## Code of conduct
 
-Copyright &copy; 2013-2018 Esri
+All contributors and participants in this repository are expected to abide by our [code of conduct](https://github.com/Esri/contributing/blob/master/CODE_OF_CONDUCT.md).
+
+## License
+
+Copyright &copy; 2013-2020 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -74,4 +80,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [LICENSE]( https://raw.github.com/Esri/esri.github.com/master/license.txt) file.
+A copy of the license is available in the repository's [LICENSE](https://raw.github.com/Esri/esri.github.com/master/license.txt) file.
