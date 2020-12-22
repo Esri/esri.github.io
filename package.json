@@ -91,7 +91,7 @@
     "karma-jasmine-diff-reporter": "^0.6.3",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.8.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "markdown-it-toc": "git+https://git@github.com/kneemer/markdown-it-toc",
     "matchdep": "1.0.1",
     "node-sass": "^4.12.0",
