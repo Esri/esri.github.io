@@ -18,13 +18,13 @@ categories:
         stars: 209
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
-        url: //esri.github.io/esri-leaflet/
+        url: https://developers.arcgis.com/esri-leaflet/
         displayLang: JavaScript
         searchLang: javascript
         stars: 1070
       - title: ArcGIS REST JS
         description: Compact, modular JavaScript wrappers for the ArcGIS REST API
-        url: //esri.github.io/arcgis-rest-js/
+        url: https://developers.arcgis.com/arcgis-rest-js/
         displayLang: JavaScript
         searchLang: javascript
         stars: 134
