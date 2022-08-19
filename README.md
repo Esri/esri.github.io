@@ -2,7 +2,7 @@
 
 > Landing page for Esri open source projects.
 
-Both the project categories and search suggestions in http://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
+Both the project categories and search suggestions in https://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
 
 [<kbd>web-development</kbd>](https://github.com/Esri?q=topic%3Aweb-development)
 [<kbd>data-management</kbd>](https://github.com/Esri?q=topic%3Adata-management)
