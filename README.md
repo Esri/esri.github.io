@@ -14,16 +14,15 @@ You can find a complete list of searchable topics in [`search-topics.yml`](src/d
 
 ## Development
 
-The website is generated using the open source static site generator [`acetate`](https://github.com/patrickarlt/acetate) and styled with the help of [`calcite-web`](https://esri.github.io/calcite-web/).
+This project is a simple web page driven with JavaScript, [Calcite](https://developers.arcgis.com/calcite-design-system/), and [Tailwind CSS](https://tailwindcss.com/).
 
 1. Fork and clone the project
-2. Install the [`package.json`](package.json) dependencies by running `npm install`
-3. Run `npm start`. This will generate built pages in memory, launch the site on http://localhost:8000 and watch the raw source for changes.
-4. To create a build that will be saved to disk, use `grunt build`
+2. Load `index.html` in a browser.
+3. Edit `index.js`
 
 ## Architecture
 
-Information for the case studies and featured projects can be found in [`projects.yml`](src/data/projects.yml)
+Information for the case studies and featured projects can be found in [`projects.yml`](data/projects.yml)
 
 ```yaml
 - title: R Analysis
@@ -33,28 +32,6 @@ Information for the case studies and featured projects can be found in [`project
     searchLang: r
     stars: 109
 ```
-
-Template markup for the featured content is located in [`_macros.html`](src/layouts/_macros.html)
-
-For example, below we define a loop to generate 24 cards using information from `projects.yml`
-
-```html
-<div class="block-group block-group-4-up tablet-block-group-2-up phone-block-group-1-up">
-    {% for project in projectInfo.projects %}
-    {% if loop.index > 1 %}
-    <div class="card block leader-1">
-        <div class="card-content card-bar-{{ projectInfo.color }}">
-        <h4>{{ project.title }}</h4>
-        <p class="card-last">{{ project.description }}</p>
-        <!-- ... -->
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-    </div>
-```
-
-`<html>` scaffolding can be found in [`src/index.html`](https://github.com/Esri/esri.github.io/blob/master/src/index.html)
 
 ## Contributing
 
@@ -66,7 +43,7 @@ All contributors and participants in this repository are expected to abide by ou
 
 ## License
 
-Copyright &copy; 2013-2020 Esri
+Copyright &copy; 2022 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
