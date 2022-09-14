@@ -4,7 +4,7 @@
 const getConfig = async () => {
     // get the YML config file with fetch:
     const fetchResult = await fetch(
-      "https://cdn.jsdelivr.net/gh/esri/esri.github.io@v2/src/data/projects.yml"
+      "https://cdn.jsdelivr.net/gh/esri/esri.github.io@v3/data/projects.yml"
     );
     const text = await fetchResult.text();
     // Use js-yaml (included in script tag) to parse the YAML into a JSON object

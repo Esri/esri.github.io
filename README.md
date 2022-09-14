@@ -10,7 +10,7 @@ Both the project categories and search suggestions in http://esri.github.io are 
 [<kbd>publishing-sharing</kbd>](https://github.com/Esri?q=topic%3Apublishing-sharing)
 [<kbd>native-development</kbd>](https://github.com/Esri?q=topic%3Anative-development)
 
-You can find a complete list of searchable topics in [`search-topics.yml`](src/data/search-topics.yml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
+You can find a complete list of searchable topics in [`search-topics.yml`](data/search-topics.yml). When a [topic](https://github.com/blog/2309-introducing-topics) is added to an Esri repository, it will be reflected in search immediately.
 
 ## Development
 
