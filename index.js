@@ -17,7 +17,7 @@ const getConfig = async () => {
  */
 const createCard = (cardInfo) => {
   const rootElement = document.createElement("calcite-card");
-  rootElement.classList.add("basis-1/4");
+  rootElement.className = "box-border p-4 basis-1/2 md:basis-1/4 grow shrink";
 
   if (cardInfo.title) {
     const titleElement = document.createElement("span");
@@ -98,7 +98,8 @@ const getSection = (categoryConfig) => {
   ];
 
   // Create the section placeholder that will hold the 4 cards
-  const section = createBasicDomNode("section", "flex flex-row space-x-4 mb-16", "");
+  // https://tailwindcss.com/docs/space#limitations for explaination of the negative margin
+  const section = createBasicDomNode("section", "flex flex-wrap mb-16 -m-4", "");
   rootElement.appendChild(section);
 
   // loop through the 4 configs, creating a card for each and place it into the section
