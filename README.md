@@ -2,7 +2,7 @@
 
 > Landing page for Esri open source projects.
 
-Both the project categories and search suggestions in http://esri.github.io are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
+Both the project categories and search suggestions in <http://esri.github.io> are powered by GitHub [topics](https://github.com/blog/2309-introducing-topics).
 
 [<kbd>web-development</kbd>](https://github.com/Esri?q=topic%3Aweb-development)
 [<kbd>data-management</kbd>](https://github.com/Esri?q=topic%3Adata-management)
@@ -17,8 +17,8 @@ You can find a complete list of searchable topics in [`search-topics.yml`](data/
 This project is a simple web page driven with JavaScript, [Calcite](https://developers.arcgis.com/calcite-design-system/), and [Tailwind CSS](https://tailwindcss.com/).
 
 1. Fork and clone the project
-2. Load `index.html` in a browser.
-3. Edit `index.js`
+2. In the terminal, run `npx serve`.
+3. Open the browser to the URL given.
 
 ## Architecture
 
@@ -49,7 +49,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   <http://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
