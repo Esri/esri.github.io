@@ -10,24 +10,24 @@ categories:
         url: //maps.raleighnc.gov/sustainable/
         displayLang: JavaScript
         searchLang: javascript
-      - title: Cedar
-        description: Charts for ArcGIS Services
-        url: //esri.github.io/cedar/
+      - title: Calcite Components
+        description: A rich library of flexible, framework-agnostic web components for building applications
+        url: https://github.com/Esri/calcite-components
         displayLang: JavaScript
         searchLang: javascript
-        stars: 209
+        stars: 179
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
-        url: //esri.github.io/esri-leaflet/
+        url: https://developers.arcgis.com/esri-leaflet/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 1070
+        stars: 1.5k
       - title: ArcGIS REST JS
         description: Compact, modular JavaScript wrappers for the ArcGIS REST API
-        url: //esri.github.io/arcgis-rest-js/
+        url: https://developers.arcgis.com/arcgis-rest-js/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 134
+        stars: 302
       - title: Webpack Plugin
         description: Build ArcGIS API for JavaScript applications with webpack
         url: //github.com/Esri/arcgis-webpack-plugin
@@ -42,33 +42,33 @@ categories:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
         image: /assets/img/projects/us-census-citysdk.png
-        url: http://terraformer.io
+        url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
-      - title: React ArcGIS
-        description: A react component kit for the ArcGIS API for JavaScript.
-        url: https://github.com/nicksenger/react-arcgis
-        displayLang: JavaScript
-        searchLang: javascript
-        stars: 122
       - title: Koop
         description: Node server to integrate custom Web APIs with ArcGIS.
         url: //koopjs.github.io/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 424
-      - title: Geometry Engine
+        stars: 542
+      - title: Geometry Engine for Java
         description: Fundamental spatial data types and analyses.
         url: //github.com/Esri/geometry-api-java/wiki
         displayLang: Java
         searchLang: java
-        stars: 440
+        stars: 648
       - title: Terraformer
         description: Library to convert common spatial data formats.
-        url: http://terraformer.io
+        url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
-        stars: 516
+        stars: 659
+      - title: ArcGIS Editor for OpenStreetMap
+        description: A toolset for GIS users to access and contribute to OpenStreetMap through their Desktop or Server environment
+        url: https://github.com/Esri/arcgis-osm-editor
+        displayLang: C#
+        searchLang: c%23
+        stars: 323
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
@@ -86,25 +86,25 @@ categories:
         url: //github.com/Esri/gis-tools-for-hadoop
         displayLang: Java
         searchLang: java
-        stars: 383
+        stars: 501
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
         url: //r-arcgis.github.io/
         displayLang: R
         searchLang: r
         stars: 125
-      - title: Solutions GP Toolbox
-        description: Models, scripts, and tools for use in ArcGIS for Desktop and ArcGIS Pro.
-        url: //github.com/Esri/solutions-geoprocessing-toolbox
+      - title: ArcGIS Raster Functions
+        description: Modern image processing and analytic tools
+        url: https://github.com/Esri/raster-functions
         displayLang: Python
         searchLang: python
-        stars: 106
+        stars: 175
       - title: LERC
         description: Rapid encoding and decoding for any pixel type (not just RGB or Byte).
         url: //github.com/Esri/lerc
         displayLang: C++
         searchLang: c%2B%2B
-        stars: 75
+        stars: 164
   - title: Publishing and Sharing
     url: https://github.com/Esri?q=topic%3Apublishing-sharing
     anchor: publishing-sharing
@@ -121,25 +121,25 @@ categories:
         url: //github.com/Esri/cim-spec
         displayLang: Markdown
         searchLang: markdown
-        stars: 4
-      - title: Esri Loader
-        description: A tiny library to help load ArcGIS API for JavaScript modules in non-Dojo applications.
-        url: //github.com/Esri/esri-loader
-        displayLang: JavaScript
-        searchLang: javascript
-        stars: 209
+        stars: 46
       - title: i3s-spec
         description: A specification for arbitrarily large amounts of geographic data.
         url: //github.com/Esri/i3s-spec
         displayLang: JavaScript
         searchLang: javascript
-        stars: 97
+        stars: 267
       - title: Maps App
         description: A progressive web app that loads the ArcGIS API for JavaScript.
         url: //github.com/Esri/maps-app-javascript
         displayLang: JavaScript
         searchLang: javascript
-        stars: 47
+        stars: 74
+      - title: Dictionary Renderer Toolkit
+        description: Extend ArcGIS Pro, the ArcGIS API for JavaScript, and the ArcGIS Runtime SDKs by creating custom dictionary renderers
+        url: https://github.com/Esri/dictionary-renderer-toolkit
+        displayLang: C#
+        searchLang: c%23
+        stars: 15
   - title: Native Development
     url: https://github.com/Esri?q=topic%3Anative-development
     anchor: native-development
@@ -152,27 +152,27 @@ categories:
         displayLang: Swift
         searchLang: swift
         stars: 8
-      - title: Indoor Routing Xamarin
-        description: Indoor routing for iOS devices built in Xamarin with the ArcGIS Runtime SDK for .NET. With some customization, you can change the app to use your indoor data and locators.
-        url: //github.com/Esri/indoor-routing-xamarin
-        displayLang: C#
-        searchLang: csharp
-        stars: 33
+      - title: ArcGIS Runtime Toolkit - Qt
+        description: Ready-made components to complement mapping and GIS applications
+        url: https://github.com/Esri/arcgis-runtime-toolkit-qt
+        displayLang: QML
+        searchLang: qml
+        stars: 95
       - title: ArcGIS Toolkit .NET
         description: Controls and utilities you can use with the ArcGIS Runtime SDK for .NET.
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
         searchLang: csharp
-        stars: 78
+        stars: 165
       - title: Dynamic Situational Awareness
         description: Built using the ArcGIS Runtime SDK for Qt, DSA highlights developer best practices for the specific workflows for in-vehicle (mounted) and field (handheld/dismounted) teams who need to dynamically understand their environment and the situation around them.
         url: //github.com/Esri/dynamic-situational-awareness-qt
         displayLang: C++
         searchLang: c%2B%2B
-        stars: 17
+        stars: 45
       - title: Nearby-Places Android
         description: Locate nearby places with Android devices. Built with the ArcGIS Runtime SDK for Android. With some minor customization, you can change the types of places displayed.
         url: //github.com/Esri/nearby-android
         displayLang: Android
         searchLang: android
-        stars: 31
+        stars: 56
