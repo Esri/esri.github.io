@@ -12,6 +12,49 @@ const getConfig = async () => {
 };
 
 /**
+ * This helper function creates a "featured" "card" DOM element
+ * given an object of details that the card should contain:
+ */
+const createFeaturedCard = (cardInfo) => {
+  console.log("cardInfo", cardInfo);
+  const rootElement = document.createElement("div");
+  rootElement.className = "bg-[#efefef] w-full m-4 p-4";
+
+  if (cardInfo.image) {
+    const imageWrapper = document.createElement("div");
+    imageWrapper.className = "w-full md:w-1/3 float-left";
+
+    const img = document.createElement("img");
+    img.className = "w-full md:w-auto";
+    img.src = `https://esri.github.io/${cardInfo.image}`;
+
+    imageWrapper.appendChild(img);
+    rootElement.appendChild(imageWrapper);
+  }
+
+  if (cardInfo.title) {
+    const contentWrapper = document.createElement("div");
+    contentWrapper.className = "w-full md:w-2/3 float-left pl-4";
+    const titleElement = document.createElement("h4");
+    titleElement.className = "text-lg mb-4 mt-4 md:mt-0";
+    const link = document.createElement("calcite-link");
+    link.href = cardInfo.url;
+    link.innerHTML = cardInfo.title;
+
+    const descriptionElement = document.createElement("p");
+    descriptionElement.className = "text-md";
+    descriptionElement.innerHTML = cardInfo.description;
+
+    titleElement.appendChild(link);
+    contentWrapper.appendChild(titleElement);
+    contentWrapper.appendChild(descriptionElement);
+    rootElement.appendChild(contentWrapper);
+  }
+
+  return rootElement;
+};
+
+/**
  * This helper function creates a calcite "card" DOM element
  * given an object of details that the card should contain:
  */
@@ -82,12 +125,12 @@ const getSection = (categoryConfig) => {
   const rootElement = document.createElement("div");
 
   // Create the title
-  const title = createBasicDomNode("h2", "text-xl font-bold mb-4 leading-4", categoryConfig.title);
+  const title = createBasicDomNode("h2", "text-4xl mb-6", categoryConfig.title);
   rootElement.appendChild(title);
 
   // The first item in the array is the "featured" project, so show that first.
   const featuredProject = categoryConfig.projects[0];
-  // TODO - CREATE FULL WIDTH CARD FOR FEATUREDPROJECT AND PLACE INTO THE "ROOTELEMENT"
+  console.log("featuredProject", featuredProject);
 
   // Then the next 4 project configs are for the 4 cards that show up below
   const otherProjects = [
@@ -98,9 +141,11 @@ const getSection = (categoryConfig) => {
   ];
 
   // Create the section placeholder that will hold the 4 cards
-  // https://tailwindcss.com/docs/space#limitations for explaination of the negative margin
+  // https://tailwindcss.com/docs/space#limitations for explanation of the negative margin
   const section = createBasicDomNode("section", "flex flex-wrap mb-16 -m-4", "");
   rootElement.appendChild(section);
+
+  section.appendChild(createFeaturedCard(featuredProject));
 
   // loop through the 4 configs, creating a card for each and place it into the section
   otherProjects.forEach((projectInfo) => {
