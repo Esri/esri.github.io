@@ -42,7 +42,7 @@ const createFeaturedCard = ({ title, image, url, description }) => {
 
   if (title) {
     const contentWrapper = createElement("div", { className: "w-full md:w-2/3 float-left pl-4" });
-    const titleElement = createElement("h4", { className: "text-lg mb-4 mt-4 md:mt-0" });
+    const titleElement = createElement("h4", { className: "text-xl mb-4 mt-4 md:mt-0" });
     const linkElement = createElement("calcite-link", { href: url, innerHTML: title });
     const descriptionElement = createElement("p", { className: "text-md", innerHTML: description });
 
@@ -64,22 +64,26 @@ const createCard = (cardInfo) => {
 
   if (cardInfo.title) {
     const titleElement = createElement("span", { slot: "title" });
-    const link = createElement("calcite-link", { innerHTML: cardInfo.title, href: cardInfo.link });
+    const link = createElement("calcite-link", {
+      innerHTML: cardInfo.title,
+      href: cardInfo.link,
+      className: "text-xl",
+    });
 
     titleElement.appendChild(link);
     rootElement.appendChild(titleElement);
   }
   if (cardInfo.content) {
-    const contentElement = createElement("div", { innerHTML: cardInfo.content });
+    const contentElement = createElement("p", { innerHTML: cardInfo.content, className: "mb-2" });
+    rootElement.appendChild(contentElement);
 
     if (cardInfo.link) {
       const p = createElement("p");
-      const link = createElement("calcite-link", { href: cardInfo.link, innerHTML: "Learn More" });
+      const link = createElement("calcite-link", { href: cardInfo.link, innerHTML: "Learn More ➜" });
 
       p.appendChild(link);
-      contentElement.appendChild(p);
+      rootElement.appendChild(p);
     }
-    rootElement.appendChild(contentElement);
   }
 
   if (cardInfo.language) {
