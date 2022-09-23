@@ -11,41 +11,42 @@ const getConfig = async () => {
   return config;
 };
 
+const createElement = (tag, info) => {
+  const element = document.createElement(tag);
+  if (info) {
+    Object.entries(info).forEach(([key, value]) => {
+      element[key] = value;
+    });
+  }
+  return element;
+};
+
 /**
  * This helper function creates a "featured" "card" DOM element
  * given an object of details that the card should contain:
  */
-const createFeaturedCard = (cardInfo) => {
-  console.log("cardInfo", cardInfo);
-  const rootElement = document.createElement("div");
-  rootElement.className = "bg-[#efefef] w-full m-4 p-4";
+const createFeaturedCard = ({ title, image, url, description }) => {
+  const rootElement = createElement("div", { className: "bg-[#efefef] w-full m-4 p-4" });
 
-  if (cardInfo.image) {
-    const imageWrapper = document.createElement("div");
-    imageWrapper.className = "w-full md:w-1/3 float-left";
+  if (image) {
+    const imageWrapper = createElement("div", { className: "w-full md:w-1/3 float-left" });
 
-    const img = document.createElement("img");
-    img.className = "w-full md:w-auto";
-    img.src = `https://esri.github.io/${cardInfo.image}`;
+    const img = createElement("img", {
+      className: "w-full md:w-auto",
+      src: `https://esri.github.io/${image}`,
+    });
 
     imageWrapper.appendChild(img);
     rootElement.appendChild(imageWrapper);
   }
 
-  if (cardInfo.title) {
-    const contentWrapper = document.createElement("div");
-    contentWrapper.className = "w-full md:w-2/3 float-left pl-4";
-    const titleElement = document.createElement("h4");
-    titleElement.className = "text-lg mb-4 mt-4 md:mt-0";
-    const link = document.createElement("calcite-link");
-    link.href = cardInfo.url;
-    link.innerHTML = cardInfo.title;
+  if (title) {
+    const contentWrapper = createElement("div", { className: "w-full md:w-2/3 float-left pl-4" });
+    const titleElement = createElement("h4", { className: "text-lg mb-4 mt-4 md:mt-0" });
+    const linkElement = createElement("calcite-link", { href: url, innerHTML: title });
+    const descriptionElement = createElement("p", { className: "text-md", innerHTML: description });
 
-    const descriptionElement = document.createElement("p");
-    descriptionElement.className = "text-md";
-    descriptionElement.innerHTML = cardInfo.description;
-
-    titleElement.appendChild(link);
+    titleElement.appendChild(linkElement);
     contentWrapper.appendChild(titleElement);
     contentWrapper.appendChild(descriptionElement);
     rootElement.appendChild(contentWrapper);
@@ -59,30 +60,21 @@ const createFeaturedCard = (cardInfo) => {
  * given an object of details that the card should contain:
  */
 const createCard = (cardInfo) => {
-  const rootElement = document.createElement("calcite-card");
-  rootElement.className = "box-border p-4 basis-1/2 md:basis-1/4 grow shrink";
+  const rootElement = createElement("calcite-card", { className: "box-border p-4 basis-1/2 md:basis-1/4 grow shrink" });
 
   if (cardInfo.title) {
-    const titleElement = document.createElement("span");
-    titleElement.slot = "title";
-
-    const link = document.createElement("calcite-link");
-    link.innerHTML = cardInfo.title;
-    link.href = cardInfo.link;
+    const titleElement = createElement("span", { slot: "title" });
+    const link = createElement("calcite-link", { innerHTML: cardInfo.title, href: cardInfo.link });
 
     titleElement.appendChild(link);
     rootElement.appendChild(titleElement);
   }
   if (cardInfo.content) {
-    const contentElement = document.createElement("div");
-    contentElement.innerHTML = cardInfo.content;
+    const contentElement = createElement("div", { innerHTML: cardInfo.content });
 
     if (cardInfo.link) {
-      const p = document.createElement("p");
-
-      const link = document.createElement("calcite-link");
-      link.href = cardInfo.link;
-      link.innerHTML = "Learn More";
+      const p = createElement("p");
+      const link = createElement("calcite-link", { href: cardInfo.link, innerHTML: "Learn More" });
 
       p.appendChild(link);
       contentElement.appendChild(p);
@@ -91,31 +83,20 @@ const createCard = (cardInfo) => {
   }
 
   if (cardInfo.language) {
-    const link = document.createElement("calcite-link");
-    link.slot = "footer-leading";
-    link.href = `https://github.com/Esri?language=${cardInfo.language.toLowerCase()}`;
-    link.innerHTML = cardInfo.language;
+    const link = createElement("calcite-link", {
+      slot: "footer-leading",
+      href: `https://github.com/Esri?language=${cardInfo.language.toLowerCase()}`,
+      innerHTML: cardInfo.language,
+    });
     rootElement.appendChild(link);
   }
 
   if (cardInfo.stars) {
-    const stars = document.createElement("div");
-    stars.slot = "footer-trailing";
-    stars.innerHTML = "⭐" + cardInfo.stars;
+    const stars = createElement("div", { slot: "footer-trailing", innerHTML: "⭐" + cardInfo.stars });
     rootElement.appendChild(stars);
   }
 
   return rootElement;
-};
-
-/**
- * This helper function creates a DOM node given the type, classes, and innerHTML
- */
-const createBasicDomNode = (elementType, classes, innerHTML) => {
-  const element = document.createElement(elementType);
-  element.className = classes;
-  element.innerHTML = innerHTML;
-  return element;
 };
 
 /**
@@ -125,7 +106,7 @@ const getSection = (categoryConfig) => {
   const rootElement = document.createElement("div");
 
   // Create the title
-  const title = createBasicDomNode("h2", "text-4xl mb-6", categoryConfig.title);
+  const title = createElement("h2", { className: "text-4xl mb-6", innerHTML: categoryConfig.title });
   rootElement.appendChild(title);
 
   // The first item in the array is the "featured" project, so show that first.
@@ -142,7 +123,7 @@ const getSection = (categoryConfig) => {
 
   // Create the section placeholder that will hold the 4 cards
   // https://tailwindcss.com/docs/space#limitations for explanation of the negative margin
-  const section = createBasicDomNode("section", "flex flex-wrap mb-16 -m-4", "");
+  const section = createElement("section", { className: "flex flex-wrap mb-16 -m-4" });
   rootElement.appendChild(section);
 
   section.appendChild(createFeaturedCard(featuredProject));
