@@ -27,8 +27,13 @@
     </header>
     <div class="bg-[#efefef]">
       <form method="get" action="https://github.com/Esri" class="mx-auto max-w-7xl py-14 text-white p-4 flex flex-row">
-        <calcite-input class="grow" name="q" scale="l"></calcite-input>
-        <calcite-button scale="l">View on GitHub &gt;</calcite-button>
+        <calcite-input
+          class="grow"
+          name="q"
+          scale="l"
+          placeholder="Search for a topic or project, e.g. iOS"
+        ></calcite-input>
+        <calcite-button scale="l" type="submit">View on GitHub &gt;</calcite-button>
       </form>
     </div>
     <main id="main" class="pt-12 px-4 max-w-7xl mx-auto">
@@ -36,12 +41,16 @@
     </main>
     <footer class="bg-[#efefef] text-center">
       <div class="flex flex-row m-4 p-4 max-w-7xl mx-auto">
-        <div class="flex-none"><calcite-link href="https://github.com/Esri">Explore other open-source projects</calcite-link></div>
+        <div class="flex-none">
+          <calcite-link href="https://github.com/Esri">Explore other open-source projects</calcite-link>
+        </div>
         <div class="grow">&nbsp;</div>
-        <div class="flex-none"><calcite-link href="https://developers.arcgis.com/">ArcGIS APIs, tools, and location services</calcite-link></div>
+        <div class="flex-none">
+          <calcite-link href="https://developers.arcgis.com/">ArcGIS APIs, tools, and location services</calcite-link>
+        </div>
       </div>
       <a href="https://esri.com" class="">
-        <img class="max-w-xs inline-block m-8" src="http://esri.github.io/assets/img/logo/esri-logo.svg" />
+        <img class="max-w-xs inline-block p-8" src="http://esri.github.io/assets/img/logo/esri-logo.svg" />
       </a>
     </footer>
     <script src="index.js"></script>
