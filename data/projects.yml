@@ -6,7 +6,7 @@ categories:
     projects:
       - title: City of Raleigh, North Carolina
         description: The City of Raleigh uses Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
-        image: /assets/img/projects/raleigh-sustainable.png
+        image: /assets/projects/raleigh-sustainable.png
         url: //maps.raleighnc.gov/sustainable/
         displayLang: JavaScript
         searchLang: javascript
@@ -41,7 +41,7 @@ categories:
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
-        image: /assets/img/projects/us-census-citysdk.png
+        image: /assets/projects/us-census-citysdk.png
         url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
@@ -76,7 +76,7 @@ categories:
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
-        image: /assets/img/projects/spark-geo.png
+        image: /assets/projects/spark-geo.png
         url: //github.com/Esri/PySAL-ArcGIS-Toolbox
         displayLang: C#
         searchLang: c%23
@@ -112,7 +112,7 @@ categories:
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
-        image: /assets/img/projects/storymap-smithsonian.png
+        image: /assets/projects/storymap-smithsonian.png
         url: //github.com/Esri/storymap-tour
         displayLang: JavaScript
         searchLang: javascript
@@ -147,7 +147,7 @@ categories:
     projects:
       - title: Data Collection iOS
         description: Perform field data collection online or offline, view and synchronize edits, work with features, pop ups, web maps, and related records. Uses the ArcGIS Runtime SDK for iOS.
-        image: /assets/img/projects/data-collection-ios.png
+        image: /assets/projects/data-collection-ios.png
         url: //github.com/Esri/data-collection-ios
         displayLang: Swift
         searchLang: swift
