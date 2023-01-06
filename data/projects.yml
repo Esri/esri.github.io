@@ -5,7 +5,7 @@ categories:
     color: blue
     projects:
       - title: Hiking trails in Swiss National Park
-        description: Web application for exploring trails in 3D. The Swiss National Park is the most highly preserved area in Switzerland and it is a beloved place to go hiking.
+        description: The Swiss National Park is the most highly preserved area in Switzerland and it is a popular place to go hiking. This web application is built with the ArcGIS Maps SDK for JavaScript and allows you to explore trails in 3D.
         image: /assets/projects/swiss-trails.png
         url: https://esri.github.io/hiking-trails-app/
         displayLang: JavaScript
