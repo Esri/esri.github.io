@@ -4,10 +4,10 @@ categories:
     anchor: web-development
     color: blue
     projects:
-      - title: City of Raleigh, North Carolina
-        description: The City of Raleigh uses Esri Leaflet to help citizens quickly find nearby electric vehicle charging stations, green roofs, and solar trash compactors.
-        image: /assets/projects/raleigh-sustainable.png
-        url: //maps.raleighnc.gov/sustainable/
+      - title: Hiking trails in Swiss National Park
+        description: Web application for exploring trails in 3D.
+        image: /assets/projects/swiss-trails.png
+        url: https://esri.github.io/hiking-trails-app/
         displayLang: JavaScript
         searchLang: javascript
       - title: Calcite Components
