@@ -88,7 +88,7 @@ const createCard = (cardInfo) => {
 
   if (cardInfo.language) {
     const link = createElement("calcite-link", {
-      slot: "footer-leading",
+      slot: "footer-start",
       href: `https://github.com/Esri?language=${encodeURIComponent(cardInfo.language.toLowerCase())}#org-profile-repositories`,
       innerHTML: cardInfo.language,
     });
@@ -96,7 +96,7 @@ const createCard = (cardInfo) => {
   }
 
   if (cardInfo.stars) {
-    const stars = createElement("div", { slot: "footer-trailing", innerHTML: "⭐" + cardInfo.stars });
+    const stars = createElement("div", { slot: "footer-end", innerHTML: "⭐" + cardInfo.stars });
     rootElement.appendChild(stars);
   }
 
