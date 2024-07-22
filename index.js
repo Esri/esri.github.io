@@ -89,7 +89,7 @@ const createCard = (cardInfo) => {
   if (cardInfo.language) {
     const link = createElement("calcite-link", {
       slot: "footer-leading",
-      href: `https://github.com/Esri?language=${cardInfo.language.toLowerCase()}`,
+      href: `https://github.com/Esri?language=${encodeURIComponent(cardInfo.language.toLowerCase())}#org-profile-repositories`,
       innerHTML: cardInfo.language,
     });
     rootElement.appendChild(link);
