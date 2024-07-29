@@ -6,7 +6,7 @@ categories:
     projects:
       - title: Hiking trails in Swiss National Park
         description: The Swiss National Park is the most highly preserved area in Switzerland and it is a popular place to go hiking. This web application is built with the ArcGIS Maps SDK for JavaScript and allows you to explore trails in 3D.
-        image: /assets/projects/swiss-trails.png
+        image: assets/projects/swiss-trails.png
         url: https://esri.github.io/hiking-trails-app/
         displayLang: JavaScript
         searchLang: javascript
@@ -41,7 +41,7 @@ categories:
     projects:
       - title: U.S. Census Bureau
         description: The U.S. Census measures and shares national statistic data about every single household in the United States. To make the information accessible to application developers they developed CitySDK which uses the Terraformer library to convert between Esri JSON and GeoJSON.
-        image: /assets/projects/us-census-citysdk.png
+        image: assets/projects/us-census-citysdk.png
         url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
@@ -51,24 +51,24 @@ categories:
         displayLang: JavaScript
         searchLang: javascript
         stars: 654
-      - title: Geometry Engine for Java
-        description: Fundamental spatial data types and analyses.
-        url: //github.com/Esri/geometry-api-java/wiki
-        displayLang: Java
-        searchLang: java
-        stars: 692
+      - title: Deep Learning Libraries Installers for ArcGIS
+        description: A collection of components, such as PyTorch, TensorFlow, Fast.ai and scikit-learn, for performing deep learning and machine learning tasks with the ArcGIS API for Python.
+        url: //github.com/Esri/deep-learning-frameworks
+        displayLang: Python
+        searchLang: python
+        stars: 416
       - title: Terraformer
         description: Library to convert common spatial data formats.
         url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
         stars: 176
-      - title: ArcGIS Editor for OpenStreetMap
-        description: A toolset for GIS users to access and contribute to OpenStreetMap through their Desktop or Server environment
-        url: https://github.com/Esri/arcgis-osm-editor
-        displayLang: C#
-        searchLang: c%23
-        stars: 389
+      - title: Geoportal server
+        description: Geoportal Server is a standards-based, open source product that enables discovery and use of geospatial resources including data and services.
+        url: https://github.com/Esri/geoportal-server
+        displayLang: Data management
+        searchLang: data-management
+        stars: 244
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
@@ -76,7 +76,7 @@ categories:
     projects:
       - title: Gibbs Seed Company
         description: Gibbs Seed Company constantly monitors current agricultural conditions and appropriate seed hybrids for farmers to plant throughout their fields. Using Spark-Geo and PySAL they can analyze over 300 million planting options in under 10 minutes.
-        image: /assets/projects/spark-geo.png
+        image: assets/projects/spark-geo.png
         url: //github.com/Esri/PySAL-ArcGIS-Toolbox
         displayLang: C#
         searchLang: c%23
@@ -112,7 +112,7 @@ categories:
     projects:
       - title: The Smithsonian
         description: The Smithsonian maintains vast archives of cultural heritage.  They use Story Maps to provide the rich history and spatial context of our world.
-        image: /assets/projects/storymap-smithsonian.png
+        image: assets/projects/storymap-smithsonian.png
         url: //github.com/Esri/storymap-tour
         displayLang: JavaScript
         searchLang: javascript
@@ -145,25 +145,38 @@ categories:
     anchor: native-development
     color: yellow
     projects:
-      - title: Data Collection iOS
-        description: Perform field data collection online or offline, view and synchronize edits, work with features, pop ups, web maps, and related records. Uses the ArcGIS Runtime SDK for iOS.
-        image: /assets/projects/data-collection-ios.png
-        url: //github.com/Esri/data-collection-ios
-        displayLang: Swift
-        searchLang: swift
-        stars: 8
-      - title: ArcGIS Runtime Toolkit - Qt
-        description: Ready-made components to complement mapping and GIS applications
-        url: https://github.com/Esri/arcgis-runtime-toolkit-qt
-        displayLang: QML
-        searchLang: qml
-        stars: 124
-      - title: ArcGIS Toolkit .NET
-        description: Controls and utilities you can use with the ArcGIS Runtime SDK for .NET.
+      - title: ArcGIS Pro SDK community samples
+        description: Samples for the ArcGIS Pro SDK for Microsoft .NET Framework demonstrating key functionality like configuration, framework, editing, geodatabase, geometry, geoprocessing, layouts, and more.
+        image: assets/projects/pro-sdk-sample.png
+        url: //github.com/Esri/arcgis-pro-sdk-community-samples
+        displayLang: C#
+        searchLang: csharp
+        stars: 238
+      - title: Geometry API for Java
+        description: Write custom applications for analysis of spatial data. This API is used in the Esri GIS Tools for Hadoop and other 3rd-party data processing solutions.
+        url: //github.com/Esri/geometry-api-java
+        displayLang: Java
+        searchLang: java
+        stars: 692
+      - title: ArcGIS Maps SDK Toolkit for .NET
+        description: Controls and utilities you can use with the ArcGIS Maps SDK for .NET.
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
         searchLang: csharp
         stars: 209
+      - title: ArcGIS Runtime Toolkit - Qt
+        description: Ready-made components to complement mapping and GIS applications
+        url: https://github.com/Esri/arcgis-maps-sdk-toolkit-qt
+        displayLang: C++
+        searchLang: cpp
+        stars: 125
+      - title: Data Collection iOS
+        description: Perform field data collection online or offline, view and synchronize edits, work with features, pop ups, web maps, and related records. Uses the ArcGIS Runtime SDK for iOS.
+        image: assets/projects/data-collection-ios.png
+        url: //github.com/Esri/data-collection-ios
+        displayLang: Swift
+        searchLang: swift
+        stars: 8
       - title: ArcGIS Maps SDK for Swift toolkit
         description: The ArcGIS Maps SDK for Swift toolkit contains components that will simplify your iOS app development.
         url: //github.com/Esri/arcgis-maps-sdk-swift-toolkit
@@ -173,6 +186,6 @@ categories:
       - title: ArcGIS Maps SDK for Kotlin Toolkit
         description: The ArcGIS Maps SDK for Kotlin Toolkit contains components that will simplify your Kotlin app development.
         url: //github.com/Esri/arcgis-maps-sdk-kotlin-toolkit
-        displayLang: Android
-        searchLang: android
-        stars: 9
+        displayLang: Kotlin
+        searchLang: kotlin
+        stars: 10
