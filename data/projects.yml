@@ -10,12 +10,12 @@ categories:
         url: https://esri.github.io/hiking-trails-app/
         displayLang: JavaScript
         searchLang: javascript
-      - title: Calcite Components
-        description: A rich library of flexible, framework-agnostic web components for building applications
-        url: https://github.com/Esri/calcite-components
+      - title: Calcite Design System
+        description: Design and development resources for creating beautiful, easy to use, cohesive experiences across apps with minimal effort
+        url: https://github.com/Esri/calcite-design-system
         displayLang: JavaScript
         searchLang: javascript
-        stars: 274
+        stars: 325
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
         url: https://developers.arcgis.com/esri-leaflet/
