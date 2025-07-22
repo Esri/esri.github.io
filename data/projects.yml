@@ -65,10 +65,10 @@ categories:
         stars: 176
       - title: Geoportal server
         description: Geoportal Server is a standards-based, open source product that enables discovery and use of geospatial resources including data and services.
-        url: https://github.com/Esri/geoportal-server
+        url: https://github.com/Esri/geoportal-server-catalog
         displayLang: Data management
         searchLang: data-management
-        stars: 244
+        stars: 110
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
