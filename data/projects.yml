@@ -81,12 +81,12 @@ categories:
         displayLang: C#
         searchLang: c%23
         stars: 28
-      - title: GIS Tools for Hadoop
+      - title: Spatial Framework for Hadoop
         description: Integrate ArcGIS with Hadoop big data processing.
-        url: //github.com/Esri/gis-tools-for-hadoop
+        url: https://github.com/Esri/spatial-framework-for-hadoop
         displayLang: Java
         searchLang: java
-        stars: 515
+        stars: 372
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
         url: //r-arcgis.github.io/
