@@ -170,13 +170,6 @@ categories:
         displayLang: C++
         searchLang: cpp
         stars: 125
-      - title: Data Collection iOS
-        description: Perform field data collection online or offline, view and synchronize edits, work with features, pop ups, web maps, and related records. Uses the ArcGIS Runtime SDK for iOS.
-        image: assets/projects/data-collection-ios.png
-        url: //github.com/Esri/data-collection-ios
-        displayLang: Swift
-        searchLang: swift
-        stars: 8
       - title: ArcGIS Maps SDK for Swift toolkit
         description: The ArcGIS Maps SDK for Swift toolkit contains components that will simplify your iOS app development.
         url: //github.com/Esri/arcgis-maps-sdk-swift-toolkit
