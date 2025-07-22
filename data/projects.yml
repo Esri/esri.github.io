@@ -27,13 +27,13 @@ categories:
         url: https://developers.arcgis.com/arcgis-rest-js/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 344
+        stars: 362
       - title: CIM Symbol Builder
         description: Use the CIM Symbol Builder to explore different combinations of symbol layers and their properties to create your desired CIMSymbol in the ArcGIS Maps SDK for JavaScript.
         url: //github.com/Esri/cim-symbol-builder-js
         displayLang: JavaScript
         searchLang: javascript
-        stars: 10
+        stars: 12
   - title: Data Management
     url: https://github.com/Esri?q=topic%3Adata-management
     anchor: data-management
