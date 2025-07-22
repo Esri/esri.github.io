@@ -98,13 +98,13 @@ categories:
         url: https://github.com/Esri/raster-functions
         displayLang: Python
         searchLang: python
-        stars: 191
+        stars: 200
       - title: LERC
         description: Rapid encoding and decoding for any pixel type (not just RGB or Byte).
         url: //github.com/Esri/lerc
         displayLang: C++
         searchLang: c%2B%2B
-        stars: 191
+        stars: 201
   - title: Publishing and Sharing
     url: https://github.com/Esri?q=topic%3Apublishing-sharing
     anchor: publishing-sharing
@@ -121,25 +121,25 @@ categories:
         url: //github.com/Esri/cim-spec
         displayLang: Markdown
         searchLang: markdown
-        stars: 78
+        stars: 87
       - title: i3s-spec
         description: A specification for arbitrarily large amounts of geographic data.
         url: //github.com/Esri/i3s-spec
         displayLang: JavaScript
         searchLang: javascript
-        stars: 317
+        stars: 326
       - title: ArcGIS Arcade expressions
         description: Sharing and maintaining reuseable Arcade expressions across all supported profiles.
         url: //github.com/Esri/arcade-expressions
         displayLang: JavaScript
         searchLang: javascript
-        stars: 264
+        stars: 317
       - title: Dictionary Renderer Toolkit
         description: Extend ArcGIS Pro, the ArcGIS API for JavaScript, and the ArcGIS Runtime SDKs by creating custom dictionary renderers
         url: https://github.com/Esri/dictionary-renderer-toolkit
         displayLang: C#
         searchLang: c%23
-        stars: 22
+        stars: 26
   - title: Native Development
     url: https://github.com/Esri?q=topic%3Anative-development
     anchor: native-development
@@ -157,28 +157,28 @@ categories:
         url: //github.com/Esri/geometry-api-java
         displayLang: Java
         searchLang: java
-        stars: 692
+        stars: 701
       - title: ArcGIS Maps SDK Toolkit for .NET
         description: Controls and utilities you can use with the ArcGIS Maps SDK for .NET.
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
         searchLang: csharp
-        stars: 209
+        stars: 230
       - title: ArcGIS Runtime Toolkit - Qt
         description: Ready-made components to complement mapping and GIS applications
         url: https://github.com/Esri/arcgis-maps-sdk-toolkit-qt
         displayLang: C++
         searchLang: cpp
-        stars: 125
+        stars: 142
       - title: ArcGIS Maps SDK for Swift toolkit
         description: The ArcGIS Maps SDK for Swift toolkit contains components that will simplify your iOS app development.
         url: //github.com/Esri/arcgis-maps-sdk-swift-toolkit
         displayLang: swift
         searchLang: swift
-        stars: 25
+        stars: 36
       - title: ArcGIS Maps SDK for Kotlin Toolkit
         description: The ArcGIS Maps SDK for Kotlin Toolkit contains components that will simplify your Kotlin app development.
         url: //github.com/Esri/arcgis-maps-sdk-kotlin-toolkit
         displayLang: Kotlin
         searchLang: kotlin
-        stars: 10
+        stars: 18
