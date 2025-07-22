@@ -50,19 +50,19 @@ categories:
         url: //koopjs.github.io/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 654
+        stars: 692
       - title: Deep Learning Libraries Installers for ArcGIS
         description: A collection of components, such as PyTorch, TensorFlow, Fast.ai and scikit-learn, for performing deep learning and machine learning tasks with the ArcGIS API for Python.
         url: //github.com/Esri/deep-learning-frameworks
         displayLang: Python
         searchLang: python
-        stars: 416
+        stars: 530
       - title: Terraformer
         description: Library to convert common spatial data formats.
         url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
-        stars: 176
+        stars: 216
       - title: Geoportal server
         description: Geoportal Server is a standards-based, open source product that enables discovery and use of geospatial resources including data and services.
         url: https://github.com/Esri/geoportal-server
