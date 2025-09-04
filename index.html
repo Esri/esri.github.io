@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
     <!-- Calcite: -->
     <script type="module" src="https://js.arcgis.com/calcite-components/2.10.1/calcite.esm.js"></script>
     <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.10.1/calcite.css" />
-    
+
     <!-- YAML processor: -->
     <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.js"></script>
   </head>
@@ -26,7 +26,11 @@
       </div>
     </header>
     <div class="bg-[#efefef]">
-      <form method="get" action="https://github.com/Esri#org-profile-repositories" class="mx-auto max-w-7xl py-14 text-white p-4 flex flex-row">
+      <form
+        method="get"
+        action="https://github.com/Esri#org-profile-repositories"
+        class="mx-auto max-w-7xl py-14 text-white p-4 flex flex-row"
+      >
         <calcite-input
           class="grow"
           name="q"
@@ -41,9 +45,13 @@
     </main>
     <footer class="bg-[#efefef] text-center">
       <div class="md:flex md:flex-row m-4 p-4 max-w-7xl mx-auto">
-        <div class="flex-none"><calcite-link href="https://github.com/Esri">Explore other open-source projects</calcite-link></div>
+        <div class="flex-none">
+          <calcite-link href="https://github.com/Esri">Explore other open-source projects</calcite-link>
+        </div>
         <div class="grow">&nbsp;</div>
-        <div class="flex-none"><calcite-link href="https://developers.arcgis.com/">ArcGIS APIs, tools, and location services</calcite-link></div>
+        <div class="flex-none">
+          <calcite-link href="https://developers.arcgis.com/">ArcGIS APIs, tools, and location services</calcite-link>
+        </div>
       </div>
       <a href="https://esri.com" class="">
         <img class="max-w-xs inline-block p-8" src="https://esri.github.io/assets/logo/esri-logo.svg" />

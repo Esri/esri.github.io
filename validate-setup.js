@@ -38,7 +38,7 @@ const fileChecks = [
 ];
 
 let passed = 0;
-let total = checks.length + fileChecks.length;
+const total = checks.length + fileChecks.length;
 
 // Command checks
 checks.forEach((check) => {
@@ -46,7 +46,7 @@ checks.forEach((check) => {
     execSync(check.command, { stdio: "ignore" });
     console.log(`✅ ${check.success}`);
     passed++;
-  } catch (error) {
+  } catch {
     console.log(`❌ ${check.name} not properly configured`);
   }
 });
@@ -62,7 +62,7 @@ fileChecks.forEach((check) => {
     } else {
       console.log(`❌ ${check.name} missing`);
     }
-  } catch (error) {
+  } catch {
     console.log(`❌ ${check.name} missing`);
   }
 });
