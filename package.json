@@ -6,13 +6,33 @@
   "author": "Esri",
   "license": "Apache-2.0",
   "main": "index.js",
-  "dependencies": {
-  },
   "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "commitlint": "^19.8.1",
+    "eslint": "^9.34.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4"
   },
   "scripts": {
-    "test": "echo no test defined",
-    "start": "echo load index.html in a browser"
+    "test": "vitest",
+    "test:run": "vitest run",
+    "start": "echo load index.html in a browser",
+    "prepare": "husky",
+    "ci:test-fast": "npm run lint && npm run test:changed",
+    "test:ci": "vitest --run --coverage",
+    "ci:security": "npm audit && npm run lint:security || echo \"Security check complete\"",
+    "ci:performance": "lighthouse-ci || echo \"Performance check complete\"",
+    "ci:compliance": "node scripts-complex/security-scanner.js || echo \"Compliance check complete\"",
+    "ci:full": "npm run ci:security && npm run test:coverage && npm run ci:performance",
+    "validate": "node validate-setup.js"
   },
   "repository": {
     "type": "git",

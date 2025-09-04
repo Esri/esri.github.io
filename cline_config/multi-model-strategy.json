@@ -1,0 +1,33 @@
+{
+  "aiModelStrategy": {
+    "version": "2.0.0",
+    "description": "Multi-model AI strategy for cost optimization and enhanced capabilities",
+    "models": {
+      "primary": {
+        "name": "gpt-4o-mini",
+        "provider": "openai",
+        "usage": "80% of tasks - cost optimized",
+        "costPerToken": 0.00015
+      },
+      "complex": {
+        "name": "claude-3.5-sonnet",
+        "provider": "anthropic",
+        "usage": "15% of tasks - complex analysis",
+        "costPerToken": 0.003
+      },
+      "planning": {
+        "name": "deepseek-r1",
+        "provider": "deepseek",
+        "usage": "3% of tasks - strategic planning",
+        "costPerToken": 0.000055,
+        "costReduction": "97%"
+      }
+    },
+    "monthlyBudget": {
+      "total": 500,
+      "primary": 250,
+      "complex": 200,
+      "planning": 50
+    }
+  }
+}

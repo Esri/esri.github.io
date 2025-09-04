@@ -1,0 +1,168 @@
+# Cline Rules for The Credit Pros AI-SDLC Framework
+# Enterprise Configuration for Credit Repair Compliance
+
+## Core Development Rules
+
+### Always Generate Tests
+- Write comprehensive tests for any new code created
+- Use Vitest for React/TypeScript/JavaScript, PHPUnit for Laravel/PHP
+- Achieve minimum 80% code coverage for all new features
+- Run tests after generation and fix until all pass
+- Include edge cases, error handling, and security validation
+
+### Credit Repair Domain Compliance
+- All credit data access must include audit trail logging
+- Validate FCRA Section 604 permissible purpose for credit pulls
+- Encrypt PII data in tests using mock/encrypted values
+- Include dispute resolution workflow validation in E2E tests
+- Test credit score calculations with 300-850 FICO range validation
+
+### Code Quality Standards
+- Follow existing project conventions (detect from codebase)
+- Use TypeScript strict mode for React components
+- Implement proper error boundaries and loading states
+- Add accessibility (WCAG 2.1 AA) compliance checks
+- Include responsive design testing for mobile/desktop
+
+### Testing Patterns
+- Unit tests: Use Vitest for business logic and edge cases
+- Integration tests: Test API endpoints with Vitest and mock data
+- E2E tests: Test complete user workflows with Playwright
+- Security tests: Validate authentication, authorization, data protection
+- Performance tests: Check for memory leaks and response times
+
+## TCP-Specific Requirements
+
+### FCRA Compliance Testing
+```typescript
+// Required test pattern for credit data access
+describe('FCRA Compliance', () => {
+  it('should log audit trail for credit data access', () => {
+    // Test audit logging
+  });
+
+  it('should verify permissible purpose before credit pull', () => {
+    // Test Section 604 compliance
+  });
+
+  it('should encrypt PII data in transit and at rest', () => {
+    // Test encryption validation
+  });
+});
+```
+
+### Credit Score Validation
+```typescript
+// Required test pattern for credit calculations
+describe('Credit Score Calculations', () => {
+  it('should enforce 300-850 FICO score range', () => {
+    expect(calculateScore(data)).toBeGreaterThanOrEqual(300);
+    expect(calculateScore(data)).toBeLessThanOrEqual(850);
+  });
+
+  it('should handle invalid input gracefully', () => {
+    expect(() => calculateScore(null)).toThrow('Invalid credit data');
+  });
+});
+```
+
+### Database Testing
+```php
+// Required pattern for Laravel database tests
+class CreditReportTest extends TestCase
+{
+    use RefreshDatabase;
+
+    /** @test */
+    public function it_logs_audit_trail_for_credit_access()
+    {
+        // Test audit trail creation
+        $this->assertDatabaseHas('audit_logs', [
+            'action' => 'credit_report_access',
+            'user_id' => $user->id
+        ]);
+    }
+}
+```
+
+## File Handling Rules
+
+### Never Modify These Files
+- .env (contains sensitive API keys)
+- package-lock.json, composer.lock
+- .git/ directory and git hooks
+- node_modules/, vendor/ directories
+- Database migration files (unless explicitly requested)
+
+### Always Check These Patterns
+- Verify imports/requires are correct
+- Check that test files have proper describe/test structure
+- Ensure async functions are properly awaited
+- Validate that mocks are set up before tests run
+- Check that database tests use RefreshDatabase trait
+
+### Security Considerations
+- Never commit real API keys or production credentials
+- Use factory/seed data for testing, never production data
+- Encrypt sensitive test data using Test::encrypt() patterns
+- Validate that PII is properly masked in logs and outputs
+
+## Code Generation Preferences
+
+### React/TypeScript Components
+- Use functional components with hooks
+- Include proper TypeScript interfaces/types
+- Add data-testid attributes for E2E testing
+- Include loading and error states
+- Follow existing styling patterns (detect from project)
+
+### Laravel/PHP Backend
+- Use proper request validation classes
+- Include authorization checks (policies/gates)
+- Add comprehensive API resource formatting
+- Use service classes for complex business logic
+- Include proper exception handling
+
+### Test Generation Priority
+1. Critical business logic (credit calculations, compliance)
+2. User-facing features (components, forms, workflows)
+3. API endpoints (authentication, data validation)
+4. Database operations (CRUD, relationships)
+5. Integration points (external APIs, webhooks)
+
+## Quality Gates
+
+### Before Creating Tests
+- Analyze the source code structure and purpose
+- Identify the framework and testing conventions used
+- Check for existing test patterns to follow
+- Determine the appropriate test types needed (unit/integration/E2E)
+
+### After Generating Tests
+- Run the tests and ensure they pass
+- Check code coverage meets minimum thresholds
+- Validate that tests cover edge cases and error conditions
+- Ensure tests are isolated and don't depend on external services
+- Verify compliance patterns are included where applicable
+
+### Continuous Improvement
+- Learn from existing test patterns in the codebase
+- Adapt to project-specific conventions and structures
+- Optimize test performance and reliability
+- Maintain consistency with team coding standards
+
+## Integration with Existing AI-SDLC Framework
+
+### Leverage Existing Automation
+- Use npm run ai:generate-tests for batch test generation
+- Work with existing Vitest/Playwright configurations
+- Utilize the real-ai-test-generator.js for OpenAI integration
+- Maintain compatibility with current git hooks and CI/CD
+
+### Enhance Current Capabilities
+- Add interactive debugging and test refinement
+- Provide real-time feedback during development
+- Offer intelligent suggestions for test improvement
+- Help with complex multi-file test scenarios
+
+This configuration ensures Cline enhances the existing AI-SDLC framework while maintaining enterprise compliance and code quality standards specific to The Credit Pros' credit repair domain.
