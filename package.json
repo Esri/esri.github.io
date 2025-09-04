@@ -21,9 +21,22 @@
     "prettier": "^3.6.2",
     "vitest": "^3.2.4"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
+    "test:changed": "vitest --changed",
+    "lint": "eslint .",
+    "format": "prettier . --check",
+    "format:write": "prettier . --write",
     "start": "echo load index.html in a browser",
     "prepare": "husky",
     "ci:test-fast": "npm run lint && npm run test:changed",
