@@ -9,11 +9,17 @@
     <link rel="stylesheet" type="text/css" href="https://webapps-cdn.esri.com/CDN/fonts/v1.4.0/fonts.css" />
 
     <!-- Calcite: -->
-    <script type="module" src="https://js.arcgis.com/calcite-components/2.10.1/calcite.esm.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.10.1/calcite.css" />
+    <script type="module" src="https://js.arcgis.com/calcite-components/5.1"></script>
     
     <!-- YAML processor: -->
     <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.js"></script>
+    
+    <style>
+      /* Apply the Calcite font to the entire page: */
+      :root {
+        font-family: var(--calcite-font-family);
+      }
+    </style>
   </head>
   <body translate="no">
     <header
