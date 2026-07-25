@@ -15,30 +15,31 @@ categories:
         url: https://github.com/Esri/maplibre-arcgis
         displayLang: JavaScript
         searchLang: javascript
+        stars: 17
       - title: Calcite Design System
         description: Design and development resources for creating beautiful, easy to use, cohesive experiences across apps with minimal effort
         url: https://github.com/Esri/calcite-design-system
         displayLang: JavaScript
         searchLang: javascript
-        stars: 325
+        stars: 370
       - title: Esri Leaflet
         description: Leaflet plugins for the most popular ArcGIS web services
         url: https://developers.arcgis.com/esri-leaflet/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 1.6k
+        stars: 1.7k
       - title: ArcGIS REST JS
         description: Compact, modular JavaScript wrappers for the ArcGIS REST API
         url: https://developers.arcgis.com/arcgis-rest-js/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 362
+        stars: 387
       - title: CIM Symbol Builder
         description: Use the CIM Symbol Builder to explore different combinations of symbol layers and their properties to create your desired CIMSymbol in the ArcGIS Maps SDK for JavaScript.
         url: //github.com/Esri/cim-symbol-builder-js
         displayLang: JavaScript
         searchLang: javascript
-        stars: 12
+        stars: 14
   - title: Data Management
     url: https://github.com/Esri?q=topic%3Adata-management
     anchor: data-management
@@ -55,25 +56,25 @@ categories:
         url: //koopjs.github.io/
         displayLang: JavaScript
         searchLang: javascript
-        stars: 692
+        stars: 709
       - title: Deep Learning Libraries Installers for ArcGIS
         description: A collection of components, such as PyTorch, TensorFlow, Fast.ai and scikit-learn, for performing deep learning and machine learning tasks with the ArcGIS API for Python.
         url: //github.com/Esri/deep-learning-frameworks
         displayLang: Python
         searchLang: python
-        stars: 530
+        stars: 634
       - title: Terraformer
         description: Library to convert common spatial data formats.
         url: https://github.com/terraformer-js/terraformer
         displayLang: JavaScript
         searchLang: javascript
-        stars: 216
+        stars: 238
       - title: Geoportal server
         description: Geoportal Server is a standards-based, open source product that enables discovery and use of geospatial resources including data and services.
         url: https://github.com/Esri/geoportal-server-catalog
         displayLang: Data management
         searchLang: data-management
-        stars: 110
+        stars: 127
   - title: Spatial Analysis
     url: https://github.com/Esri?q=topic%3Aspatial-analysis
     anchor: spatial-analysis
@@ -85,31 +86,31 @@ categories:
         url: //github.com/Esri/PySAL-ArcGIS-Toolbox
         displayLang: C#
         searchLang: c%23
-        stars: 28
+        stars: 52
       - title: Spatial Framework for Hadoop
         description: Integrate ArcGIS with Hadoop big data processing.
         url: https://github.com/Esri/spatial-framework-for-hadoop
         displayLang: Java
         searchLang: java
-        stars: 372
+        stars: 376
       - title: R Analysis
         description: Develop and share R statistical analysis with ArcGIS.
         url: //r-arcgis.github.io/
         displayLang: R
         searchLang: r
-        stars: 188
+        stars: 195
       - title: ArcGIS Raster Functions
         description: Modern image processing and analytic tools
         url: https://github.com/Esri/raster-functions
         displayLang: Python
         searchLang: python
-        stars: 200
+        stars: 204
       - title: LERC
         description: Rapid encoding and decoding for any pixel type (not just RGB or Byte).
         url: //github.com/Esri/lerc
         displayLang: C++
         searchLang: c%2B%2B
-        stars: 201
+        stars: 207
   - title: Publishing and Sharing
     url: https://github.com/Esri?q=topic%3Apublishing-sharing
     anchor: publishing-sharing
@@ -126,25 +127,25 @@ categories:
         url: //github.com/Esri/cim-spec
         displayLang: Markdown
         searchLang: markdown
-        stars: 87
+        stars: 92
       - title: i3s-spec
         description: A specification for arbitrarily large amounts of geographic data.
         url: //github.com/Esri/i3s-spec
         displayLang: JavaScript
         searchLang: javascript
-        stars: 326
+        stars: 336
       - title: ArcGIS Arcade expressions
         description: Sharing and maintaining reuseable Arcade expressions across all supported profiles.
         url: //github.com/Esri/arcade-expressions
         displayLang: JavaScript
         searchLang: javascript
-        stars: 317
+        stars: 359
       - title: Dictionary Renderer Toolkit
         description: Extend ArcGIS Pro, the ArcGIS API for JavaScript, and the ArcGIS Runtime SDKs by creating custom dictionary renderers
         url: https://github.com/Esri/dictionary-renderer-toolkit
         displayLang: C#
         searchLang: c%23
-        stars: 26
+        stars: 27
   - title: Native Development
     url: https://github.com/Esri?q=topic%3Anative-development
     anchor: native-development
@@ -156,34 +157,34 @@ categories:
         url: //github.com/Esri/arcgis-pro-sdk-community-samples
         displayLang: C#
         searchLang: csharp
-        stars: 238
+        stars: 304
       - title: Geometry API for Java
         description: Write custom applications for analysis of spatial data. This API is used in the Esri GIS Tools for Hadoop and other 3rd-party data processing solutions.
         url: //github.com/Esri/geometry-api-java
         displayLang: Java
         searchLang: java
-        stars: 701
+        stars: 707
       - title: ArcGIS Maps SDK Toolkit for .NET
         description: Controls and utilities you can use with the ArcGIS Maps SDK for .NET.
         url: //github.com/Esri/arcgis-toolkit-dotnet
         displayLang: C#
         searchLang: csharp
-        stars: 230
+        stars: 244
       - title: ArcGIS Runtime Toolkit - Qt
         description: Ready-made components to complement mapping and GIS applications
         url: https://github.com/Esri/arcgis-maps-sdk-toolkit-qt
         displayLang: C++
         searchLang: cpp
-        stars: 142
+        stars: 146
       - title: ArcGIS Maps SDK for Swift toolkit
         description: The ArcGIS Maps SDK for Swift toolkit contains components that will simplify your iOS app development.
         url: //github.com/Esri/arcgis-maps-sdk-swift-toolkit
         displayLang: Swift
         searchLang: swift
-        stars: 36
+        stars: 41
       - title: ArcGIS Maps SDK for Kotlin Toolkit
         description: The ArcGIS Maps SDK for Kotlin Toolkit contains components that will simplify your Kotlin app development.
         url: //github.com/Esri/arcgis-maps-sdk-kotlin-toolkit
         displayLang: Kotlin
         searchLang: kotlin
-        stars: 18
+        stars: 25
