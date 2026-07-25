@@ -63,7 +63,7 @@ const createCard = (cardInfo) => {
   const rootElement = createElement("calcite-card", { className: "box-border p-4 basis-1/2 md:basis-1/4 grow shrink" });
 
   if (cardInfo.title) {
-    const titleElement = createElement("span", { slot: "title" });
+    const titleElement = createElement("span", { slot: "heading" });
     const link = createElement("calcite-link", {
       innerHTML: cardInfo.title,
       href: cardInfo.link,
